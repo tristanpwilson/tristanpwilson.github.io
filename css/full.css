@@ -4,6 +4,7 @@
 
 body {
 	margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	height: 100vw;
 }
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
@@ -16,9 +17,59 @@ body {
     -o-background-size: cover;
 }
 
-#MainPortrait{
-	max-width: 200px;
-	-webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.53);
-	border: 3px solid #626262;
-	box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.53)
+.MainPortrait{
+	display: block;
+	position: relative;
+	width:100%;
+	max-width: 250px;
+	border-radius: 16px;
+	opacity: .6;
+	-webkit-box-shadow: 1px 1px 1px 1px #808080;
+	box-shadow: 1px 1px 1px 1px #808080;
+	    -webkit-transition: opacity .5s, box-shadow .5s; /* For Safari 3.1 to 6.0 */
+    transition: opacity .5s, box-shadow .5s;
+
 }
+
+.MainPortrait:hover{
+	opacity: .9;
+	width:100%;
+	-webkit-box-shadow: 1px 1px 2px 2px #808080;
+	box-shadow: 1px 1px 2px 2px #808080;
+}
+
+#mainbio{
+	text-align: left;
+	}
+	
+#mainbioname{
+	text-align:left;
+}
+
+@media (min-width:992px){
+	.MainPortrait{
+	margin-left: 0% !important;
+}
+}
+
+@media (max-width:991px){
+	.MainPortrait {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+	}
+	#mainbioname{
+	text-align:center !important;
+}
+}
+
+
+
+
+#Placeholder{
+	height:50px;
+}
+
