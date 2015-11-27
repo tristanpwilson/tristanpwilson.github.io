@@ -10,7 +10,7 @@ body {
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 
 .full {
-    background: url('http://placehold.it/1920x1080') no-repeat center center fixed;
+    background-color:#fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -20,22 +20,55 @@ body {
 .MainPortrait{
 	display: block;
 	position: relative;
-	width:100%;
-	max-width: 250px;
-	border-radius: 16px;
-	opacity: .6;
-	-webkit-box-shadow: 1px 1px 1px 1px #808080;
-	box-shadow: 1px 1px 1px 1px #808080;
-	    -webkit-transition: opacity .5s, box-shadow .5s; /* For Safari 3.1 to 6.0 */
-    transition: opacity .5s, box-shadow .5s;
+	width: 100%;
+	max-width: 120px;
+	border-radius: 25%;
+	margin-left: auto;
+	margin-right: .5%;
+	opacity: .9;
+	-webkit-transition: max-width .5s, margin-top .5s; /* For Safari 3.1 to 6.0 */
+	transition: max-width .5s, margin-top .5s;
+	-webkit-box-shadow: 0px 0px 0px 0px #6F6F6F;
+	box-shadow: 0px 0px 0px 0px #6F6F6F;
+	padding: 0px;
+}
+
+
+
+#col-MainPortrait{
+	margin-top: 1vw;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: #a2b86c;
+	width: 20vw;
+	border-radius: 0 8px 8px 0;
+	-webkit-box-shadow: 1px 2px 4px #707070;
+	box-shadow: 1px 2px 4px #707070;
+		-webkit-transition: width .5s, margin-top .5s; /* For Safari 3.1 to 6.0 */
+	transition: width .5s, margin-top .5s;
+}
+
+#col-MainPortrait-text{
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border-radius: 0 8px 8px 0;
+		-webkit-transition: width .5s, margin-top .5s; /* For Safari 3.1 to 6.0 */
+	transition: width .5s, margin-top .5s;
+}
+
+#col-MainPortrait:hover{
+	width:30vw;
+}
+
+
+#col-MainPortrait:hover .MainPortrait{
+	max-width: 130px;
+	opacity:1;
 
 }
 
-.MainPortrait:hover{
-	opacity: .9;
-	width:100%;
-	-webkit-box-shadow: 1px 1px 2px 2px #808080;
-	box-shadow: 1px 1px 2px 2px #808080;
+#row-MainPortrait{
+
 }
 
 #mainbio{
@@ -43,12 +76,13 @@ body {
 	}
 	
 #mainbioname{
+	position:relative;
 	text-align:left;
 }
 
 @media (min-width:992px){
 	.MainPortrait{
-	margin-left: 0% !important;
+
 }
 }
 
@@ -72,4 +106,3 @@ body {
 #Placeholder{
 	height:50px;
 }
-
