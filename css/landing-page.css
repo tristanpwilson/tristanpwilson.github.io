@@ -96,6 +96,8 @@ h6 {
 .content-section-a {
     padding: 50px 0;
     background-color: #f8f8f8;
+	box-shadow: -3px 1px 2px 2px #999999;
+	-webkit-box-shadow: -3px 1px 2px 2px #999999;
 }
 
 .content-section-b {
