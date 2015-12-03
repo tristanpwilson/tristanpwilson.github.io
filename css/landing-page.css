@@ -36,8 +36,8 @@ h6 {
 	text-align: center;
 	color: #f8f8f8;
 	opacity: 1;
-	background: url(../img/banner-bg.jpg) no-repeat center center;
-	background-size: 100%;
+	background: url(../img/banner-bg.jpg) repeat-x;
+	background-size: 120vh;
 	background-position: center bottom;
 	/* [disabled]background-attachment:fixed; */
 }
