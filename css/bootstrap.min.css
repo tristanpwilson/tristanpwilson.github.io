@@ -43,22 +43,21 @@ h3 {
 }
 
 .intro-header {
-	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 	padding-bottom: 0px;
 	text-align: center;
 	color: #FFFFFF;
 	opacity: 1;
+	background-color: #FFFFFF;
 	/* [disabled]background: url(../img/banner-bg3.png) no-repeat; */
 
 }
 
 .intro-message {
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 2%;
-  	background-color: #8FA6D7;
-	background-position: left bottom;
-		  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding-top:50px;
+  padding-bottom:50px;
+
 }
 
 .intro-message > h1 {
@@ -75,6 +74,27 @@ h3 {
 
 .intro-message > h3 {
   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+
+.intro-img {
+  position: relative;
+  margin-top: 1vw;
+
+}
+
+#profile-img{
+position:relative;
+width: 100%;
+height:100%;
+}
+
+
+#col-top-row{
+	height:25vw;
+	background-color: #5789a8;
+	background-position: left bottom;
+		  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 @media (max-width:767px) {
@@ -110,7 +130,7 @@ h3 {
 
 .content-section-a {
   padding: 50px 0;
-  background-color: #f8f8f8;
+  background-color: #FFFFFF;
 }
 
 .content-section-b {
@@ -470,40 +490,57 @@ ul {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+
 }
 
 @media (min-width:768px) {
   .container {
-    width: 750px;
+    width: 88vw;
+  }
+}
+
+@media (max-width:768px) {
+  .container {
+    width: 90vw;
   }
 }
 
 @media (min-width:992px) {
   .container {
-    width: 970px;
-  }
-}
-
-@media (min-width:1200px) {
-  .container {
-    width: 1170px;
+    width: 88vw;
   }
 }
 
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -1.5%;
+  margin-left: -1.5%;
 }
 
-.col-lg-12,
-.col-lg-5,
-.col-lg-6,
-.col-sm-6 {
+  .col-lg-12,
+  .col-lg-5,
+  .col-lg-4,
+  .col-lg-8,
+  .col-lg-6, 
+  .col-lg-4-bump{
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 1%;
+  padding-left: 1%;
+  float:left;
 }
+
+    .col-lg-4{
+	  width:25.5%;
+  }
+  
+    .col-lg-4-bump{
+	  width:26.5%;
+	  margin-right:5%;
+  }
+  
+  .col-lg-8{
+	  width:66.5%;
+  }
 
 @media (min-width:768px) {
   .col-sm-6 {
@@ -521,18 +558,25 @@ ul {
   .col-sm-push-6 {
     left: 50%;
   }
+  
+
+
 }
 
 @media (min-width:1200px) {
   .col-lg-12,
   .col-lg-5,
-  .col-lg-6 {
+  .col-lg-4,
+  .col-lg-8,
+  .col-lg-6, 
+  .col-lg-4-bump{
     float: left;
   }
 
   .col-lg-12 {
     width: 100%;
   }
+
 
   .col-lg-6 {
     width: 50%;
@@ -542,6 +586,7 @@ ul {
     width: 41.66666667%;
   }
 
+
   .col-lg-offset-2 {
     margin-left: 16.66666667%;
   }
@@ -550,6 +595,8 @@ ul {
     margin-left: 8.33333333%;
   }
 }
+
+
 
 .form-control::-moz-placeholder {
   color: #999;
@@ -769,6 +816,11 @@ ul {
   .navbar-fixed-top {
     border-radius: 0;
   }
+  
+    .navbar>.container .navbar-brand {
+    margin-left: -15px;
+  }
+
 }
 
 .navbar-fixed-top {
@@ -797,11 +849,7 @@ ul {
 	box-shadow: 0px -1px 1px 0px #C4C4C4;
 }
 
-@media (min-width:768px) {
-  .navbar>.container .navbar-brand {
-    margin-left: -15px;
-  }
-}
+
 
 .navbar-toggle {
   position: relative;
@@ -869,6 +917,7 @@ ul {
 .navbar-default {
   background-color: #f8f8f8;
   border-color: #e7e7e7;
+  		  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .navbar-default .navbar-brand {
