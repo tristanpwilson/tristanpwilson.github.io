@@ -72,33 +72,38 @@ h3 {
 	position: relative;
 	left: -2vw;
 	width: 20vw;
-	max-height:158px;
-	padding: .5vw;
-	background-color: #748BB4;
-	border-radius: 0px 2px 2px 0px;
+	max-height: 15vw;
+	padding: 1vw;
+	/*background-color: #9CA8C1;*/
+	background: linear-gradient(135deg, #9CAFCF 20%, #8399BD 60%);
+	border-radius: 0px 6px 6px 0px;
 	margin: 0vw;
 	overflow: hidden;
-	webkit-box-shadow: 1px 1px 1px 1px #BBBBBB;
-	box-shadow: 1px 1px 1px 1px #BBBBBB;
+	webkit-box-shadow: 1px 1px .5px 1px #707070;
+	box-shadow: 1px 1px .5px 1px #707070;
 }
 
 
 .intro-img {
 	position: relative;
-	width:  12vw;
-	height: 11vw;
-	max-width:150px;
-	max-height:140px;
-	border-radius: 5px;
-	margin:0vw;
+	width: 10vw;
+	height: 9vw;
+	max-width: 150px;
+	max-height: 140px;
+	border-radius: 6px;
+	margin: 0vw;
 	overflow: hidden;
-	float:right;
+	float: right;
+	border-top: 1px solid #6E6E6E;
+	border-left: 1px solid #6E6E6E;
+	border-right: .5px solid #6C6C6C;
+	border-bottom: .5px solid #6C6C6C;
 }
 
 #profile-img{
 	position: relative;
 	width: 100%;
-	border-radius: 5px;
+	border-radius: 2px;
 
 }
 
@@ -108,11 +113,13 @@ h3 {
 	border-radius: 5px;
 	margin:0vw;
 		overflow: hidden;
+		left: -2vw;
 }
 .intro-sub-img-box > h1{
 	font-size:2.4vw;
 	color:#BBBBBB;
-	text-align: left;
+	text-align: right;
+	width:20vw;
 }
 
 .intro-sub-img-box > P {
