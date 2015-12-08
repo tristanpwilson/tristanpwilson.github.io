@@ -38,7 +38,7 @@
 .section-box-H {
 	padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 	padding-bottom: 0px;
-	color: #FFFFFF;
+	color: #CCCCCC;
 	opacity: 1;
 }
 
@@ -46,30 +46,32 @@
 .section-box-0 {
 	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 	padding-bottom: 0px;
-	color: #FFFFFF;
+	color: #CCCCCC;
 	opacity: 1;
 }
 
 .section-box-1 {
 	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 	padding-bottom: 0px;
-	color: #FFFFFF;
+	color: #CCCCCC;
 	opacity: 1;
 }
 
   .container {
-    width: 80vw;
+      width: 80vw;
 	  max-width: 950px;
   }
   
   .col-span-head{
-	  width:80vw;
-	  height:19vw;
-	  max-width: 950px;
-	  max-height: 225px;
-	  background-color:#F8F8F8;
-	  margin-bottom:0px;
-	  			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	width: 80vw;
+	height: 19vw;
+	max-width: 950px;
+	max-height: 225px;
+	border-radius:2px;
+	background-color: #F8F8F8;
+	/*background-color: #84ADD8;*/
+	margin-bottom: 0px;
+	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.30), 0 2px 1px 0 rgba(0, 0, 0, 0.1);
   }
   
   .col-lg-left{
@@ -79,7 +81,7 @@
 	  max-height: 450px;
 	  background-color:#F8F8F8;
 	  margin-right:0px;
-	  		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	  	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.20), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
   }
   
     .col-lg-right{
@@ -89,7 +91,7 @@
 	  max-height: 450px;
 	  background-color:#F8F8F8;
 	  margin-right:0vw !important;
-	  		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	  	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.20), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
   }
   
   .col-spacer{
@@ -136,14 +138,15 @@
 	  height:19vw;
 	  max-width: 950px;
 	  max-height: 225px;
-	  background-color:#F8F8F8;
+	  background-color:#84ADD8;
+	  border-radius:5px;
 	  margin-bottom:0px;
 	  		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   }
 	
 	  .col-lg-left{
 	  width:80vw;
-	  background-color:#93B4E7;
+	  background-color:#F8F8F8;
 	  height:38vw;
 	  margin-right:0vw;
 	  margin-bottom:0px;
@@ -152,7 +155,7 @@
   
     .col-lg-right{
 	  width:80vw;
-	  background-color:#93B4E7;
+	  background-color:#F8F8F8;
 	  height:38vw;
 	  margin-right:0vw !important;
 	  		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
