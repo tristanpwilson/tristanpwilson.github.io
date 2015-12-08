@@ -10,9 +10,10 @@
 }
 
 .row {
-  margin-right: -1.5vw;
-  margin-left: -1.5vw;
-  padding:2vw
+	width:80vw;
+ 	margin-right: -1.5vw;
+ 	margin-left: -1.5vw;
+ 	padding:0vw
 }
 
   .col-lg-12,
@@ -20,126 +21,161 @@
   .col-lg-4,
   .col-lg-8,
   .col-lg-6, 
-  .col-lg-4-bump{
+  .col-lg-4-bump,
+  .col-lg-left,
+  .col-lg-right,
+  .col-span-head,
+  .col-spacer{
   position: relative;
   min-height: 1px;
   padding-right: 0vw;
   padding-left: 0vw;
   float:left;
+
 }
 
-/*@media (min-width:768px) {
-  .container {
-    width: 90vw;
-  }
+@media (min-width:960px) {
+.section-box-H {
+	padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 0px;
+	color: #FFFFFF;
+	opacity: 1;
 }
 
-@media (max-width:767px) {
-  .container {
-    width: 90vw;
-  }
-}*/
 
-@media (min-width:0px) {
+.section-box-0 {
+	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+}
+
+.section-box-1 {
+	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+}
+
   .container {
     width: 80vw;
+	  max-width: 950px;
   }
   
-  
-  .col-cont-12{
+  .col-span-head{
 	  width:80vw;
-  }
-      .col-lg-4{
-	  width:15vw;
-  }
-  
-    .col-lg-4-bump{
-	  width:25vw;
-	  margin-right:5vw;
+	  height:19vw;
+	  max-width: 950px;
+	  max-height: 225px;
+	  background-color:#F8F8F8;
+	  margin-bottom:0px;
+	  			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   }
   
-  .col-lg-8{
-	  width:50vw;
+  .col-lg-left{
+	  width:38vw;
+	  height:38vw;
+	  max-width: 450px;
+	  max-height: 450px;
+	  background-color:#F8F8F8;
+	  margin-right:0px;
+	  		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   }
+  
+    .col-lg-right{
+	  width:38vw;
+	  height:38vw;
+	  max-width: 450px;
+	  max-height: 450px;
+	  background-color:#F8F8F8;
+	  margin-right:0vw !important;
+	  		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .col-spacer{
+	  width:4vw;
+	  height:38vw;
+	  	  max-height: 450px;
+		  max-width:50px;
+/*	  background-color:#000000*/
+  }
+  
+  .col-top-row{
+
+}
 }
 
+@media (max-width:959px){
+.section-box-H {
+	padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+}
 
+.section-box-0 {
+	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+}
 
+.section-box-1 {
+	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 0px;
+	color: #FFFFFF;
+	opacity: 1;
+}
 
-
-/*@media (max-width:992px) {
-
-  .container {
+	  .container {
     width: 80vw;
   }
 
-    .col-lg-4{
-	  width:20vw;
+  .col-span-head{
+	  width:80vw;
+	  height:19vw;
+	  max-width: 950px;
+	  max-height: 225px;
+	  background-color:#F8F8F8;
+	  margin-bottom:0px;
+	  		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+	
+	  .col-lg-left{
+	  width:80vw;
+	  background-color:#93B4E7;
+	  height:38vw;
+	  margin-right:0vw;
+	  margin-bottom:0px;
+	  		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   }
   
-    .col-lg-4-bump{
-	  width:20vw;
-	  margin-right:5vw;
+    .col-lg-right{
+	  width:80vw;
+	  background-color:#93B4E7;
+	  height:38vw;
+	  margin-right:0vw !important;
+	  		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   }
+ 
+   .col-spacer{
+	  width:80vw;
+	  height:38vw;
+	  	  max-height: 50px;
+/*	  background-color:#000000*/
+  } 
   
-  .col-lg-8{
-	  width:55vw;
-  }
+.col-top-row{
+	width:80vw;
+	height:19vw;
+	border-radius: 1px;
+	background-color: #FBFBFB;
+	background-position: left bottom;
+
 }
-
-@media (min-width:768px) {
-  .col-sm-6 {
-    float: left;
-  }
-
-  .col-sm-6 {
-    width: 50%;
-  }
-
-  .col-sm-pull-6 {
-    right: 50%;
-  }
-
-  .col-sm-push-6 {
-    left: 50%;
-  }
-  
-
-
-}*/
-
-@media (min-width:1200px) {
-  .col-lg-12,
-  .col-lg-5,
-  .col-lg-4,
-  .col-lg-8,
-  .col-lg-6, 
-  .col-lg-4-bump{
-    float: left;
-  }
-
-  .col-lg-12 {
-    width: 100%;
   }
 
 
-  .col-lg-6 {
-    width: 50%;
-  }
-
-  .col-lg-5 {
-    width: 41.66666667%;
-  }
-
-
-  .col-lg-offset-2 {
-    margin-left: 16.66666667%;
-  }
-
-  .col-lg-offset-1 {
-    margin-left: 8.33333333%;
-  }
-}
 
 
 

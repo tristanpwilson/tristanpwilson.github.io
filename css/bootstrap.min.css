@@ -51,83 +51,13 @@ h3 {
   font-weight: 400;
 }
 
-.intro-header {
-	padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-	padding-bottom: 0px;
-	color: #FFFFFF;
-	opacity: 1;
-	/* [disabled]background: url(../img/banner-bg3.png) no-repeat; */
 
+
+.h1-top-left{
+	color:#3A3A3A;
+	text-align:center;
+	padding-top:2vw
 }
-
-.col-top-row{
-	height:30vw;
-	border-radius: 1px;
-	background-color: #FBFBFB;
-	background-position: left bottom;
-		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
-.intro-img-box{
-	position: relative;
-	left: -2vw;
-	width: 20vw;
-	max-height: 15vw;
-	padding: 1vw;
-	/*background-color: #9CA8C1;*/
-	background: linear-gradient(135deg, #9CAFCF 20%, #8399BD 60%);
-	border-radius: 0px 6px 6px 0px;
-	margin: 0vw;
-	overflow: hidden;
-	webkit-box-shadow: 1px 1px .5px 1px #707070;
-	box-shadow: 1px 1px .5px 1px #707070;
-}
-
-
-.intro-img {
-	position: relative;
-	width: 10vw;
-	height: 9vw;
-	max-width: 150px;
-	max-height: 140px;
-	border-radius: 6px;
-	margin: 0vw;
-	overflow: hidden;
-	float: right;
-	border-top: 1px solid #6E6E6E;
-	border-left: 1px solid #6E6E6E;
-	border-right: .5px solid #6C6C6C;
-	border-bottom: .5px solid #6C6C6C;
-}
-
-#profile-img{
-	position: relative;
-	width: 100%;
-	border-radius: 2px;
-
-}
-
-.intro-sub-img-box{
-	position: relative;
-	width: 100%;
-	border-radius: 5px;
-	margin:0vw;
-		overflow: hidden;
-		left: -2vw;
-}
-.intro-sub-img-box > h1{
-	font-size:2.4vw;
-	color:#BBBBBB;
-	text-align: right;
-	width:20vw;
-}
-
-.intro-sub-img-box > P {
-	font-size:1.4vw;
-	color:#BBBBBB;
-	text-align: left;
-}
-
 
 
 
