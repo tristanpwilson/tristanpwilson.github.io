@@ -36,9 +36,10 @@
 
 @media (min-width:960px) {
 .section-box-H {
-	padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-	padding-bottom: 0px;
+	padding-top: 125px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 75px;
 	color: #CCCCCC;
+	background-color:#6D9CDB;
 	opacity: 1;
 }
 
@@ -110,8 +111,9 @@
 @media (max-width:959px){
 .section-box-H {
 	padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-	padding-bottom: 0px;
+	padding-bottom: 50px;
 	color: #FFFFFF;
+		background-color:#6D9CDB;
 	opacity: 1;
 }
 
@@ -138,7 +140,7 @@
 	  height:19vw;
 	  max-width: 950px;
 	  max-height: 225px;
-	  background-color:#84ADD8;
+	  background-color:#F8F8F8;
 	  border-radius:5px;
 	  margin-bottom:0px;
 	  		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
