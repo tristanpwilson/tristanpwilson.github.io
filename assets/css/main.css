@@ -20,6 +20,11 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+.tristan-name{
+	float:left;
+    width:300px;	
+}
+
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', sans-serif;
@@ -182,7 +187,7 @@ a:after {
 }
 
 .navbar-default {
-	background-color: #5D92D4;
+	background-color: #F0F0F0;
 	border-color: transparent;
 }
 
@@ -191,7 +196,7 @@ a:after {
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: white;
+	color: #606060;
 }
 
 /* Helpers */
@@ -215,25 +220,22 @@ i {
 
 /* HeaderWrap */
 #headerwrap {
-	/* background: url(../img/bg01.jpg) no-repeat center top; */
-	background-color: #5D92D4;
+	background-color: #606060;
 	margin-top: -20px;
-	padding-top:100px;
+	padding-top: 100px;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 650px;
+	min-height: 250px;
 	width: 100%;
-	text-align:center;
-	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+	text-align: center;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 #headerwrap h1 {
@@ -243,4 +245,15 @@ i {
 	font-size: 45px;
 	font-weight: 300;
 	letter-spacing: 1px;
+}
+
+#headerwrap h3 {
+	margin-left: 190px;
+	text-align: left;
+	margin-bottom: 15px;
+	color: white;
+	font-size: 25px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin-top: 0px;
 }
