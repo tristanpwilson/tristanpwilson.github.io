@@ -9,6 +9,7 @@
     
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/panels.css" rel="stylesheet" type="text/css">
     
 	
     
@@ -38,10 +39,10 @@
 
       <div class="collapse navbar-collapse" id="defaultNavbar1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+          <li><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Resume</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="active"><a href="#" >Portfolio</a></li>
           <li class="dropdown" ><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a  href="places.html">Places I've Been</a></li>
@@ -63,15 +64,40 @@
   </nav>
   
   <div class="container">
-  <div class="row row-home">
-   	 <div class="col-lg-5 col-home col-w">
-      <p>Hi.  My name is </p>
-      <h1>Tristan Wilson</h1>
-      <p>This website isn't even close to finished.  Feel free to have a look around, though.  (I recommend the "Places I've Been" page that's listed in the dropdown menu above - it has a really neat map)</p>
-     </div>
- 	 <div class="col-lg-5 col-home col-b half">
-  
-     </div>
+  <div class="row row-panels">
+       <div class="col-xs-14 col-md-14">
+       </div>
+       <div class="col-xs-14 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-image hide-panel-body">
+                    <img src="http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52d09387ae003_1.JPG" class="panel-image-preview" />
+                </div>
+                <div class="panel-body">
+                    <h4>Personas</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper et.</p>
+                </div>
+                <div class="panel-footer text-center">
+					<h2>Personas</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-14 col-md-2">
+        </div>
+        <div class="col-xs-14 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-image hide-panel-body">
+                    <img src="http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52d09387ae003_1.JPG" class="panel-image-preview" />
+                </div>
+                <div class="panel-body">
+                    <h4>Journey Maps</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida massa luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper et.</p>
+                </div>
+                <div class="panel-footer text-center">
+					<h2>Journey Map</h2>
+                </div>
+            </div>
+        </div>
+        
   </div>
   </div>
   
@@ -85,6 +111,13 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed --> 
 	<script src="js/bootstrap.js"></script>
     
+     <script>
+  $(function() {
+    $('.panel-image img.panel-image-preview').on('click', function(e) {
+	    $(this).closest('.panel-image').toggleClass('hide-panel-body');
+    });
+	});
+	</script>
     
   </body>
 </html>
