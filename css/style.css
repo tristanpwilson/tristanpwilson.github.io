@@ -189,6 +189,54 @@ h1{
 
 
 
+
+
+.row-grid1{
+  margin-top:3%;
+}
+
+.row-grid1 .col-md-8,
+.row-grid1 .col-md-4{
+  margin-left:5%;
+  margin-bottom:2%;
+  background-color:#fff;
+  min-height:100px;
+  border-bottom:solid 2px #E0E0E0;
+  border-left:solid 1.5px #E0E0E0;
+  border-radius:2px;
+}
+
+.row-grid1 .col-md-8 h1,
+.row-grid1 .col-md-4 h1{
+text-transform:none;
+font-size:22px;
+color:#fff;
+margin-top:0px;
+margin-bottom:10px;
+margin-left:-5px;
+margin-right:-5px;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:10px;
+background-color:#B3B3B3;
+border-bottom:solid 1.5px #999;
+border-left:solid 1px #999;
+  border-radius:2px 2px 0 0;
+}
+
+@media (max-width: 939px){
+.row-grid1 .col-md-8,
+.row-grid1 .col-md-4{
+  margin-left:2%;
+  margin-right:2%;
+  margin-bottom:2%;
+  background-color:#fff;
+}
+}
+
+
+
+
 /* -----------  HOME Body Section 1 -------------*/
 
 .row-home{
@@ -201,11 +249,17 @@ box-shadow:0px 1px 1px 0px #909090;
  }
 
 #container-body1{
-margin-top:0px;
-padding-top: 100px;
-padding-bottom: 100px;
-background-color:#F4F4F4;
+  margin-top: 0px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
+
+.col-nametag-test{
+    background-image: url(/img/Paper-004.png);
+    background-size:200px 200px;
+    background-repeat:  repeat;
+   }
+
 
 #col-nametag{
   padding-top:3vw;
@@ -319,6 +373,7 @@ background-color:#F4F4F4;
 }
 	
 @media (max-width: 939px){
+   
 #col-nametag{
   padding-top:3.5vw;
   padding-bottom:5vw;
