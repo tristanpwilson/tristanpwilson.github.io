@@ -283,61 +283,78 @@ background-color:#F4F4F4;
 	transition:.7s ease-in opacity;
 	}
 	
+@media (max-width: 1199px){
+#col-nametag{
+  padding-top:3vw;
+  padding-bottom:5vw;
+}
+}
+	
 @media (max-width: 939px){
-
 #col-nametag{
   padding-top:3vw;
   padding-bottom:5vw;
   min-height:40vw;
-  margin-left:3vw;
-  margin-right:3vw;
-}
+  margin-left:5vw;
+  margin-right:5vw;}
+  
 .HS, .HS2, .HS-hov{
 	height:25vw;
-	width:25vw;
-}
+	width:25vw;}
+	
 .HS2{
-	margin-top:-25vw;
-}
+	margin-top:-25vw;}
+	
 #col-HS{
-	position:relative;
-    width:30vw !important;
-	margin-left:1vw;
-}
+    width:32vw !important;
+	margin-left:1vw;}
 
 #name {
-   display:inline-block;
-   bottom:0;
-   text-align:left;
-   width:61% !important;
-}
+    width:60% !important;}
 
 #name h1{
-	font-size:7vw;
-	}
+    font-size:7vw;}
 
 #name h2{
-	text-transform:none;
-	font-family:gotham book;
-    font-size:3.2vw;
-    color:#777777;
+    font-size:3.5vw;
     margin-top:0;
     margin-bottom:.5vw;
-	margin-left:.8vw;
-}
+	margin-left:2vw;}
 
 #col-contact h3{
-	text-transform:none;
-	font-family:gotham book;
-    font-size:2.5vw;
-    color:#777777;
-    margin-top:2vw;
-	margin-left:.8vw;	
+    font-size:3vw;
+    margin-top:4vw;
+	margin-left:.2vw;}
+	
+#phone{
+	margin-left:0 !important;
+	margin-right:-1px;}
 }
 
+@media (max-width: 768px){
+#col-nametag{
+  padding-top:3vw;
+  padding-bottom:5vw;
+  min-height:50vw;
+  margin-left:2vw;
+  margin-right:2vw;}
 
+#name h1{
+    font-size:7.5vw;}
+
+#col-HS{
+    width:30vw !important;
+	margin-left:1vw;}
 }
 
+@media (max-width: 310px){
+#col-nametag{
+	padding-top:3vw;
+	padding-bottom:5vw;
+	min-height:50vw;
+	margin-left:-1vw;
+	margin-right:-1vw;}
+}
 
 /* -----------  PLACES Body Section 1 -------------*/
 
