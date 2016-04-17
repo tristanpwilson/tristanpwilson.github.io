@@ -33,7 +33,6 @@ h1{
 	margin-left:.5vw !important;
 }
 
-
 .navbar-brand {		
     position:relative;
     z-index: 800;
@@ -67,9 +66,6 @@ h1{
     animation: wiggle .5s 1;
 }
 
-
-
-
 .navbar-brand > img {
   display: block;}
 
@@ -78,8 +74,23 @@ h1{
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,  .navbar > .container-fluid .navbar-brand {
     margin-left: -5px;
-  }}
+  } 
+  }
+  
+@media (max-width: 768px) {
+  .navbar-brand{
+	  max-height:79px;
+  }
 
+  .navbar-brand img{
+  width:42%;
+  transition:.2s ease-in width;
+  margin-left:auto;
+  margin-right:auto;}
+  
+  .navbar-brand:hover #wiggle{	
+    width:45%;}
+}
 
 .navbar-position{
 	top:0px;
@@ -110,7 +121,7 @@ h1{
   transition:.08s ease-in background-color, .08s ease-in width, .05s ease-in height ;
 }
 
-.nav > li > a:hover,  .nav .open > a,  .nav .open > a:hover,  .nav .open > a:focus{
+.nav > li > a:hover,  .nav .open a,  .nav .open > a:hover,  .nav .open > a:focus{
 	text-decoration: none;
 	background-color: #9EBBD3;
 	z-index: 1000;
@@ -120,7 +131,9 @@ h1{
 	border-bottom: solid 2px #6E96B9;
     transition:.05s ease-in background-color, .08s ease-in width, .08s ease-in height; 
 }
+.nav .open{
 
+}
 
 .navbar-nav .active a{
 	background-color: #95B2CC;
@@ -159,9 +172,19 @@ h1{
 }}
 
 /*--active dropdown list item --*/
-.item-active{
-background-color:#CAD8E8;
+.dropdown-menu > li{
+	margin-top:10px
 }
+.dropdown-menu > li > a{
+	font-family:gotham light !important;
+	font-size:16px;
+	}
+.dropdown-menu > .item-active > a{
+  color:#8BABC7;
+  border-bottom:solid 1px #8BABC7 !important;
+  border-top:solid 1px #8BABC7 !important;
+  font-family:gotham book !important;
+  }
 
 
 
@@ -227,16 +250,21 @@ background-color:#F4F4F4;
     font-size:1vw;
     color:#777777;
     margin-top:2vw;
-	margin-left:.8vw;	
 }
 
 #col-contact{
-	margin-bottom:-2.5vw;
+	position:absolute;
+	bottom:0px !important;
+	margin-bottom:1%;
 }
 
 #phone{
 	text-align:right;
-	margin-right:.8vw;
+	margin-right:1%;
+}
+
+#email{
+	margin-left:1%;
 }
 
 #col-HS{
@@ -283,7 +311,7 @@ background-color:#F4F4F4;
 	transition:.7s ease-in opacity;
 	}
 	
-@media (max-width: 1199px){
+@media (max-width: 1199px) and (min-width:940px){
 #col-nametag{
   padding-top:3vw;
   padding-bottom:5vw;
@@ -292,7 +320,7 @@ background-color:#F4F4F4;
 	
 @media (max-width: 939px){
 #col-nametag{
-  padding-top:3vw;
+  padding-top:3.5vw;
   padding-bottom:5vw;
   min-height:40vw;
   margin-left:5vw;
@@ -323,7 +351,6 @@ background-color:#F4F4F4;
 
 #col-contact h3{
     font-size:3vw;
-    margin-top:4vw;
 	margin-left:.2vw;}
 	
 #phone{
@@ -333,11 +360,14 @@ background-color:#F4F4F4;
 
 @media (max-width: 768px){
 #col-nametag{
-  padding-top:3vw;
+  padding-top:5vw;
   padding-bottom:5vw;
-  min-height:50vw;
-  margin-left:2vw;
-  margin-right:2vw;}
+  height:45vw;
+	margin-left:0;
+	margin-right:0;}
+
+#name {
+    width:62% !important;}
 
 #name h1{
     font-size:7.5vw;}
@@ -345,6 +375,14 @@ background-color:#F4F4F4;
 #col-HS{
     width:30vw !important;
 	margin-left:1vw;}
+
+#col-contact{}
+	
+#col-contact h3{
+    font-size:3vw;
+    margin-top:0vw;
+	margin-left:0vw;
+	margin-bottom:0px;}
 }
 
 @media (max-width: 310px){
@@ -359,8 +397,7 @@ background-color:#F4F4F4;
 /* -----------  PLACES Body Section 1 -------------*/
 
 .row-sec1{
-  margin-top:22px;
-  background-color:#C5C5C5;
+	background-color: #C5C5C5;
 }
 
 .sec1a, .sec1b, .sec1c{
