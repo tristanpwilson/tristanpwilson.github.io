@@ -285,11 +285,10 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #2a2a2a;
-  background-color: #ffffff;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #2a2a2a;
+	background-color: #ffffff;
 }
 input,
 button,
@@ -3212,7 +3211,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
 	position: relative;
 	min-height: 80px;
-	margin-bottom: 21px;
 	border: 0 solid;
 }
 @media (min-width: 768px) {
