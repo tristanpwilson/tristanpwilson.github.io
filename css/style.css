@@ -47,26 +47,24 @@ h1{
     max-height:84px;
 	text-decoration: none;
 	text-transform:uppercase;
-	  padding-top: 30px;
-	  padding-bottom: 22px;	  
+	  padding-top: 24px;
+	  padding-bottom: 20px;	  
 	     border-right: solid 1px #7B9FBF;
 	  background-color: #8BABC7;
     transition:.5s ease-in background-color, .08s ease-in width, .08s ease-in height}
 
-.navbar-brand h1{
-	font-size: 32px;
-	font-family:gotham thin;
-	font-weight:300;
-	color:#fff;
-	margin:0;
+.navbar-brand img{
+  width:50%;
+  transition:.2s ease-in width;
+  margin-left:auto;
+  margin-right:auto;
 }
 	
 .navbar-brand:hover #wiggle{	
-    font-weight:bold;
-	margin-left:-5px !important;
-	transition:.8s ease-in all;
+    width:52%;
+	transition:.2s ease-in width;
 	-webkit-animation: wiggle 1s 1; /* Chrome, Safari, Opera */
-    animation: wiggle 1s 1;
+    animation: wiggle .5s 1;
 }
 
 
