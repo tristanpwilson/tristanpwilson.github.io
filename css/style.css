@@ -29,12 +29,11 @@ h1{
 
 /* ----------- Navigation Styles -------------*/
 
-#navbar-button-position{
-	margin-left:.5vw !important;
-}
+
 
 .navbar-brand {		
     position:relative;
+	background-color: #F0F0F0;
     z-index: 800;
 	float: left;
 	  width:150px;
@@ -43,13 +42,12 @@ h1{
 	font-family:gotham thin;
 	font-weight:300;
 	color:#fff;
-    max-height:84px;
+    max-height:90px;
 	text-decoration: none;
 	text-transform:uppercase;
 	  padding-top: 24px;
 	  padding-bottom: 20px;	  
 	     border-right: solid .5px #6B93B7;
-	  background-color: #7B9FBF;
     transition:.5s ease-in background-color, .08s ease-in width, .08s ease-in height}
 
 .navbar-brand img{
@@ -62,7 +60,7 @@ h1{
 .navbar-brand:hover #wiggle{	
     width:52%;
 	transition:.2s ease-in width;
-	-webkit-animation: wiggle 1s 1; /* Chrome, Safari, Opera */
+	-webkit-animation: wiggle .5s 1; /* Chrome, Safari, Opera */
     animation: wiggle .5s 1;
 }
 
@@ -75,6 +73,9 @@ h1{
   .navbar > .container .navbar-brand,  .navbar > .container-fluid .navbar-brand {
     margin-left: -5px;
   } 
+  #navbar-button-position{
+	margin-left:.5vw !important;
+}
   }
   
 @media (max-width: 768px) {
@@ -93,75 +94,50 @@ h1{
 }
 
 .navbar-position{
-
-	background-color:#7B9FBF;
+	background-color:#F0F0F0;
     transition:.08s ease-in all;
+	border-bottom:1px solid #555555;
 }
-
-
-.overflow-fixer{
-  position:absolute;
-  background-color:#eee;
-  top:84px;
-  height:2px !important;
-  z-index:2000 !important;
-}
-
-@media (max-height:767px){
-   .overflow-fixer{
-   display:none !important;
-}}
   
 .nav > li {
   position: relative;
   display:block;
-
 }
 
 .nav > li > a {
   position: relative;
-  min-height:84px;
+  margin-left:-1px;
+  min-height:70px;
   display: block;
   padding-left: 3vw;
   padding-right: 3vw;
-  color:#FFFFFF;
+  color:#555;
   font-size:16px;
-  background-color:#7B9FBF;
-	 border-left:solid .5px transparent;
-     border-right:solid .5px #6B93B7;
-  border-bottom:solid 0px #7B9FBF;
+  	border-radius:1.5px;
+  background-color:#F0F0F0;
+	border-left: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
   border-top:solid 0px #7B9FBF;
-  transition:.08s ease-in background-color, .08s ease-in width, .05s ease-in height ;
+    transition:.05s ease-in background-color, .08s ease-in width, .5s linear padding; 
 }
 
 .nav > li > a:hover,  .nav .open a,  .nav .open > a:hover,  .nav .open > a:focus{
 	text-decoration: none;
-	background-color: #9EBBD3;
+	background-color: #F0F0F0;
 	z-index: 1000;
-	border-radius:0px;
-	border-left: solid .5px transparent;
-	border-right: solid .5px #6B93B7;
-	border-bottom: solid 2px #7B9FBF;
+	border-left: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
 	border-top:solid 0px #7B9FBF;
-    transition:.05s ease-in background-color, .08s ease-in width, .08s ease-in height; 
+    transition:.05s ease-in background-color, .08s ease-in width, .08s ease-in padding; 
 	padding-left: 3vw;
     padding-right: 3vw;
 
 }
 
-.nav > li > a:hover:before {
-  content: " ";
-  position: absolute;
-  z-index: 1999;
-  top: 0px;
-  left:-.5px;
-  right: -.5px !important;
-  bottom: -2px !important;
-  border-bottom: 2px solid #7B9FBF;
-}
-
 .navbar-nav .active a{
-	background-color: #85A9C7;
+	background-color: #eee;
 	 border-left:solid .5px #6B93B7;
      border-right:solid .5px #6B93B7;
      border-bottom:solid 0px #85A9C7;
@@ -179,42 +155,104 @@ h1{
   .navbar-nav > li {
     float: left; }	
   .navbar-nav > li > a {
-	padding-top: 33.5px;
+	padding-top: 25.5px;
 	padding-bottom: 29.5px;} 
   .nav > li > a:hover,  .nav .open > a,  .nav .open > a:hover,  .nav .open > a:focus{
-	padding-top: 32.5px;
+	padding-top: 44.5px;
     padding-bottom: 28.5px; 
 	}
    .navbar-position{
 	top:0px;
-	background-color:#7B9FBF;
     transition:.08s ease-in all;
+    height:94px;
 }  }
 	
 @media (max-width: 767px){
 /* --- (Small screen) Navbar dropdown buttons ---*/
 .navbar-nav {
-  margin: 0 -5px;
+  margin: 0 0px;
 }
 .navbar-nav > li > a {
-    min-height:initial;
+  min-height:initial;
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 21px;
+  margin-right:-5px;
+  margin-left:-5px;
+  	border-left: solid 0px #ccc;
+	border-right: solid 0px #ccc;
 }
-.nav > li > a:hover:before {
-display:none !important;}
+
+.navbar-nav > li > a:hover {
+  	border-left: solid 0px #ccc;
+	border-right: solid 0px #ccc;
+}
+
+.navbar-nav > li > .active a:hover {
+  	border-left: solid 0px #ccc;
+	border-right: solid 0px #ccc;
+	border-bottom: solid 0px #ccc !important;
+	border-top: solid 0px #ccc !important;
+}
+}
+
+
+/*--- Dropdown navbar right side --*/
+
+.dropdown-menu {
+	position: absolute;
+	top: 0px;
+	left: 100%;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 90px;
+	min-height:93px;
+	margin-left: -1px;
+	list-style: none;
+	font-size: 12px;
+	text-align: left;
+	background-color: #F0F0F0;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	/*	-webkit-box-shadow: -1 1 1px 0px rgba(0, 0, 0, 0.175);
+	box-shadow: -1 1 1px 0px rgba(0, 0, 0, 0.175);*/
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.dropdown-menu > li > a {
+	display: block;
+	padding-top: 5px;
+	padding-right: 30px !important;
+	padding-left: 15px !important;
+	padding-bottom: 4px;
+	clear: both;
+	font-weight: normal;
+	line-height: 1.5;
+	color: #555;
+	white-space: nowrap;
+	border: 0 !important;
+	background-color: #F0F0F0 !important;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #98B7D1 !important;
 }
 
 /*--active dropdown list item --*/
 
 
-.dropdown-menu > li{
-	margin-top:10px
-}
 .dropdown-menu > li > a{
 	font-family:gotham light !important;
-	font-size:16px;
+	font-size:14px;
 	}
 .dropdown-menu > .item-active > a{
   color:#7B9FBF;
@@ -286,6 +324,7 @@ box-shadow:0px 1px 1px 0px #909090;
  }
 
 #container-body1{
+	margin-top:100px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
