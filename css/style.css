@@ -28,9 +28,13 @@ h1{
 
 
 /* ----------- Navigation Styles -------------*/
+.navbar-position{
+	background-color:#F0F0F0;
+    transition:.08s ease-in all;
+	/*border-bottom:1px solid #555555;*/
+}
 
-
-
+/*---------- Navbar Brand ------------------*/
 .navbar-brand {		
     position:relative;
 	background-color: #F0F0F0;
@@ -67,16 +71,11 @@ h1{
 .navbar-brand > img {
   display: block;}
 
-
   
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,  .navbar > .container-fluid .navbar-brand {
     margin-left: -5px;
-  } 
-  #navbar-button-position{
-	margin-left:.5vw !important;
-}
-  }
+  } }
   
 @media (max-width: 768px) {
   .navbar-brand{
@@ -92,13 +91,9 @@ h1{
   .navbar-brand:hover #wiggle{	
     width:45%;}
 }
-
-.navbar-position{
-	background-color:#F0F0F0;
-    transition:.08s ease-in all;
-	border-bottom:1px solid #555555;
-}
-  
+ 
+ 
+/*---------- Navbar Li a's ------------------*/ 
 .nav > li {
   position: relative;
   display:block;
@@ -113,42 +108,40 @@ h1{
   padding-right: 3vw;
   color:#555;
   font-size:16px;
-  	border-radius:1.5px;
   background-color:#F0F0F0;
 	border-left: solid 1px #ccc;
 	border-right: solid 1px #ccc;
 	border-bottom: solid 1px #ccc;
-  border-top:solid 0px #7B9FBF;
-    transition:.05s ease-in background-color, .08s ease-in width, .5s linear padding; 
+  border-top:solid 0px transparent;
+    transition:.1s ease-in background-color, .08s ease-in width, .2s ease-out padding; 
 }
 
 .nav > li > a:hover,  .nav .open a,  .nav .open > a:hover,  .nav .open > a:focus{
 	text-decoration: none;
-	background-color: #F0F0F0;
+	background-color: #FFF;
 	z-index: 1000;
 	border-left: solid 1px #ccc;
 	border-right: solid 1px #ccc;
 	border-bottom: solid 1px #ccc;
 	border-top:solid 0px #7B9FBF;
-    transition:.05s ease-in background-color, .08s ease-in width, .08s ease-in padding; 
+    transition:.1s ease-in background-color, .08s ease-in width, .08s ease-in padding; 
 	padding-left: 3vw;
     padding-right: 3vw;
 
 }
 
 .navbar-nav .active a{
-	background-color: #eee;
-	 border-left:solid .5px #6B93B7;
-     border-right:solid .5px #6B93B7;
-     border-bottom:solid 0px #85A9C7;
-	 border-top:solid 0px #85A9C7;
-	 transition:.08s ease-in background-color, .08s ease-in width, .08s ease-in height;
+   margin-left:0px !important;
+	border-left: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+   border-top:solid 0px transparent;
+	 transition:.08s ease-in background-color, .05s ease-in width, .2s ease-out padding;
 }
 	
-
-
+   
+/* --- (Large Screen Only) Navbar  buttons ---*/
 @media (min-width: 768px) {
-/* --- (Large Screen) Navbar  buttons ---*/
   .navbar-nav {
     float: left;
     margin: 0; }
@@ -158,17 +151,39 @@ h1{
 	padding-top: 25.5px;
 	padding-bottom: 29.5px;} 
   .nav > li > a:hover,  .nav .open > a,  .nav .open > a:hover,  .nav .open > a:focus{
-	padding-top: 44.5px;
+	padding-top: 34.5px;
     padding-bottom: 28.5px; 
 	}
+   .nav .open > a,  .nav .open > a:hover,  .nav .open > a:focus{
+    border-right:#fff;}
+    .nav-open:{
+    z-index:800 !important;}
+    
+   .nav .open > a:after {
+  	 z-index: 888;
+    content:'';
+    position:absolute;
+    border-right: 1px solid #ccc;
+    background:none;
+    top:0px;
+    right:-1px;
+    width:auto;
+    height: 10.5px;
+    display: block;
+    pointer-events: none
+   }
+   .navbar-nav .active a{
+    padding-top: 34.5px;
+    padding-bottom: 28.5px; 
+   }
    .navbar-position{
 	top:0px;
     transition:.08s ease-in all;
     height:94px;
 }  }
 	
+/* --- (Small Screen Only) Navbar dropdown buttons ---*/
 @media (max-width: 767px){
-/* --- (Small screen) Navbar dropdown buttons ---*/
 .navbar-nav {
   margin: 0 0px;
 }
@@ -201,9 +216,9 @@ h1{
 
 .dropdown-menu {
 	position: absolute;
-	top: 0px;
-	left: 100%;
-	z-index: 1000;
+	top: 10px;
+   left:100%;
+	z-index: 900;
 	display: none;
 	float: left;
 	min-width: 90px;
@@ -216,7 +231,7 @@ h1{
 	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
-	border-top: 1px solid #ccc;
+	border-top: 10px solid #fff;
 	/*	-webkit-box-shadow: -1 1 1px 0px rgba(0, 0, 0, 0.175);
 	box-shadow: -1 1 1px 0px rgba(0, 0, 0, 0.175);*/
 	-webkit-background-clip: padding-box;
@@ -224,9 +239,28 @@ h1{
 	padding-top: 0px;
 	padding-right: 0px;
 	padding-bottom: 0px;
-	padding-left: 0px;
-}
+	padding-left: 0px;}
+
+
+
+.dropdown-menu::before {
+  	z-index: 1001;
+    content:'';
+    position:absolute;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    background:none;
+    top:-10px;
+    bottom:0px;
+    right:-1px;
+    width:100%;
+    height: auto;
+    display: block;
+    pointer-events: none
+   }
+
 .dropdown-menu > li > a {
+  	z-index: 902;
 	display: block;
 	padding-top: 5px;
 	padding-right: 30px !important;
