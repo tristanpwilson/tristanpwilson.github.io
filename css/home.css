@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+#col-HS{
+	position:relative;
+   width:100% !important;
+   margin-top:5vw;
+   margin-bottom:5vw;
+}
+
+
+.HS{
+	position:relative;
+	display:block;
+	height:10vw;
+	width:10vw;
+	margin-left:auto !important;
+	margin-right:auto !important;
+}
+.HS2{
+	position:relative;
+	display:block;
+	opacity:1;
+	height:10vw;
+	width:10vw;
+	margin-left:auto !important;
+	margin-right:auto !important;
+	margin-top:-10vw;
+	border:1px solid #ccc;
+	transition:.5s ease-in opacity;
+}
+
+.HS-hov{
+	position:relative;
+	display:block;
+	height:10vw;
+	width:10vw;
+	margin-left:auto !important;
+	margin-right:auto !important;
+}
+
+.HS-hov:hover .HS2{
+	position:relative;
+	opacity:0;
+	transition:.7s ease-in opacity;
+	}
