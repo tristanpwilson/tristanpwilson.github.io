@@ -10,8 +10,7 @@ h1, h2, h3, h4, p, a{
 }
 
 h1{
-	font-family: Gotham Medium;
-	text-transform:uppercase;
+	font-family: Gotham Book;
 	font-size:20px;
 }
 
@@ -310,13 +309,26 @@ border-left:solid 1px #999;
 
 /* -----------  Universal Body Attributes -------------*/
 
+.spacer-md{
+height:50px;
+}
+
 .spacer-lg{
-min-height:75px;
+height:75px;
 }
 
 .bdr{
 border:1px solid #ccc;
 }
+
+.mrgn {
+margin-bottom:10px;
+}
+
+@media (max-width: 939px){
+.shifter{
+display:none !important;
+}}
 
 /* -----------  PLACES Body Section 1 -------------*/
 

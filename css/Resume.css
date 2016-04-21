@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (min-width:940px){
+.resume-body{
+width:90vw !important;
+}
+
+.resume-body h1,
+.resume-body h2,
+.resume-body h3{
+  font-family:gotham book;
+   }  
+   
+   .resume-body h4,
+.resume-body h5,
+.resume-body p{
+  font-family:gotham light;
+   }  
+
+.resume-body h1,
+.resume-body h2,
+.resume-body h3{
+   color:#555;
+   text-transform:uppercase; }
+   
+.resume-body h4{
+   color:#777; }
+   
+.resume-body h5{
+   color:#777; }
+
+.resume-body h1{
+  margin-top:0px;
+  margin-bottom:2.5px;}
+.resume-body h2{
+  margin-top:0px;
+  margin-bottom:1px;}
+.resume-body h3{
+  margin-top:0px;
+  margin-bottom:1px;}
+.resume-body h4{
+  margin-top:0px;
+  margin-bottom:2.5px;
+   }
+.resume-body h5{
+  margin-top:0px;
+  margin-bottom:2.5px;
+   }
+   
+.resume-body p{
+   margin-top:5px;
+   margin-bottom:15px}
+
+.resume-body h3,
+.resume-body h4,
+.resume-body h5{
+  line-height:20px;
+  font-size:18px;}
+.resume-body h5{
+   font-style:italic
+   }
+
+.resume-body h1{
+   line-height:56px;
+   font-size:30px;
+}
+
+.resume-body h2{
+   line-height:40px;
+   font-size:28px;}
+
+.resume-body p{
+    color:#777;
+    font-size:14px;
+    line-height:20px;
+}
+
+.resume-body > .box {
+padding:10px;
+}
+}
+
+@media (min-width:0px) and (max-width:939px){
+.resume-body{
+width:100vw !important;
+}}
+
+#resume-name{
+  font-size:40px;
+}
+
