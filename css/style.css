@@ -325,7 +325,7 @@ border:1px solid #ccc;
 margin-bottom:10px;
 }
 
-@media (max-width: 939px){
+@media (max-width: 767px){
 .shifter{
 display:none !important;
 }}
