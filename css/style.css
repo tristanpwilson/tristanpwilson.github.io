@@ -309,22 +309,17 @@ border-left:solid 1px #999;
 
 /* -----------  Universal Body Attributes -------------*/
 
-.spacer-md{
-height:50px;
-}
+.spacer-md{height:50px;}
 
-.spacer-lg{
-height:75px;
-}
+.spacer-lg{height:75px;}
 
-.bdr{
-border:1px solid #ccc;
-}
+.bdr{border:1px solid #ccc;}
 
-.mrgn {
-margin-bottom:10px;
-}
+.mrgn {margin-bottom:10px;}
 
+.no-pad{padding:0}
+
+.thin-shifter{width:5%;	padding:0;}
 @media (max-width: 767px){
 .shifter{
 display:none !important;
