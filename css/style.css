@@ -125,7 +125,6 @@ h1{
     transition:.1s ease-in background-color, .08s ease-in width, .08s ease-in padding; 
 	padding-left: 3vw;
     padding-right: 3vw;
-
 }
 
 .navbar-nav .active a{
@@ -150,11 +149,30 @@ h1{
   .navbar-nav > li > a {
 	padding-top: 25.5px;
 	padding-bottom: 29.5px;} 
-  .nav > li > a:hover,  .nav .open > a,  .nav .open > a:hover,  .nav .open > a:focus{
+  .nav > li > a:hover{
 	padding-top: 34.5px;
-    padding-bottom: 28.5px; }
+    padding-bottom: 28.5px;
+    transition-delay: 0s }
+    
+   /*Navbar Dropdown Menu Button: Open & Open + Hover*/
    .nav .open > a,  .nav .open > a:hover,  .nav .open > a:focus{
-	   border-right:#fff;}   
+	  border-right:#fff;
+     padding-top: 58.5px;
+     padding-bottom: 36.5px;
+     transition: .15s ease-in padding !important;
+     transition-delay: 0s}   
+    .nav .open > a.down{  
+    -webkit-transition-property: padding; /* Safari */
+    -webkit-transition-duration: .15s; /* Safari */
+    -webkit-transition-delay: .5s;
+    transition-property: padding;
+    transition-duration: .15s;
+    transition-delay: .3s;}
+    .nav > li > a.up{
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;}
+
+
    .navbar-nav .active a{
     padding-top: 25.5px;
     padding-bottom: 29.5px; }
@@ -164,7 +182,7 @@ h1{
     height:94px;
 }  }
 	
-/* --- (Small Screen Only) Navbar dropdown buttons ---*/
+/* --- (Small Screen Only) Navbar  Collapse & Expand buttons ---*/
 @media (max-width: 767px){
 .navbar-nav {
   margin: 0 0px;
@@ -205,7 +223,7 @@ h1{
 	display: none;
 	float: left;
 	min-width: 90px;
-	min-height: 75px;
+	min-height: 115px;
 	margin-left: -1px;
 	list-style: none;
 	font-size: 12px;
@@ -328,10 +346,18 @@ display:none !important;
 /* -----------  PLACES Body Section 1 -------------*/
 
 .row-sec1{
-	background-color: #C5C5C5;
+  
+  background-color: #C5C5C5;
   margin-top:-19px;
 }
 
 .sec1a, .sec1b, .sec1c{
-height:88vh;
+height:92vh;
 }
+
+@media (max-width:767px){
+.row-sec1{
+  background-color: #C5C5C5;
+  margin-top:-4px;
+}   
+   }

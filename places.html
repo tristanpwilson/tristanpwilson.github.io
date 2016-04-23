@@ -44,7 +44,7 @@
             <ul class="dropdown-menu" id="dropdown-menu-r" role="menu">
               <li><a  href="places.html">Places I've Been</a></li>
               <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">Something else here </a></li>
             </ul>
           </li>
         </ul>   
@@ -54,20 +54,30 @@
   
     <div id="navbar-underlay"></div>
   
+  <div class="container-fluid no-pad" id="map-container">
   <div class="row row-sec1"> 
     <div class="col-lg-14 sec1a" id="mapid"></div>
-
   </div>
- 
-  <script type="text/javascript">var mymap = L.map('mapid').setView([39.520921,-54.7096542], 3);</script>
+  </div>
+  
+  <script type="text/javascript">
+   var mymap = L.map('mapid', {
+       maxBounds: [
+          [-43.210326, -172.476117],
+          [71.487245, 151.705228]
+         ], 
+         }).setView([39.520921,-54.7096542], 3);
+  </script>
   
   <script type="text/javascript">L.tileLayer('https://api.mapbox.com/styles/v1/srirachachacha/cimthlorp00mxb8m7qag8pa0d/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic3JpcmFjaGFjaGFjaGEiLCJhIjoiY2ltdGhpeGpiMDIxM3dibHVic3N2OGt3dyJ9.GCpLXlY3H4rUnodkF073WA', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    attribution: 'Attributions: <a href="http://openstreetmap.org">1</a>  &bull; <a href="http://creativecommons.org/licenses/by-sa/2.0/">2</a> &bull; <a href="http://mapbox.com">3</a>',
     minZoom: 3,
-	maxZoom: 6,
+	 maxZoom: 4,
+    
     id: 'mapbox.mapbox-streets-v7',
     accessToken: 'pk.eyJ1Ijoic3JpcmFjaGFjaGFjaGEiLCJhIjoiY2ltdGhpeGpiMDIxM3dibHVic3N2OGt3dyJ9.GCpLXlY3H4rUnodkF073WA'
 }).addTo(mymap);
+
 var marker = L.marker([41.8530802,-87.6144048]).addTo(mymap);
 var marker = L.marker([43.713057, -79.388806]).addTo(mymap);
 var marker = L.marker([58.5502526,-137.0773099]).addTo(mymap);
@@ -86,6 +96,7 @@ var marker = L.marker([42.3134791,-71.1271966]).addTo(mymap);
 var marker = L.marker([42.2780475,-83.7404128]).addTo(mymap);
 var marker = L.marker([38.8992013,-77.0488802]).addTo(mymap);
 var marker = L.marker([34.7031122,-76.76038]).addTo(mymap);
+
 </script>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
