@@ -150,32 +150,28 @@ h1{
 	padding-top: 25.5px;
 	padding-bottom: 29.5px;} 
   .nav > li > a:hover{
-	padding-top: 34.5px;
-    padding-bottom: 28.5px;
-    transition-delay: 0s }
+	padding-top: 35.5px;
+    padding-bottom: 29.5px;}
+    
     
    /*Navbar Dropdown Menu Button: Open & Open + Hover*/
-   .nav .open > a,  .nav .open > a:hover,  .nav .open > a:focus{
-	  border-right:#fff;
-     padding-top: 58.5px;
-     padding-bottom: 36.5px;
-     transition: .15s ease-in padding !important;
-     transition-delay: 0s}   
-    .nav .open > a.down{  
-    -webkit-transition-property: padding; /* Safari */
-    -webkit-transition-duration: .15s; /* Safari */
-    -webkit-transition-delay: .5s;
-    transition-property: padding;
-    transition-duration: .15s;
-    transition-delay: .3s;}
-    .nav > li > a.up{
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;}
 
-
+.down{
+	padding-top: 35.5px !important;
+	padding-bottom: 29.5px;
+  } 
+  
+ .nav .open > a,  .nav .open > a:hover,  .nav .open > a:focus{
+	padding-top: 35.5px;
+	padding-bottom: 29.5px;
+    height: 85px;
+	 border-right:#fff;
+  }  
+     
    .navbar-nav .active a{
     padding-top: 25.5px;
     padding-bottom: 29.5px; }
+    
    .navbar-position{
 	top:0px;
     transition:.08s ease-in all;
