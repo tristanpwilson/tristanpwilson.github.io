@@ -139,6 +139,13 @@ h1{
 }
 	
    
+/* --- Jquery Media Query Hackz ---*/
+
+.sampleClass {float:left;}
+@media (min-width: 768px) {
+.sampleClass {float:none;}}
+
+
 /* --- (Large Screen Only) Navbar  buttons ---*/
 @media (min-width: 768px) {
   .navbar-nav {
@@ -161,6 +168,11 @@ h1{
 	padding-bottom: 29.5px;
   } 
   
+#drop{
+ width:150px;
+ text-align:center;
+}
+ 
  .nav .open > a,  .nav .open > a:hover,  .nav .open > a:focus{
 	padding-top: 35.5px;
 	padding-bottom: 29.5px;
@@ -213,12 +225,11 @@ h1{
 
 .dropdown-menu {
 	position: absolute;
-	top: 0px;
-	left: 100%;
+	top: -115px;
 	z-index: 2;
-	display: none;
+	display: block;
 	float: left;
-	min-width: 90px;
+   	width: 150px;
 	min-height: 115px;
 	margin-left: -1px;
 	list-style: none;
@@ -270,8 +281,21 @@ h1{
   font-family:gotham book !important;
   }
 
-
-
+.drop-arrow{
+ position:absolute;
+ z-index:1;
+ width:100px;
+ margin-left:25px;
+ margin-right:25px;
+top:50px;
+opacity:.8;
+}
+.flip-vert{
+     -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+    transition:.5s ease all;
+}
 
 
 
