@@ -372,6 +372,10 @@ border-left:solid 1px #999;
 .spacer-lg{height:75px;}
 
 .bdr{border:1px solid #ccc;}
+.bdr-lt{border:1px solid #ddd;}
+.bdr-lt-b{border-bottom:1px solid #ddd;}
+
+.bgd-w{background-color:#F9F9F9;}
 
 .mrgn {margin-bottom:10px;}
 

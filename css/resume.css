@@ -4,8 +4,13 @@
 
 @media (min-width:1200px){
 .resume-body{
-width:80vw !important;
-}}
+  width: 70vw !important;
+   padding-left:0;
+   padding-right:0;
+}
+#box-resume-name{
+  height:150px;
+   }}
 @media (min-width:940px)and (max-width:1199px){
 .resume-body{
 width:85vw !important;
@@ -22,22 +27,16 @@ width:90vw !important;
 }}
    
    
-#resume-name-box{
-  display:flex;
-   height:150px;
-   margin-bottom:40px;}
-#resume-contact-box{
-   display:flex;
-   height:150px;
-   }
+
 .xs-4-mod{
    width: 30.71%;}
 #resume-name{
-  position:relative;
-  display:block;
-  margin-top:auto;
-  margin-bottom:auto;}
-#resume-contact{
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#box-resume-name  h4{
+  font-size:16px;
   position:relative;
   display:block;
   margin-top:auto;
@@ -119,23 +118,12 @@ padding:10px;
 .resume-body h1{
    line-height:52px;
    font-size:48px;}
- #resume-name-box{
-  display:flex;
-   height:125px;
-   margin-bottom:40px;}
-#resume-contact-box{
-   display:flex;
-   height:125px;
-   }}
+}
 @media (min-width:768px) and (max-width:939px){
 .resume-body h1{
    line-height:46px;
    font-size:42px;}
- #resume-name-box{
-   height:125px;}
-#resume-contact-box{
-   height:125px;
-   }}
+}
 @media (min-width:0px) and (max-width:767px){
  .resume-body h1{
    line-height:46px;
@@ -168,28 +156,8 @@ padding:10px;
 }}
 
 @media (min-width:0px) and (max-width:767px){
-#resume-name-box{
-  display:flex;
-   width:41%;
-   height:125px;
-   margin-bottom:10px;
-   margin-left:0;
-   margin-right:0;
-   padding-top:0;
-   padding-bottom:0;
-      text-align:center;
-}
-#resume-contact-box{
-	float:right;
-   width:55%;
-   height:125px;
-   margin-left:0;
-   margin-right:0;
-   padding-top:0;
-   padding-bottom:0;
-   padding-right:0;
-   
-}
+
+
 #resume-contact-box h4{
 font-size:3.2vw;
 margin-top:4px;
@@ -224,8 +192,10 @@ line-height:100%;
 .resume-body p{
    color:#777;
    font-size:14px;
-   line-height:20px;}
-   }
+   line-height:20px;
+ }
+ }
+
 
 
 .resume-cat-head{
@@ -239,21 +209,26 @@ line-height:100%;
   margin-bottom:auto !important;
 }
 .resume-cat-head h2{
-  display:inline;
-  margin-top:auto !important;
-  margin-bottom:auto !important;
-    vertical-align:middle;
+  position:relative;
+  display:inline-block;
+  vertical-align:bottom;
+  margin-bottom:10px;
+
 }
 
 @media (min-width:1200px){
 .cat-box{
-padding-left:40px;
+padding-top:25px;
+padding-left:30px;
 }
 .resume-cat-head{
   margin-left:10px;
 }
 .resume-cat-img{
    width:100px;
+}
+#experience-img{
+  
 }
 .resume-cat-head h2{
   margin-left:10px;
