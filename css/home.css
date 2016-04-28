@@ -51,13 +51,13 @@
    position:relative;
      margin-left:auto;
      margin-right:auto;
-     width:82vw;
+     width:68vw;
      }   
     
 .a-name{
  position:relative;
  font-family:gotham thin !important;
- font-size:9vw;
+ font-size:100px;
  padding-left:.25vw;
  padding-top:2vw;
  text-align:center;
@@ -65,35 +65,44 @@
  color:#777;
  font-weight:100;
  float:left;
-  transition:.1s linear color, .5s ease-in margin-top;
-    }
-    
+  transition:.5s linear color, .5s linear margin-top;
+  transition-delay:.1s;
+}
+
+.a-name-i{ padding-left:1.5vw; padding-right:1.5vw; margin-right:-.8vw; margin-left:-.8vw;}
+.a-name-blank{font-size:8vw; padding-left:.25vw; padding-top:2vw; position:relative; float:left;}
 .a-name:hover{
  color:#6890CF;
  font-weight:100;
- transition:.2s linear color, .4s ease-out margin-top ;
- margin-top:10px !important;
-    }
+ transition:.2s linear color, .1s ease-in margin-top ;
+ margin-top:5px !important; }
+ 
 .a-name::before, .a-name::after {
  position:absolute;
  margin-left:auto;
  margin-right:auto;
  content:"";
- width:20%;
-  top:99%;
+  top:99.5%;
  bottom:0;
  left:0;
  right:0;
+ height:2px;
+  width:30%;
   background-color:transparent;
-  transition:2s ease-out width, .4s ease-in background-color;
+  transition:.8s linear width, 10s ease-in background-color;
+
 }
 
  
  .a-name:hover::before, .a-name:hover::after {
- width:70%;
-  background-color:#777;
-  transition:.3s ease-out width, .2s ease opacity, .4s ease-in background-color;
-  opacity:1;
+ opacity:.8;
+    background: #999; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#fff, #ccc, #777); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff, #ccc, #777); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff, #ccc, #777);  /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff, #ccc, #777);  /* Standard syntax */
+  transition:.8s linear width, .8s ease-in background-color;
+
 }
     
 .container-home-a{
