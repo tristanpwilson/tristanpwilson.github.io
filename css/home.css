@@ -1,71 +1,44 @@
 @charset "utf-8";
 /* CSS Document */
 
-#col-HS{
-	position:relative;
-   width:100% !important;
-   margin-top:5vw;
-   margin-bottom:5vw;
-}
 
-
-.HS{
-	position:relative;
-	display:block;
-	height:10vw;
-	width:10vw;
-	margin-left:auto !important;
-	margin-right:auto !important;
-}
-.HS2{
-	position:relative;
-	display:block;
-	opacity:1;
-	height:10vw;
-	width:10vw;
-	margin-left:auto !important;
-	margin-right:auto !important;
-	margin-top:-10vw;
-	border:1px solid #ccc;
-	transition:.5s ease-in opacity;
-}
-
-.HS-hov{
-	position:relative;
-	display:block;
-	height:10vw;
-	width:10vw;
-	margin-left:auto !important;
-	margin-right:auto !important;
-}
-
-.HS-hov:hover .HS2{
-	position:relative;
-	opacity:0;
-	transition:.7s ease-in opacity;
-	}
+.container-home-a{
+  position:absolute;
+  display:block;
+  bottom:0;
+  top:25vh;
+  height:75vh;
+  width:100vw}  
     
+     
  .col-name{
   display:block;
+  overflow:hidden;
   padding:1vw;
-   position:relative;
-     margin-left:auto;
-     margin-right:auto;
-     width:68vw;
+  position:relative;
+     margin-left:auto !important;
+     margin-right:auto !important;
+     width:60vw;
+     height:100%;
      }   
     
 .a-name{
  position:relative;
  font-family:gotham thin !important;
- font-size:100px;
+ font-size:5.5vw;
+ margin-top:150px;
+ margin-left:-.1vw;
+ margin-right:-.1vw;
+ padding-bottom:400px;
+ padding-top:3vw;
  padding-left:.25vw;
- padding-top:2vw;
+  padding-right:.25vw;
  text-align:center;
  text-transform:uppercase;
  color:#777;
  font-weight:100;
  float:left;
-  transition:.5s linear color, .5s linear margin-top;
+  transition:.5s linear color, .6s ease-in margin-top;
   transition-delay:.1s;
 }
 
@@ -74,38 +47,31 @@
 .a-name:hover{
  color:#6890CF;
  font-weight:100;
- transition:.2s linear color, .1s ease-in margin-top ;
+ transition:.2s linear color, .1s ease-out margin-top ;
+ transition-delay:.1s;
  margin-top:5px !important; }
  
 .a-name::before, .a-name::after {
  position:absolute;
+ margin-top:-295px;
  margin-left:auto;
  margin-right:auto;
  content:"";
-  top:99.5%;
- bottom:0;
+  top:100%;
  left:0;
  right:0;
- height:2px;
-  width:30%;
+ height:60vh;
+  width:1.3vw;
   background-color:transparent;
-  transition:.8s linear width, 10s ease-in background-color;
+  transition: 1s ease-out background-color, 1s ease-out margin-top;
 
 }
 
- 
  .a-name:hover::before, .a-name:hover::after {
- opacity:.8;
-    background: #999; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#fff, #ccc, #777); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#fff, #ccc, #777); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#fff, #ccc, #777);  /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#fff, #ccc, #777);  /* Standard syntax */
-  transition:.8s linear width, .8s ease-in background-color;
+  margin-top:-400px;
+  opacity:.8;
+  background-color: #ccc;
+  transition: .2s ease-in background, .05s ease-in margin-top;
 
 }
     
-.container-home-a{
-display:block;
-    height:40vw;
-    width:90vw}
