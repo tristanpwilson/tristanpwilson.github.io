@@ -1,10 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300);
 @font-face {font-family: Gotham Light; src: url('../fonts/Gotham-Light.otf') format('opentype'); }
 @font-face {font-family: Gotham Book; src: url('../fonts/Gotham-Book.otf') format('opentype');}
 @font-face {font-family: Gotham Medium; src: url('../fonts/Gotham-Medium.otf') format('opentype'); }  
- 
+
+
 h1, h2, h3, h4, p, a{
 	font-family: Gotham Book;
 }
@@ -34,11 +36,11 @@ h1{
 }
 
 #navbar-underlay{
-  position:absolute;
-  z-index:1;
-  width:99%;
-  top:74px;
-  border-bottom:1px solid #CDCDCD;
+ position: absolute;
+ z-index: 1;
+ width: 99%;
+ top: 75px;
+ border-bottom: 1px solid #CDCDCD;
 }
 /*---------- Navbar Brand ------------------*/
 .navbar-brand {		
@@ -52,7 +54,7 @@ h1{
 	font-family:gotham thin;
 	font-weight:300;
 	color:#fff;
-    max-height:75px;
+    max-height:76px;
 	text-decoration: none;
 	text-transform:uppercase;
 	  padding-top: 5px;
@@ -91,6 +93,8 @@ h1{
  
  
 /*---------- Navbar Li a's ------------------*/ 
+
+
 .nav > li {
   position: relative;
   display:block;
@@ -100,6 +104,7 @@ h1{
  position: relative;
  z-index: 3;
  margin-left: -1px;
+ margin-right: -1px;
  min-height: 70px;
  display: block;
  padding-left: 3vw;
@@ -111,8 +116,8 @@ h1{
  border-right: solid 1px #ddd;
  border-bottom: solid 1px #ddd;
  border-top: solid 0px transparent;
- transition: .1s ease-in background-color, .08s ease-in width, .2s ease-out padding;
- margin-right: -1px;
+ transition: .1s ease-in background-color, .08s ease-in width, .2s ease-out padding, .2s ease-out height;
+
 }
 
 .nav > li > a:hover,  .nav .open a,  .nav .open > a:hover,  .nav .open > a:focus{
@@ -124,9 +129,9 @@ h1{
 	border-right: solid 1px #ccc;
 	border-bottom: solid 1px #ccc;
 	border-top:solid 0px #7B9FBF;
-    transition:.1s ease-in background-color, .08s ease-in width, .08s ease-in padding; 
 	padding-left: 3vw;
     padding-right: 3vw;
+        transition:.1s ease-in background-color, .08s ease-in width, .08s ease-in padding, .08s ease-in height; 
 }
 
 .navbar-nav .active a{
@@ -138,7 +143,7 @@ h1{
 	border-right: solid 1px #ccc;
 	border-bottom: solid 1px #ccc;
    border-top:solid 0px transparent;
-	 transition:.08s ease-in background-color, .05s ease-in width, .2s ease-out padding;
+	  transition:.08s ease-in background-color, .05s ease-in width, .2s ease-out padding;
 }
 	
    
@@ -150,18 +155,21 @@ h1{
    position: absolute;
    margin-left:130px;
  }
-  .navbar-nav {
+.navbar-nav {
  float: left;
  margin:0;
 }
+
   .navbar-nav > li {
     float: left; }	
   .navbar-nav > li > a {
 	padding-top: 25.5px;
-	padding-bottom: 29.5px;} 
+	padding-bottom: 29.5px;
+    height:76px;} 
   .nav > li > a:hover{
 	padding-top: 28.5px;
-    padding-bottom: 29.5px;}
+    padding-bottom: 29.5px;
+    height:79px;}
     
     
    /*Navbar Dropdown Menu Button: Open & Open + Hover*/
@@ -185,7 +193,7 @@ h1{
  .nav .open > a,  .nav .open > a:hover,  .nav .open > a:focus{
 	padding-top: 35.5px;
 	padding-bottom: 29.5px;
-    height: 85px;
+    height: 79px;
   }  
      
    .navbar-nav .active a{
@@ -337,20 +345,18 @@ h1{
 .drop-arrow{
  position:absolute;
  z-index:1;
- width:100px;
- margin-left:25px;
- margin-right:25px;
-top:-50px;
-opacity:1;
+ width:75px;
+ margin-left:37.5px;
+ margin-right:37.5px;
+ top:-50px;
+ opacity:1;
 }
+
 .flip-vert{
-     -ms-transform: rotate(180deg); /* IE 9 */
-    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-    transform: rotate(180deg);
-    transition:.5s ease all;
-}
-
-
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+   transform: rotate(180deg);
+   transition:.5s ease all;}
 
 .row-grid1{
   margin-top:3%;
@@ -423,15 +429,17 @@ display:none !important;
 /* -----------  PLACES Body Section 1 -------------*/
 
 .row-sec1{
-   z-index:1;
+   z-index:2;
   background-color: #C5C5C5;
   margin-top:-19px;
+
 }
 
 .sec1a, .sec1b, .sec1c{
  position:absolute;
  z-index:0;
 height:92vh;
+  width:100%;
 }
 
 @media (max-width:767px){
