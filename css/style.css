@@ -31,15 +31,14 @@ h1{
 /* ----------- Navigation Styles -------------*/
 .navbar-position{
 	background-color:#F0F0F0;
-    transition:.08s ease-in all;
-	/*border-bottom:1px solid #555555;*/
 }
 
 #navbar-underlay{
  position: absolute;
  z-index: 1;
  width: 100vw;
- top: 75px;
+ top: 75px !important;
+ max-height:1px;
  border-bottom: 1px solid #ddd;
 }
 /*---------- Navbar Brand ------------------*/
@@ -49,7 +48,7 @@ h1{
     z-index: 800;
 	float: left;
 	  width:14vw;
-	  text-align:center;
+	text-align:center;
     font-size: 32px;
 	font-family:gotham thin;
 	font-weight:300;
@@ -74,43 +73,34 @@ h1{
 	-webkit-animation: wiggle .5s 1; /* Chrome, Safari, Opera */
     animation: wiggle .5s 1;
 }
-
-.navbar-brand > img {
-  display: block;}
-
   
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,  .navbar > .container-fluid .navbar-brand {
     margin-left: -5px;
-  } }
+ }}
   
 @media (max-width: 768px) {
   .navbar-brand{
 	  max-height:79px;
-  }
-
-}
+ }}
  
  
 /*---------- Navbar Li a's ------------------*/ 
-
 
 .nav > li {
   position: relative;
   display:block;
   text-align:center;
+  width:16vw;
 }
 
 .nav > li > a {
  position: relative;
- width:auto;
  z-index: 3;
  margin-left: -1px;
  margin-right: -1px;
  min-height: 70px;
  display: block;
- padding-left: 6vw;
- padding-right: 6vw;
  color: #777;
  font-size: 16px;
  background-color: #F0F0F0;
@@ -126,32 +116,29 @@ h1{
     color:#6890CF;
 	background-color: #FFF;
 	z-index: 1999;
-	border-left: solid 1px #ccc;
-	border-right: solid 1px #ccc;
-	border-bottom: solid 1px #ccc;
+	border-left: solid 1px #ddd;
+	border-right: solid 1px #ddd;
+	border-bottom: solid 1px #ddd;
 	border-top:solid 0px #7B9FBF;
      transition:.1s ease-in background-color, .08s ease-in width, .08s ease-in padding, .08s ease-in height; 
 }
 
 .navbar-nav .active a{
-	z-index:1800;
-    color:#6890CF;
-    background-color:#fff;
+   z-index:1800;
+   color:#6890CF;
+   background-color:#fff;
    margin-left:0px !important;
-	border-left: solid 1px #ccc;
-	border-right: solid 1px #ccc;
-	border-bottom: solid 1px #ccc;
-   border-top:solid 0px transparent;
+	border-left: solid 1px #ddd;
+	border-right: solid 1px #ddd;
+	border-bottom: solid 1px #ddd;
+    border-top:solid 0px transparent;
 	  transition:.08s ease-in background-color, .05s ease-in width, .2s ease-out padding;
-}
-	
-   
-
+}	
 
 /* --- (Large Screen Only) Navbar  buttons ---*/
 @media (min-width: 768px) {
  #defaultNavbar1{
-   position: absolute;
+   position: relative;
    margin-left:14vw;
  }
 .navbar-nav {
@@ -162,33 +149,32 @@ h1{
   .navbar-nav > li {
     float: left;    }	
   .navbar-nav > li > a {
-	padding-top: 25.5px;
+	padding-top: 29.5px;
 	padding-bottom: 29.5px;
     height:76px;} 
   .nav > li > a:hover{
-	padding-top: 28.5px;
+	padding-top: 31.5px;
     padding-bottom: 29.5px;
     height:79px;}
-    
+  .navbar-nav .active a{
+    padding-top: 29.5px;
+    padding-bottom: 29.5px; }
     
    /*Navbar Dropdown Menu Button: Open & Open + Hover*/
-
 .down{
 	padding-top: 35.5px !important;
 	padding-bottom: 29.5px;
   }  
  #click-slide{
+   display:block;
     z-index:3;
-    min-width:150px;
     width:16vw;
     border-left:0px solid #ccc;
-    border-right:0px solid #ccc;
+    border-right:1px solid #F0F0F0;
   }
+
  #drop{
-    min-width:150px;
     width:16vw;
-    padding-left:0vw;
-    padding-right:0vw;
     text-align:center;
 }
  
@@ -196,11 +182,8 @@ h1{
 	padding-top: 35.5px;
 	padding-bottom: 29.5px;
     height: 79px;
+
   }  
-     
-   .navbar-nav .active a{
-    padding-top: 25.5px;
-    padding-bottom: 29.5px; }
     
    .navbar-position{
 	top:0px;
@@ -267,9 +250,6 @@ h1{
 #click-slide{
     z-index:2000;
   }
-.drop-arrow{
-  display:none;
-}
 
 }
 
@@ -284,7 +264,7 @@ h1{
  z-index: 2000;
  display: block;
  float: left;
- min-width: 150px;
+ min-width: 130px;
  min-height: 104px;
  list-style: none;
  font-size: 12px;
@@ -299,15 +279,14 @@ h1{
  padding-right: 0px;
  padding-bottom: 0px;
  padding-left: 0px;
+
 }
 
 .dropdown-menu > li > a {
  margin-right:1px;
-  margin-left:-1px;
+ margin-left:-1px;
  display: block;
  padding-top: 5.6px;
- padding-right: 12px !important;
- padding-left: 12px !important;
  padding-bottom: 5.6px;
  clear: both;
  font-family:gotham light !important;
@@ -332,7 +311,6 @@ h1{
 
 /*--active dropdown list item --*/
 
-
 .dropdown-menu > li > a{
 	font-family:gotham light !important;
 	font-size:14px;
@@ -344,22 +322,10 @@ h1{
   font-family:gotham book !important;
   }
 
-.drop-arrow{
- position:absolute;
- z-index:1;
- width:70px;
- left:5.1vw;
- margin-left:auto;
- margin-right:auto;
- top:-50px;
- opacity:1;
-}
 
-.flip-vert{
-  -ms-transform: rotate(180deg); /* IE 9 */
-  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-   transform: rotate(180deg);
-   transition:.5s ease all;}
+
+
+
 
 .row-grid1{
   margin-top:3%;
