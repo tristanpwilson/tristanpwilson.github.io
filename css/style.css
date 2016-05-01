@@ -316,7 +316,7 @@ h1{
 	font-size:14px;
 	}
 .dropdown-menu > .item-active > a{
-  color:#7B9FBF;
+  color:#6890CF !important;
   border-bottom:solid 1px #7B9FBF !important;
   border-top:solid 1px #7B9FBF !important;
   font-family:gotham book !important;
