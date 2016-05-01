@@ -38,9 +38,9 @@ h1{
 #navbar-underlay{
  position: absolute;
  z-index: 1;
- width: 99%;
+ width: 100vw;
  top: 75px;
- border-bottom: 1px solid #CDCDCD;
+ border-bottom: 1px solid #ddd;
 }
 /*---------- Navbar Brand ------------------*/
 .navbar-brand {		
@@ -48,7 +48,7 @@ h1{
 	background-color:transparent;
     z-index: 800;
 	float: left;
-	  width:150px;
+	  width:14vw;
 	  text-align:center;
     font-size: 32px;
 	font-family:gotham thin;
@@ -98,17 +98,19 @@ h1{
 .nav > li {
   position: relative;
   display:block;
+  text-align:center;
 }
 
 .nav > li > a {
  position: relative;
+ width:auto;
  z-index: 3;
  margin-left: -1px;
  margin-right: -1px;
  min-height: 70px;
  display: block;
- padding-left: 3vw;
- padding-right: 3vw;
+ padding-left: 6vw;
+ padding-right: 6vw;
  color: #777;
  font-size: 16px;
  background-color: #F0F0F0;
@@ -117,7 +119,6 @@ h1{
  border-bottom: solid 1px #ddd;
  border-top: solid 0px transparent;
  transition: .1s ease-in background-color, .08s ease-in width, .2s ease-out padding, .2s ease-out height;
-
 }
 
 .nav > li > a:hover,  .nav .open a,  .nav .open > a:hover,  .nav .open > a:focus{
@@ -129,9 +130,7 @@ h1{
 	border-right: solid 1px #ccc;
 	border-bottom: solid 1px #ccc;
 	border-top:solid 0px #7B9FBF;
-	padding-left: 3vw;
-    padding-right: 3vw;
-        transition:.1s ease-in background-color, .08s ease-in width, .08s ease-in padding, .08s ease-in height; 
+     transition:.1s ease-in background-color, .08s ease-in width, .08s ease-in padding, .08s ease-in height; 
 }
 
 .navbar-nav .active a{
@@ -153,15 +152,15 @@ h1{
 @media (min-width: 768px) {
  #defaultNavbar1{
    position: absolute;
-   margin-left:130px;
+   margin-left:14vw;
  }
 .navbar-nav {
  float: left;
  margin:0;
+ width:84vw
 }
-
   .navbar-nav > li {
-    float: left; }	
+    float: left;    }	
   .navbar-nav > li > a {
 	padding-top: 25.5px;
 	padding-bottom: 29.5px;
@@ -180,11 +179,14 @@ h1{
   }  
  #click-slide{
     z-index:3;
+    min-width:150px;
+    width:16vw;
     border-left:0px solid #ccc;
     border-right:0px solid #ccc;
   }
  #drop{
     min-width:150px;
+    width:16vw;
     padding-left:0vw;
     padding-right:0vw;
     text-align:center;
@@ -275,7 +277,7 @@ h1{
 
 
 .dropdown-menu {
- width:100%;
+ width:16vw;
  position: absolute;
  top: -115px;
  text-align:center;
@@ -345,9 +347,10 @@ h1{
 .drop-arrow{
  position:absolute;
  z-index:1;
- width:75px;
- margin-left:37.5px;
- margin-right:37.5px;
+ width:70px;
+ left:5.1vw;
+ margin-left:auto;
+ margin-right:auto;
  top:-50px;
  opacity:1;
 }
