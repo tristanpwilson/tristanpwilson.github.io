@@ -1,19 +1,27 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* #68A2CF
+
+*/
+
 @import url(https://fonts.googleapis.com/css?family=Quicksand:300);
 @font-face {font-family: Gotham Light; src: url('../fonts/Gotham-Light.otf') format('opentype'); }
 @font-face {font-family: Gotham Book; src: url('../fonts/Gotham-Book.otf') format('opentype');}
 @font-face {font-family: Gotham Medium; src: url('../fonts/Gotham-Medium.otf') format('opentype'); }  
 
 
-h1, h2, h3, h4, p, a{
-	font-family: Gotham Book;
+h1, h2, h3, h4 {
+	font-family: Gotham Book, arial;
 }
 
 h1{
 	font-family: Gotham Book;
 	font-size:20px;
+}
+
+a, p{
+	font-family: 'Work Sans', arial;
 }
 
 /* Chrome, Safari, Opera */
@@ -38,8 +46,8 @@ h1{
  z-index: 1;
  width: 100vw;
  top: 75px !important;
- max-height:1px;
- border-bottom: 1px solid #ddd;
+ height:1px !important;
+ border-top: 1px solid #ddd;
 }
 /*---------- Navbar Brand ------------------*/
 .navbar-brand {		
@@ -49,10 +57,6 @@ h1{
 	float: left;
 	  width:14vw;
 	text-align:center;
-    font-size: 32px;
-	font-family:gotham thin;
-	font-weight:300;
-	color:#fff;
     max-height:76px;
 	text-decoration: none;
 	text-transform:uppercase;
@@ -61,14 +65,16 @@ h1{
     transition:.5s ease-in background-color, .08s ease-in width, .08s ease-in height}
 
 #wiggle{
-  font-size:18px;
-  color:#777;
+  font-size:26px;
+  font-family:Work Sans;
+  font-weight:300;
+  color:#999;
   	transition:.2s ease-in all;
 }
 	
 .navbar-brand:hover #wiggle{	
-   font-size:20px;
-     color:#6BD73F;
+   font-size:28px;
+     color:#68A2CF;
 	transition:.2s ease-in all;
 	-webkit-animation: wiggle .5s 1; /* Chrome, Safari, Opera */
     animation: wiggle .5s 1;
@@ -91,7 +97,6 @@ h1{
   position: relative;
   display:block;
   text-align:center;
-  width:16vw;
 }
 
 .nav > li > a {
@@ -101,8 +106,9 @@ h1{
  margin-right: -1px;
  min-height: 70px;
  display: block;
- color: #777;
- font-size: 16px;
+ color: #999;
+ font-size: 18px;
+ font-weight:300;
  background-color: #F0F0F0;
  border-left: solid 1px #ddd;
  border-right: solid 1px #ddd;
@@ -141,6 +147,10 @@ h1{
    position: relative;
    margin-left:14vw;
  }
+
+.nav > li {
+  width:16vw;
+}
 .navbar-nav {
  float: left;
  margin:0;
@@ -161,10 +171,7 @@ h1{
     padding-bottom: 29.5px; }
     
    /*Navbar Dropdown Menu Button: Open & Open + Hover*/
-.down{
-	padding-top: 35.5px !important;
-	padding-bottom: 29.5px;
-  }  
+
  #click-slide{
    display:block;
     z-index:3;
@@ -176,7 +183,17 @@ h1{
  #drop{
     width:16vw;
     text-align:center;
+    transition:.4s ease-out background-color;
 }
+
+.down{
+	padding-top: 29.5px !important;
+    padding-bottom: 29.5px !important;
+    height:76px !important}
+.down-white{
+  background-color:#fff !important;
+ }
+
  
  .nav .open > a,  .nav .open > a:hover,  .nav .open > a:focus{
 	padding-top: 35.5px;
@@ -296,7 +313,7 @@ h1{
  white-space: nowrap;
  border-left: 1px solid #ccc !important;
  border-right: 1px solid #ccc  !important;
- border-bottom: 1px solid #ddd !important;
+ border-bottom: 1px solid rgba(151,151,151,0.18) !important;
  border-top: 0 !important;
  background-color: #F0F0F0 !important;
 }
@@ -316,10 +333,10 @@ h1{
 	font-size:14px;
 	}
 .dropdown-menu > .item-active > a{
-  color:#6890CF !important;
-  border-bottom:solid 1px #7B9FBF !important;
-  border-top:solid 1px #7B9FBF !important;
+  color:#68A2CF !important;
   font-family:gotham book !important;
+ border-left: 2px solid #68A2CF !important;
+ border-right: 2px solid #68A2CF  !important;
   }
 
 

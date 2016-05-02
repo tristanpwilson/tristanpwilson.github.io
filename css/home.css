@@ -1,15 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:100);
+/* CSS Document */
 
+/* #68A2CF
 
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,300,400,500);
+
+/* Class to be removed on fade-in (JS) */
 .nav-hidden{
  display:none;
 }
-
-
-
 
 .container-home-a{
   position:absolute;
@@ -22,7 +25,7 @@
   transition:1.5s linear background-color}  
 
 .bgnd-blue{
-    background-color:#6890CF;} 
+    background-color:#68A2CF} 
      
  .col-name{
   position:relative;
@@ -50,9 +53,9 @@
  padding-left:.25vw;
   padding-right:.25vw;
  text-transform:uppercase;
- color:#6890CF;
+ color:#68A2CF;
  font-weight:100;
-  transition:1.5s ease-in color, .6s ease-in margin-top;
+  transition:.7s ease-in color, .6s ease-in margin-top, .8s ease-out letter-spacing;
 }
 
 .text-white{
@@ -60,10 +63,7 @@ color:#fff;
 }
 
 .a-name:hover{
- color:#6890CF;
- font-weight:100;
- transition:.2s linear color, .1s ease-out margin-top ;
- transition-delay:.1s;}
+}
  
 
     
