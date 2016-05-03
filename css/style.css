@@ -88,7 +88,10 @@ a, p{
 @media (max-width: 768px) {
   .navbar-brand{
 	  max-height:79px;
- }}
+     min-width:80px;}
+  .nav > li > a {
+     background-color: #fff!important;
+    }}
  
  
 /*---------- Navbar Li a's ------------------*/ 
