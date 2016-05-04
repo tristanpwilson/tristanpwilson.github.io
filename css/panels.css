@@ -1,11 +1,46 @@
 @charset "utf-8";
 /* CSS Document */
 
-.row-panels{
-	margin-top:20px;
-	margin-left:-3vw;
-	margin-right:-3vw;
+
+
+.modal-trig-box{
+  position:relative;
+  overflow:hidden;
+  height:50vh;
+  padding:0px;
+  border-radius:5px 5px 1px 1px;
+  background-color:#fff;
+  box-shadow:0px 1px 1px 0px #888;
+  cursor:pointer;
+   }
+ .modal-trig-box h2{
+   color:#fff;
+   margin-top: 0px;
+   padding:5px;
+   border-radius:5px 5px 0 0;
+   background-color:#6890CF;
+   }
+.img-modal-trig{
+  position:relative;
+  display:block;
+   width:100%;
+   margin-top:-1vh;}
+
+.modal-img{
+   width:100%;
 }
+
+
+.row-panels{
+	margin-top:10vh;
+}
+
+@media (min-width:1199px){
+   .row-panels{
+  	margin-top:15vh;
+	margin-left:-1vw;
+	margin-right:-1vw;
+}}
 
 .panel-image {
 		 cursor: pointer; 

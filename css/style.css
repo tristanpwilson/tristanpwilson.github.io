@@ -60,12 +60,12 @@ a, p{
     max-height:76px;
 	text-decoration: none;
 	text-transform:uppercase;
-	  padding-top: 5px;
+	  padding-top: 6px;
 	  padding-bottom: 20px;	  
     transition:.5s ease-in background-color, .08s ease-in width, .08s ease-in height}
 
 #wiggle{
-  font-size:26px;
+  font-size:20px;
   font-family:Work Sans;
   font-weight:300;
   color:#999;
@@ -73,7 +73,7 @@ a, p{
 }
 	
 .navbar-brand:hover #wiggle{	
-   font-size:28px;
+   font-size:26px;
      color:#68A2CF;
 	transition:.2s ease-in all;
 	-webkit-animation: wiggle .5s 1; /* Chrome, Safari, Opera */
@@ -124,7 +124,7 @@ a, p{
 	text-decoration: none;
     color:#6890CF;
 	background-color: #FFF;
-	z-index: 1999;
+	z-index: 1040;
 	border-left: solid 1px #ddd;
 	border-right: solid 1px #ddd;
 	border-bottom: solid 1px #ddd;
@@ -133,7 +133,7 @@ a, p{
 }
 
 .navbar-nav .active a{
-   z-index:1800;
+   z-index:1000;
    color:#6890CF;
    background-color:#fff;
    margin-left:0px !important;
@@ -242,13 +242,13 @@ a, p{
     display: none !important;
     top: 0px;
     background-color:#F0F0F0 !important;
-    z-index:2000 !important; 
+    z-index:1049 !important; 
 }
    
 .navbar-nav .open > .dropdown-menu > li > a { 
    display:block;  
     background-color:#FFF !important;  
-    z-index:2000 !important; 
+    z-index:1049 !important; 
     margin-right:0;
     margin-left:0;
 }
@@ -259,16 +259,16 @@ a, p{
     display: block !important;
     margin-left:1px;
     margin-right:0;
-    z-index:2000 !important; 
+    z-index:1049 !important; 
         
 }
 .dropdown-toggle {
     display: block !important;
-        z-index:2000 !important; 
+        z-index:1049 !important; 
 }
 
 #click-slide{
-    z-index:2000;
+    z-index:1049;
   }
 
 }
@@ -281,7 +281,7 @@ a, p{
  position: absolute;
  top: -115px;
  text-align:center;
- z-index: 2000;
+ z-index: 1049;
  display: block;
  float: left;
  min-width: 130px;
