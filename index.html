@@ -34,16 +34,18 @@
       <div class="collapse navbar-collapse nav-li-hidden" id="defaultNavbar1">
         <ul class="nav navbar-nav ">
           <!--<li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>-->
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>        
-          <li class="dropdown" id="click-slide" ><a href="#" class="dropdown-toggle" id="drop" data-toggle="dropdown" onclick="toggleSlider();" role="button" aria-expanded="false">More<span class="caret"></span></a>
+          <li><a href="about.html">About</a><div class="layer"></div></li>
+          <li><a href="resume.html">Resume</a><div class="layer"></div></li>
+          <li><a href="portfolio.html">Portfolio</a><div class="layer"></div></li>        
+          <li class="dropdown" id="click-slide" ><a href="#" class="dropdown-toggle" id="drop" data-toggle="dropdown" onclick="toggleSlider();" role="button" aria-expanded="false">More<span class="caret"></span><div class="drop-layer"></div></a>
             
             <ul class="dropdown-menu" id="dropdown-menu-r" role="menu">
-              <li><a  href="places.html">Places I've Been</a></li>
+              <li><a href="places.html">Places I've Been</a></li>
               <li><a href="#">Another action</a></li>
               <li><a href="#">Something else</a></li>
             </ul>
+            
+            <div class="layer"></div>
           </li>
         </ul>   
      </div> <!--/.navbar-collapse -->     

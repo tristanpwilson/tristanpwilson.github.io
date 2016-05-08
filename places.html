@@ -24,7 +24,6 @@
   <body>
 
 
-  <div class="nav-hidden">
   <nav class="navbar navbar-position">
 
     <div class="container-fluid" id="container-nav-btns">
@@ -34,30 +33,29 @@
         	<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>                 
       </div>
 
-      <div class="collapse navbar-collapse" id="defaultNavbar1">
-        <ul class="nav navbar-nav nav-li-hidden">
+      <div class="collapse navbar-collapse nav-li-hidden" id="defaultNavbar1">
+        <ul class="nav navbar-nav ">
           <!--<li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>-->
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>        
-          <li class="dropdown" id="click-slide" ><a href="#" class="dropdown-toggle" id="drop" data-toggle="dropdown" onclick="toggleSlider();" role="button" aria-expanded="false">More<span class="caret"></span></a>
+          <li><a href="about.html">About</a><div class="layer"></div></li>
+          <li><a href="resume.html">Resume</a><div class="layer"></div></li>
+          <li><a href="portfolio.html">Portfolio</a><div class="layer"></div></li>        
+          <li class="dropdown" id="click-slide" ><a href="#" class="dropdown-toggle" id="drop" data-toggle="dropdown" onclick="toggleSlider();" role="button" aria-expanded="false">More<span class="caret"></span><div class="drop-layer"></div></a>
             
             <ul class="dropdown-menu" id="dropdown-menu-r" role="menu">
-              <li class="item-active"><a  href="places.html">Places I've Been</a></li>
+              <li><a href="places.html">Places I've Been</a></li>
               <li><a href="#">Another action</a></li>
               <li><a href="#">Something else</a></li>
             </ul>
+            
+            <div class="layer"></div>
           </li>
         </ul>   
      </div> <!--/.navbar-collapse -->     
    </div> <!--/.container-fluid --> 
   </nav>
   
-  
   <div class="container-fluid no-pad" id="map-container">
-  <div class="row row-sec1"> 
-    <div class="col-lg-14 sec1a" id="mapid"></div>
-  </div>
+    <div class="col-lg-14  sec1a" id="mapid"></div>
   </div>
   
   <script type="text/javascript">
