@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+    
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+    
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+  </head>
+  <body>
+
+
+  <div class="nav-hidden">
+  <nav class="navbar navbar-position">
+
+    <div class="container-fluid" id="container-nav-btns">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1">        
+        	<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>                 
+      </div>
+
+      <div class="collapse navbar-collapse" id="defaultNavbar1">
+        <ul class="nav navbar-nav nav-li-hidden">
+          <!--<li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>-->
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>        
+          <li class="dropdown" id="click-slide" ><a href="#" class="dropdown-toggle" id="drop" data-toggle="dropdown" onclick="toggleSlider();" role="button" aria-expanded="false">More<span class="caret"></span></a>
+            
+            <ul class="dropdown-menu" id="dropdown-menu-r" role="menu">
+              <li class="item-active"><a  href="places.html">Places I've Been</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else</a></li>
+            </ul>
+          </li>
+        </ul>   
+     </div> <!--/.navbar-collapse -->     
+   </div> <!--/.container-fluid --> 
+  </nav>
+  
+  
+  <div class="container-fluid no-pad" id="map-container">
+  <div class="row row-sec1"> 
+    <div class="col-lg-14 sec1a" id="mapid"></div>
+  </div>
+  </div>
+  
+  <script type="text/javascript">
+   var mymap = L.map('mapid', {
+       maxBounds: [
+          [-43.210326, -172.476117],
+          [71.487245, 151.705228]
+         ], 
+         }).setView([39.520921,-54.7096542], 3);
+  </script>
+  
+  <script type="text/javascript">L.tileLayer('https://api.mapbox.com/styles/v1/srirachachacha/cimthlorp00mxb8m7qag8pa0d/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic3JpcmFjaGFjaGFjaGEiLCJhIjoiY2ltdGhpeGpiMDIxM3dibHVic3N2OGt3dyJ9.GCpLXlY3H4rUnodkF073WA', {
+    attribution: 'Attributions: <a href="http://openstreetmap.org">1</a>  &bull; <a href="http://creativecommons.org/licenses/by-sa/2.0/">2</a> &bull; <a href="http://mapbox.com">3</a>',
+    minZoom: 3,
+	 maxZoom: 4,
+    
+    id: 'mapbox.mapbox-streets-v7',
+    accessToken: 'pk.eyJ1Ijoic3JpcmFjaGFjaGFjaGEiLCJhIjoiY2ltdGhpeGpiMDIxM3dibHVic3N2OGt3dyJ9.GCpLXlY3H4rUnodkF073WA'
+}).addTo(mymap);
+
+var marker = L.marker([41.8530802,-87.6144048]).addTo(mymap);
+var marker = L.marker([43.713057, -79.388806]).addTo(mymap);
+var marker = L.marker([58.5502526,-137.0773099]).addTo(mymap);
+var marker = L.marker([18.459073, -77.916099]).addTo(mymap);
+var marker = L.marker([39.6335217,-106.3952793]).addTo(mymap);
+var marker = L.marker([47.6205124,-122.3514743]).addTo(mymap);
+var marker = L.marker([49.556417, -125.736597]).addTo(mymap);
+var marker = L.marker([25.745809, -80.221141]).addTo(mymap);
+var marker = L.marker([18.3429754,-64.9719512]).addTo(mymap);
+var marker = L.marker([40.7058254,-74.1180863]).addTo(mymap);
+var marker = L.marker([43.0828201,-79.0763516]).addTo(mymap);
+var marker = L.marker([41.384956,-81.7697788]).addTo(mymap);
+var marker = L.marker([40.0049314,-75.2581158]).addTo(mymap);
+var marker = L.marker([39.2594116,-74.6382446]).addTo(mymap);
+var marker = L.marker([42.3134791,-71.1271966]).addTo(mymap);
+var marker = L.marker([42.2780475,-83.7404128]).addTo(mymap);
+var marker = L.marker([38.8992013,-77.0488802]).addTo(mymap);
+var marker = L.marker([34.7031122,-76.76038]).addTo(mymap);
+
+</script>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+  </body>
+</html>
