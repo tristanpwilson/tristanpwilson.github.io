@@ -24,6 +24,32 @@ a, p{
 	font-family: 'Work Sans', arial;
 }
 
+.name-brand{
+ position:absolute;
+ opacity:.5;
+left:0px;
+bottom:10px;
+background-color:#68A2CF;
+   margin:0 !important;
+   padding-right:10px;
+   padding-left:10px;
+   padding-bottom:2px;
+   padding-top:2px;
+    transition:.2s ease-in all
+    }
+    .name-brand:hover{
+        opacity:1;
+        transition:.2s ease-in all;
+        padding-left:30px}
+.name-brand > h1{
+ font-family: 'Work Sans', arial;
+ font-weight:300;
+  text-transform:uppercase;
+  color:#fff;
+ line-height:20px !important;
+margin:0px !important;
+padding:0 !important;
+}
 
 /* ----------- Navigation Styles -------------*/
 
