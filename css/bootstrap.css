@@ -284,12 +284,7 @@ html {
   font-size: 10px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	color: #2a2a2a;
-	background-color: #F0F0F0;
-}
+
 input,
 button,
 select,

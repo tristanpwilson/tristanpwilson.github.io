@@ -24,32 +24,10 @@ a, p{
 	font-family: 'Work Sans', arial;
 }
 
-.name-brand{
- position:absolute;
- opacity:.5;
-left:0px;
-bottom:10px;
-background-color:#68A2CF;
-   margin:0 !important;
-   padding-right:10px;
-   padding-left:10px;
-   padding-bottom:2px;
-   padding-top:2px;
-    transition:.2s ease-in all
-    }
-    .name-brand:hover{
-        opacity:1;
-        transition:.2s ease-in all;
-        padding-left:30px}
-.name-brand > h1{
- font-family: 'Work Sans', arial;
- font-weight:300;
-  text-transform:uppercase;
-  color:#fff;
- line-height:20px !important;
-margin:0px !important;
-padding:0 !important;
+body {
+  	background-color: #F0F0F0;
 }
+
 
 /* ----------- Navigation Styles -------------*/
 
@@ -80,6 +58,7 @@ height:76px;
   position: relative;
   display:block;
   text-align:center;
+
 }
 
 .nav > li > a {
@@ -103,7 +82,6 @@ height:76px;
 .nav .open a,  .nav .open > a:hover,  .nav .open > a:focus{
  text-decoration: none;
 
- background-color: #FFF;
  z-index: 1999;
  transition: .1s ease-in background-color, .08s ease-in width, .08s ease-in padding, .08s ease-in height;
 }
@@ -114,8 +92,8 @@ height:76px;
    margin-left:0px !important;
      border-left: none;
      border-right: none;
-     border-bottom: none;
-    border-top:3px solid #68A2CF;
+     border-top: none;
+    border-bottom:4px solid #68A2CF;
 	  transition:.3s ease-in color,.08s ease-in background-color, .05s ease-in width, .2s ease-out padding;
 }	
 
@@ -140,7 +118,10 @@ padding:0 !important;
  width: 100vw
 }
   .navbar-nav > li {
-    float: left;    }	
+    float: left;  
+    overflow:hidden;
+ }	
+    
   .navbar-nav > li > a {
 	padding-top: 29.5px;
 	padding-bottom: 29.5px;
@@ -149,14 +130,14 @@ padding:0 !important;
  .nav > li .layer {
   color: #fff;
   position: absolute;
-  top: -76px;
+  top: 76px;
   height:76px;
   width: 100%;
   left: 0;
   padding: 29px 0;
   background-color: #68A2CF;
   transition: all .3s ease;  -webkit-transition: all .3s ease;  -moz-transition: all 0.3s ease;  -o-transition: all 0.3s ease;  -ms-transition: all 0.3s ease;
-  transition-delay:.1s;
+  transition-delay:.2s;
 }
 .nav > li:hover .layer {
   top: 0;
@@ -167,6 +148,7 @@ padding:0 !important;
   color:#fff;
   transition: .2s ease-in color;
 }
+
 
 
 
