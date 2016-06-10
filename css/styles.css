@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic);
+
+*{font-family:'Open Sans', sans serif}
+body{background:#88bf65}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+.head-block{
+    margin-top:20vh;
+    color:#fff;
+    width:100%;}
+
+.centerer{
+    width:50%;
+    margin:0 auto;
+    text-align:center;
+    }
+
+#head-name{
+    width:100%;
+
+    font-size:60px;
+    font-weight:300;
+    color:#fff;}
+
+.nav-box{
+  position:relative; 
+  width:100vw; 
+  margin-top:10vh;
+  background-color:transparent;}
+
+.nav-menu{ 
+  position:relative; 
+  width:50vw; 
+  max-width:800px;
+  margin:auto auto; 
+  padding:0; 
+  background-color:transparent;}
+
+.nav-menu li{
+  position:relative; 
+  display:block; 
+  float:left;
+  list-style:none;
+  width: 12.5vw; 
+  max-width:200px;
+  height:83px;
+  padding-bottom:3px;
+  background-color:#0D47A1;
+  text-align:center;}
+
+.nav-menu li a{
+  position:relative; 
+  display:block;  
+  width:100%;
+  height:100%;
+  line-height:80px;
+  font-size:40px;
+  color:#f0f0f0;
+  background-color:#1976D2;
+}
+.nav-menu li a:hover,
+.nav-menu li a:focus{
+  color:#fff;
+  background-color:#4095e8;  
+}
+.nav-menu li:hover,
+.nav-menu li:focus{
+  background-color:#12579b;  
+}
+
+
+
+
+/* pseudo labels for on-hover context */
+
+.nav-menu li::before{
+  position:absolute; 
+  left:0; bottom:0px;
+  margin-bottom:0px;
+  line-height:50px;
+  width:12.5vw;
+  max-width:200px;
+  font-size:24px;
+  color:#fff ;
+  transition: .2s ease-out margin;
+}
+.nav-menu li:hover::before, .nav-menu li:focus::before{
+  margin-bottom:-60px;
+  transition: .2s ease-out margin;
+}
+
+#about::before{ content:"About";}
+#resume::before{ content:"Resume";}
+#portfolio::before{ content:"Portfolio";}
+#places::before{ content:"Places";}
+
+
+/*animation keyframes*/
+
+
+
+@media (max-width:767px){
+.nav-menu{ width:90vw; }
+.nav-menu li{ width: 22.5vw; }
+.nav-menu li::before{
+ margin-bottom:-10px;
+  font-size:18px;
+  bottom:-50px !important; 
+  width: 22.5vw !important; 
+  display:initial !important;   transition: .2s ease-out margin;}
+.nav-menu li:hover::before{
+  animation:slide-down-sm .2s forwards !important;  margin-bottom:-20px;
+  transition: .2s ease-out margin;} 
+}
+
+@media (max-width:400px){
+.nav-box{padding-left:0; padding-right:0}
+.nav-menu{ width:98vw; }
+.nav-menu li{ width: 24.5vw; }
+
+}
