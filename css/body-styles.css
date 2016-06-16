@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container-res{
+    background-color:#fff;
+    height:600px;
+    padding:5%;
+    margin-top:50px;
+    border:1px solid #eee;
+    box-shadow: -1px 1px 0px 1px #ccc;
+    }
+ .res-sep{ position:relative; width:90%; height:3px !important; margin:40px auto; background:#1976D2;}
+ 
+ .container-res h1{ color:#555; font-size:60px; font-weight:300; margin:0; line-height:80px; }
+ .container-res h2{ color:#555; font-size:26px; font-weight:400; margin:0; line-height:40px}
+ .container-res h3{ color:#555; font-size:22px; font-weight:400; margin:0; line-height:40px}
+ .container-res p{ color:#555; font-size:18px; font-weight:300; margin:0;}
