@@ -2,10 +2,11 @@
 
 *, *:before, *:after {font-family:'Muli', sans-serif; box-sizing: border-box !important;}
 
-h1, h2, h3, h4, p, a{margin:0; padding:0; color:#444}
-a {}
-a:hover{text-decoration:none; color:#D32F2F !important}
-a:focus{text-decoration:underline; color:#D32F2F !important}
+h1, h2, h3, h4, p, a{margin:0; padding:0}
+h1, h2, h3, h4 {color:#444}
+p, a{color:#777;}
+a:hover{text-decoration:none; color:#7597ce !important}
+a:focus{text-decoration:underline; color:#7597ce !important}
 
 h1, h2, h3, h4, b, h1>a, h2>a, h3>a, h4>a { font-weight:300}
 p, a{font-weight:200;}
