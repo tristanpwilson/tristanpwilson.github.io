@@ -6,6 +6,11 @@
 
 * {font-family:'Muli', sans-serif;}
 
+.focuser:focus{
+  outline:solid 6px rgba(252,255,158,0.62);
+  outline-offset: 2px;
+}
+
 h1{font-size:30px;}
 h2{font-size:24px;}
 h3{font-size:20px;}
@@ -69,6 +74,7 @@ label{margin:0; padding:0 0 5px 2.5px;}
  width:95%;
  margin:0 2.5%;
  padding:10px;
+ background:#fff;
  border: 1px solid rgba(0,0,0,0.09);
 }
 
