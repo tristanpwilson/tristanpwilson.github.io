@@ -220,3 +220,27 @@ label{margin:0; padding:0 0 5px 2.5px;}
 #main-title{
 	left:10%;
 }
+
+.alert{
+  font-weight:400;
+  font-size:16px;
+  background:rgba(255,182,183,0.54);
+}
+
+
+.col-input-ex{
+	padding:20px 25px;
+}
+
+.col-alert-btn{
+ height:220px;
+}
+
+.col-alert-btn .btn{
+	padding:7.5px 12px;
+	margin:7.5px 25px 0 0 !important;
+}
+
+.col-markup-alert{
+   padding:0 30px;
+}
