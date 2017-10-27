@@ -3,7 +3,7 @@
 *, *:before, *:after {font-family:'Muli', sans-serif; box-sizing: border-box !important;}
 
 h1, h2, h3, h4, p, a{margin:0; padding:0}
-h1, h2, h3, h4 {color:#444}
+h1, h2, h3, h3 a, h4 {color:#444}
 p, a{color:#777;}
 a:hover{text-decoration:none; color:#7597ce !important}
 a:focus{text-decoration:underline; color:#7597ce !important}
