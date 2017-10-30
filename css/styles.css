@@ -15,7 +15,7 @@ h1{font-size:38px}
 h2{font-size:30px}
 h3, h3 a{font-size:18px}
 h4{font-size:15px}
-p{font-size:15px;}
+p{font-size:14px;}
 a{font-size:15px;}
 
 @media(max-width:767px){
@@ -93,7 +93,9 @@ body{
   width: 75px;
 }
 
-
+.box-d h4 {
+  font-style:italic;
+}
 
 @media (max-width: 1299px) {
   .container-body {
