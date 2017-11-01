@@ -52,20 +52,23 @@ body{
    margin:0 5px;
    padding:5px 10px;
    list-style:none;
-   outline:1px solid rgba(0, 0, 0, 0.05);
+   color:#767676;
+   outline:1px solid rgba(0, 0, 0, 0.1);
+   transition:.2s ease all;
 }
 
 #nav-a ul li a:hover,
 #nav-a ul li a:focus{
    text-decoration:none;
    color:#444 !important;
-   outline:1px solid rgba(0, 0, 0, 0.3);
+   outline:1px solid rgba(0, 0, 0, 0.35);
+   transition:.2s ease all;
 }
 
 #nav-a ul li a.active{
    text-decoration:none;
    color:#444 !important;
-   outline:1px solid rgba(0, 0, 0, 0.3);
+   outline:1px solid rgba(0, 0, 0, 0.35);
 }
 
 
@@ -136,6 +139,23 @@ body{
   width:100%;
   height:auto;
 }
+
+.modal-port .modal-content{
+  border-radius: 2px !important;
+}
+
+.modal-port .modal-header h4{
+  font-size:20px;
+  font-weight:400;
+ }
+ 
+ .modal-port .modal-body img{
+  width:100%;
+ }
+
+.modal-port .modal-footer p{
+  text-align:left;
+ }
 
 .box-c h4 {
   display: inline-block;
@@ -242,4 +262,4 @@ body{
   width:125px;
   border-radius:3px;}
 
-@media (max-width: 767px) {#container-pic-icon{display:none !important;}
+@media (max-width: 767px) {#container-pic-icon{display:none !important;}}
