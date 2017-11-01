@@ -140,17 +140,32 @@ body{
   height:auto;
 }
 
+@media (min-width: 768px) {
+  .modal-port .modal-dialog {
+    width: 80vw;
+    margin: 30px auto;
+  }
+}
+
 .modal-port .modal-content{
   border-radius: 2px !important;
 }
 
+.modal-port .modal-header{
+  background:#fafafa;
+ }
+ 
 .modal-port .modal-header h4{
   font-size:20px;
   font-weight:400;
  }
  
+.modal-port .modal-body{
+    padding:0;
+ }
+ 
  .modal-port .modal-body img{
-  width:100%;
+    width:100%;
  }
 
 .modal-port .modal-footer p{
