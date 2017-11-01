@@ -32,10 +32,42 @@ body{
 }
 
 .container-body {
-  padding: 60px 4vw 15px 4vw;
+  padding: 45px 4vw 15px 4vw;
   background: #fff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
 }
+
+#nav-a ul{
+  float:right;
+  padding:0;
+}
+
+#nav-a ul li{
+   display:inline-block;
+   list-style:none;
+}
+
+#nav-a ul li a{
+   display:inline-block;
+   margin:0 5px;
+   padding:5px 10px;
+   list-style:none;
+   outline:1px solid rgba(0, 0, 0, 0.05);
+}
+
+#nav-a ul li a:hover,
+#nav-a ul li a:focus{
+   text-decoration:none;
+   color:#444 !important;
+   outline:1px solid rgba(0, 0, 0, 0.3);
+}
+
+#nav-a ul li a.active{
+   text-decoration:none;
+   color:#444 !important;
+   outline:1px solid rgba(0, 0, 0, 0.3);
+}
+
 
 .row-flex {
   display: flex;
@@ -75,17 +107,34 @@ body{
 .box-a,
 .box-b,
 .box-c,
-.box-d {
+.box-d,
+.box-p {
   max-width: 80%;
 }
 
 .box-a h3,
 .box-b h3,
 .box-d h3,
+.box-p h3,
 .box-a h4,
 .box-b h4,
-.box-d h4 {
+.box-d h4,
+.box-p h4 {
   margin: 4px 0 2.5px 0;
+}
+
+.box-p .box-img {
+  display: inline-block;
+  width:100%;
+  height:200px;
+  overflow:hidden;
+  border:1px solid #ccc;
+}
+
+.box-p img {
+  margin-top:-10%;
+  width:100%;
+  height:auto;
 }
 
 .box-c h4 {
@@ -96,6 +145,8 @@ body{
 .box-d h4 {
   font-style:italic;
 }
+
+
 
 @media (max-width: 1299px) {
   .container-body {
