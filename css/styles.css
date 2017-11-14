@@ -76,9 +76,14 @@ body{
   padding: 5px 10px 15px 10px;
 }
 
+.col-p {
+  padding: 25px 10px 15px 10px;
+}
+
 .col-a,
 .col-b,
-.col-c {
+.col-c,
+.col-p {
   flex-basis: 50%;
 }
 
@@ -105,7 +110,7 @@ body{
   margin: 4px 0 2.5px 0;
 }
 
-.box-p .box-img {
+.btn-box-img {
   display: inline-block;
   width:100%;
   height:200px;
@@ -114,7 +119,7 @@ body{
 }
 
 .box-p img {
-  margin-top:-10%;
+  margin-top:0;
   width:100%;
   height:auto;
 }
@@ -147,14 +152,16 @@ body{
   }
   .col-a,
   .col-b,
-  .col-c {
+  .col-c,
+  .col-p {
     min-width: initial;
     flex-basis: 100%;
   }
   .box-a,
   .box-b,
   .box-c,
-  .box-d {
+  .box-d,
+  .box-p {
     max-width: initial;
   }
   .box-c h4 {
