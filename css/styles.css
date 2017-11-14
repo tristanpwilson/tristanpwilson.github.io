@@ -2,7 +2,15 @@
 
 *, *:before, *:after {font-family:'Muli', sans-serif; box-sizing: border-box !important;}
 
-h1, h2, h3, h4, p, a{margin:0; padding:0}
+
+
+/* ----------------------------------- */
+/* ------ Universal Text Styles ------ */
+/* ----------------------------------- */
+
+h1, h2, h3, h4, p, a{margin:0; padding:0; line-height:130%;}
+h2, h3{margin:5px 0 0 0}
+h4, p, a{margin:3px 0 0 0}
 h1, h2, h3, h3 a, h4 {color:#444}
 p, a{color:#777;}
 a:hover{text-decoration:none; color:#7597ce !important}
@@ -21,11 +29,17 @@ a{font-size:15px;}
 @media(max-width:767px){
   h1{font-size:36px}
   h2{font-size:28px}
-  h3{font-size:18px}
-  h4{font-size:14px}
-  p{font-size:14px;}
-  a{font-size:14px;}
+  h3, h3 a{font-size:16px}
+  h4{font-size:13px}
+  p{font-size:13px;}
+  a{font-size:13px;}
 }
+
+
+
+/* ----------------------------------- */
+/* ------- General Body Styles ------- */
+/* ----------------------------------- */
 
 body{
   background:#fcfcfc;
@@ -36,41 +50,6 @@ body{
   background: #fff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
 }
-
-#nav-a ul{
-  float:right;
-  padding:0;
-}
-
-#nav-a ul li{
-   display:inline-block;
-   list-style:none;
-}
-
-#nav-a ul li a{
-   display:inline-block;
-   margin:0 5px;
-   padding:5px 10px;
-   list-style:none;
-   color:#767676;
-   outline:1px solid rgba(0, 0, 0, 0.1);
-   transition:.2s ease all;
-}
-
-#nav-a ul li a:hover,
-#nav-a ul li a:focus{
-   text-decoration:none;
-   color:#444 !important;
-   outline:1px solid rgba(0, 0, 0, 0.35);
-   transition:.2s ease all;
-}
-
-#nav-a ul li a.active{
-   text-decoration:none;
-   color:#444 !important;
-   outline:1px solid rgba(0, 0, 0, 0.35);
-}
-
 
 .row-flex {
   display: flex;
@@ -140,38 +119,6 @@ body{
   height:auto;
 }
 
-@media (min-width: 768px) {
-  .modal-port .modal-dialog {
-    width: 80vw;
-    margin: 30px auto;
-  }
-}
-
-.modal-port .modal-content{
-  border-radius: 2px !important;
-}
-
-.modal-port .modal-header{
-  background:#fafafa;
- }
- 
-.modal-port .modal-header h4{
-  font-size:20px;
-  font-weight:400;
- }
- 
-.modal-port .modal-body{
-    padding:0;
- }
- 
- .modal-port .modal-body img{
-    width:100%;
- }
-
-.modal-port .modal-footer p{
-  text-align:left;
- }
-
 .box-c h4 {
   display: inline-block;
   width: 75px;
@@ -181,8 +128,6 @@ body{
   font-style:italic;
 }
 
-
-
 @media (max-width: 1299px) {
   .container-body {
     width: 90vw;
@@ -191,9 +136,10 @@ body{
 
 @media (max-width: 767px) {
   body {
-    background: #fff
+    background: #fff;
   }
   .container-body {
+    padding:45px 3.1vw 45px 3vw;
     box-shadow: none;
   }
   .col-h {
@@ -219,10 +165,60 @@ body{
 
 
 
+/* ----------------------------------- */
+/* -------- Navigation Styles -------- */
+/* ----------------------------------- */
+
+#nav-a ul{
+  float:right;
+  padding:0;
+}
+
+#nav-a ul li{
+   display:inline-block;
+   list-style:none;
+}
+
+#nav-a ul li a{
+   display:inline-block;
+   margin:0 5px;
+   padding:5px 10px;
+   list-style:none;
+   color:#767676;
+   border:1px solid rgba(0, 0, 0, 0.1);
+   border-radius:2px;
+   transition:.2s ease all;
+}
+#nav-a ul li a.active{
+   text-decoration:none;
+   color:#444 !important;
+   border:1px solid rgba(0, 0, 0, 0.25);
+   /*background:#fcfcfc;*/
+}
+
+#nav-a ul li a:hover,
+#nav-a ul li a:focus{
+   text-decoration:none;
+   color:#444 !important;
+   border:1px solid rgba(0, 0, 0, 0.35);
+   transition:.2s ease all;
+}
+
+
+
+
+
+/* ----------------------------------- */
+/* ------- Specific to Resume  ------- */
+/* ----------------------------------- */
+
 #name{
   display:inline;
   float:left;
 }
+
+
+/* ----- Photo Popup Heading ----- */
 
 #container-pic-icon{
   position:absolute;
@@ -277,4 +273,44 @@ body{
   width:125px;
   border-radius:3px;}
 
-@media (max-width: 767px) {#container-pic-icon{display:none !important;}}
+@media (max-width: 767px) {
+  #container-pic-icon{display:none !important;}
+}
+
+
+
+/* ----------------------------------- */
+/* ------ Specific to Portfolio ------ */
+/* ----------------------------------- */
+
+.modal-port .modal-content{
+  border-radius: 2px !important;
+}
+
+.modal-port .modal-header{
+  background:#fafafa;
+ }
+ 
+.modal-port .modal-header h4{
+  font-size:20px;
+  font-weight:400;
+ }
+ 
+.modal-port .modal-body{
+    padding:0;
+ }
+ 
+ .modal-port .modal-body img{
+    width:100%;
+ }
+
+.modal-port .modal-footer p{
+  text-align:left;
+ }
+ 
+ @media (min-width: 768px) {
+  .modal-port .modal-dialog {
+    width: 80vw;
+    margin: 30px auto;
+  }
+}
