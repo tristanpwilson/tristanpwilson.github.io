@@ -1,23 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Hind+Vadodara:300|Muli:200,300,400);
 
 *, *:before, *:after {font-family:'Muli', sans-serif; box-sizing: border-box !important;}
-
-
+*:focus{outline:1px dashed rgba(0,0,0,0.3) !important; outline-offset: 4px !important;}
 
 /* ----------------------------------- */
 /* ------ Universal Text Styles ------ */
 /* ----------------------------------- */
 
-h1, h2, h3, h4, p, a{margin:0; padding:0; line-height:130%;}
+h1, h2, h3, h4, p, a, li{margin:0; padding:0; line-height:130%;}
 h2, h3{margin:5px 0 0 0}
 h4, p, a{margin:3px 0 0 0}
 h1, h2, h3, h3 a, h4 {color:#444}
-p, a{color:#777;}
-a:hover{text-decoration:none; color:#7597ce !important}
-a:focus{text-decoration:underline; color:#7597ce !important}
+p, a, li{color:#777;}
+a:hover{text-decoration:underline; color:#7597ce !important}
+a:focus{text-decoration:underline; color:#7597ce !important; transition:.3s ease all;}
 
 h1, h2, h3, h4, b, h1>a, h2>a, h3>a, h4>a { font-weight:300}
-p, a{font-weight:200;}
+p, a, li{font-weight:200;}
 
 h1{font-size:38px}
 h2{font-size:30px}
@@ -31,8 +30,7 @@ a{font-size:15px;}
   h2{font-size:28px}
   h3, h3 a{font-size:16px}
   h4{font-size:13px}
-  p{font-size:13px;}
-  a{font-size:13px;}
+  p, li, a{font-size:13px;}
 }
 
 
@@ -116,6 +114,10 @@ body{
   width: 75px;
 }
 
+.box-c a {
+  display:inline-block;
+}
+
 .box-d h4 {
   font-style:italic;
 }
@@ -162,6 +164,25 @@ body{
 /* ----------------------------------- */
 /* -------- Navigation Styles -------- */
 /* ----------------------------------- */
+
+.skip-nav{
+  position:absolute;
+  top:-50px;
+  padding:15px 7.5px 5px 7.5px;
+  font-weight:400;
+  font-size:16px;
+  color:#fff;
+  background: #666;
+  border-radius:0px 0px 5px 5px;
+    transition:.4s ease all;
+}
+
+.skip-nav:focus{
+  position:absolute;
+  top:-15px;
+  color:#fff !important;
+    transition:.4s ease all;
+}
 
 #nav-a ul{
   float:right;
@@ -296,12 +317,34 @@ body{
   height:auto;
 }
 
+
+
+.modal-port h4, 
+.modal-port p,
+.modal-port li {
+  color:#000 !important;
+ }
+
+.modal-port p {
+  margin:5px 0;
+ }
+
+.modal-port ul{
+  list-style: circle;
+  padding-left:25px;
+ }
+
+.modal-port li {
+  margin:5px 0;
+ }
+
 .modal-port .modal-content{
   border-radius: 2px !important;
 }
 
 .modal-port .modal-header{
   background:#fafafa;
+  padding:15px 15px 7.5px 15px;
  }
  
 .modal-port .modal-header h4{
@@ -327,6 +370,13 @@ body{
     margin: 30px auto;
   }
   
+  .modal-port .modal-header h4{
+   font-size:16px;
+   font-weight:400;
+  }
+}
+
+ @media (max-width: 767px) {
   .modal-port .modal-header h4{
    font-size:16px;
    font-weight:400;
