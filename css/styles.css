@@ -33,17 +33,20 @@ a{font-size:15px;}
   p, li, a{font-size:13px;}
 }
 
-
+.hidden{visibility:hidden;}
 
 /* ----------------------------------- */
 /* ------- General Body Styles ------- */
 /* ----------------------------------- */
 
 body{
+  width:100vw;
   background:#fcfcfc;
+  overflow-x:hidden;
 }
 
 .container-body {
+  min-height:100vh !important;
   padding: 45px 4vw 15px 4vw;
   background: #fff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
@@ -107,7 +110,6 @@ body{
 .box-p h4 {
   margin: 4px 0 2.5px 0;
 }
-
 
 .box-c h4 {
   display: inline-block;
@@ -196,18 +198,32 @@ body{
 
 #nav-a ul li a{
    display:inline-block;
+   /*min-width:76px;*/
    margin:0 5px;
    padding:5px 10px;
    list-style:none;
    color:#767676;
+   text-align:center;
+   line-height:18px;
    border:1px solid rgba(0, 0, 0, 0.1);
    border-radius:2px;
    transition:.2s ease all;
 }
+
+#nav-a ul li a i{
+  margin-bottom:-1px;
+  color:#999;
+  font-size:18px; 
+  line-height:100%; 
+  vertical-align:bottom;
+    transition:.2s ease all;
+}
+
 #nav-a ul li a.active{
    text-decoration:none;
    color:#444 !important;
-   border:1px solid rgba(0, 0, 0, 0.25);
+   font-weight:300;
+   border:1px solid rgba(0, 0, 0, 0.35);
    /*background:#fcfcfc;*/
 }
 
@@ -216,9 +232,75 @@ body{
    text-decoration:none;
    color:#444 !important;
    border:1px solid rgba(0, 0, 0, 0.35);
-   transition:.2s ease all;
+     transition:.2s ease all;
 }
 
+#nav-a ul li a:hover i,
+#nav-a ul li a:focus i,
+#nav-a ul li a.active i{
+   color:#555 !important;
+     transition:.2s ease all;
+}
+
+
+/* ----------------------------------- */
+/* ------ Specific to Home Page ------ */
+/* ----------------------------------- */
+
+.col-home-main {
+  padding-top:20vh;
+}
+
+.box-home-main {
+  width:400px;
+  margin:0 auto;
+}
+
+.box-home-main img{
+  display:block;
+  width:120px;
+  margin:15px auto;
+  border-radius:2px;
+  box-shadow:0 0 2px 0 rgba(0,0,0,0.2);
+}
+
+.box-home-main h1{
+  font-size:44px;
+  display:block;
+  margin:5px auto;
+  text-align:center;
+}
+
+.box-home-main p{
+  display:block;
+  font-size:20px;
+  text-align:center;
+}
+
+@media (max-width: 767px) {
+.box-home-main {
+  width:100%;
+  max-width:320px;
+}
+
+.box-home-main img{
+  width:110px;
+}
+
+.box-home-main h1{
+  font-size:32px;
+  display:block;
+  margin:5px auto;
+  text-align:center;
+}
+
+.box-home-main p{
+  display:block;
+  font-size:16px;
+  text-align:center;
+}
+
+}
 
 
 
