@@ -1,0 +1,3 @@
+<p>Experienced User Experience Specialist with an extensive background in behavioral and psycho-physiological research.</p>  
+          <!--<p> Formal training in a range of research methodologies, from behavioral analysis to electroencephalography (EEG). Versed in front end web development, digital design and data analysis. Holds Master of Science degree in clinical psychology from the University of Maryland, College Park.</p>
+            <p>Holds Master of Science degree in clinical psychology from the University of Maryland, College Park.</p>-->

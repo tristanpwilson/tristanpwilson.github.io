@@ -33,7 +33,7 @@ a{font-size:15px;}
   p, li, a{font-size:13px;}
 }
 
-.hidden{visibility:hidden;}
+.hidden{display:none;}
 
 /* ----------------------------------- */
 /* ------- General Body Styles ------- */
@@ -278,31 +278,29 @@ body{
 }
 
 @media (max-width: 767px) {
-.box-home-main {
-  width:100%;
-  max-width:320px;
+  .box-home-main {
+    width:100%;
+    max-width:320px;
+  }
+  
+  .box-home-main img{
+    width:110px;
+  }
+  
+  .box-home-main h1{
+    font-size:32px;
+    display:block;
+    margin:5px auto;
+    text-align:center;
+  }
+  
+  .box-home-main p{
+    display:block;
+    font-size:16px;
+    text-align:center;
+  }
+
 }
-
-.box-home-main img{
-  width:110px;
-}
-
-.box-home-main h1{
-  font-size:32px;
-  display:block;
-  margin:5px auto;
-  text-align:center;
-}
-
-.box-home-main p{
-  display:block;
-  font-size:16px;
-  text-align:center;
-}
-
-}
-
-
 
 
 /* ----------------------------------- */
@@ -313,67 +311,6 @@ body{
   display:inline;
   float:left;
 }
-
-
-/* ----- Photo Popup Heading ----- */
-
-#container-pic-icon{
-  position:absolute;
-  display:inline-block;
-  margin:12px 0 0 1.8%;
-  padding:0px;
-  cursor:pointer;
-  outline:none !important;
-}
-
-#pic-icon{
-  position:absolute;
-  font-size:26px;
-  color:#aaa;
-}
-
-#pic-box{
-  position:absolute;
-  top:2px;
-  left:2px;
-  opacity:0;
-  width:22px;
-  height:22px;
-  padding:0;
-  border-radius:3px;
-  overflow:hidden;
-  background:#aaa;
-  cursor:default;
-  -webkit-transition: .3s ease opacity .3s, .3s top ease, .3s left ease .3s, .3s ease height, .3s ease width .3s;
-}
-
-#container-pic-icon:hover > #pic-icon,
-#container-pic-icon:focus > #pic-icon{
-  color:#7597ce;
-}
-
-#container-pic-icon:hover > #pic-box,
-#container-pic-icon:focus > #pic-box{
-  top:-100px;
-  left:30px;
-  width:125px;
-  height:125px;
-  opacity:1;
-  -webkit-transition: .3s ease opacity .1s, 
-                      .3s top ease .3s, 
-                      .3s left ease, 
-                      .3s ease height .3s, 
-                      .3s ease width;
-}
-
-#pic-box img{
-  width:125px;
-  border-radius:3px;}
-
-@media (max-width: 767px) {
-  #container-pic-icon{display:none !important;}
-}
-
 
 
 /* ----------------------------------- */
@@ -399,7 +336,7 @@ body{
   height:auto;
 }
 
-
+/* ------ Modal Styles ------ */
 
 .modal-port h4, 
 .modal-port p,

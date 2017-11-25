@@ -33,12 +33,10 @@
       <div class="row row-flex">
     
         <div class="col-xs-12 col-home-main">
-          <div class="box-home-main">
+          <div class="box-home-main hidden">
             <img id="img-self" src="https://media.licdn.com//mpr/mpr/AAEAAQAAAAAAAAwnAAAAJDdjMTgwY2MwLTg2MDItNDNlMy05MjNkLTE0ZGQ4M2E2ODhhOQ.jpg" alt="Photo of Tristan Wilson">
-            <h1>Tristan Wilson</h1>
+            <h1>Tristan Wilson <i>M.S.</i></h1>
             <p>Experienced User Experience Specialist with an extensive background in behavioral and psycho-physiological research.</p>
-            <!--<p> Formal training in a range of research methodologies, from behavioral analysis to electroencephalography (EEG). Versed in front end web development, digital design and data analysis. Holds Master of Science degree in clinical psychology from the University of Maryland, College Park.</p>
-            <p>Holds Master of Science degree in clinical psychology from the University of Maryland, College Park.</p>-->
           </div>
         </div>
         
@@ -46,13 +44,19 @@
   
     
     </div>
-
-  
    
     <!-- jQuery  --> 
     <script src="js/jquery-1.11.2.min.js"></script>
 
     <!-- bootstrap.js --> 
     <script src="js/bootstrap.js"></script>
+    
+    <!-- Fade in on Load -->
+    <script type="text/javascript">
+    $(document).ready(function () {
+       $('div.hidden').fadeIn(1000).removeClass('hidden');
+    });
+    </script>
+    
   </body>
 </html>
