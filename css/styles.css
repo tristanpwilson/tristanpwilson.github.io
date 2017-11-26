@@ -3,6 +3,7 @@
 *, *:before, *:after {font-family:'Muli', sans-serif; box-sizing: border-box !important;}
 *:focus{outline:1px dashed rgba(0,0,0,0.3) !important; outline-offset: 4px !important;}
 
+
 /* ----------------------------------- */
 /* ------ Universal Text Styles ------ */
 /* ----------------------------------- */
@@ -354,6 +355,7 @@ body{
   height:200px;
   overflow:hidden;
   box-shadow:0 0 1px 0 rgba(0,0,0,0.3);
+  transition:.2s ease all;
 }
 
 .btn-box-img:hover,
@@ -420,6 +422,14 @@ body{
   text-align:left;
  }
  
+ 
+@media (max-width: 991px){
+  .btn-box-img {
+    height:150px;
+  }
+
+} 
+ 
  @media (min-width: 768px) {
   .modal-port .modal-dialog {
     width: 80vw;
@@ -433,6 +443,10 @@ body{
 }
 
  @media (max-width: 767px) {
+  .btn-box-img {
+    height:200px;
+  } 
+   
   .modal-port .modal-header h4{
    font-size:16px;
    font-weight:400;
