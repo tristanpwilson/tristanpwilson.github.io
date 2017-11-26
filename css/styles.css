@@ -296,6 +296,11 @@ body{
     max-width:320px;
   }
   
+  .box-img-self{
+    height:110px;
+    margin:5px auto;
+  }
+  
   .box-img-self img{
     height:110px;
   }
