@@ -17,8 +17,9 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'UA-113461588-1');
-      ga('require', 'linkid');
+      gtag('config', 'UA-113461588-1', {
+       'link_attribution': true
+      });
     </script>
     
   </head>
