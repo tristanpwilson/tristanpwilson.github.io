@@ -276,7 +276,7 @@ body{
 .box-img-self img{
   display:block;
   height:120px;
-  margin:120px auto 0 auto;
+  margin:0px auto 0 auto;
   border-radius:2px;
   box-shadow:0 0 2px 0 rgba(0,0,0,0.2);
   transition: .3s ease margin .4s;
@@ -303,6 +303,39 @@ body{
   text-align:center;
 }
 
+.box-home-main ul{
+   text-align:center;
+   list-style:none;
+   padding:20px 0 0 0;
+}
+
+.box-home-main ul li{
+   display:inline-block;
+   list-style:none;
+}
+
+.box-home-main ul li a{
+   display:inline-block;
+   margin:0 5px;
+   padding:10px 20px;
+   list-style:none;
+   font-size:20px;
+   color:#767676;
+   text-align:center;
+   line-height:20px;
+   border:1px solid rgba(0, 0, 0, 0.1);
+   border-radius:2px;
+   transition:.2s ease all;
+}
+
+.box-home-main ul li a:hover,
+.box-home-main ul li a:focus{
+   text-decoration:none;
+   color:#444 !important;
+   border:1px solid rgba(0, 0, 0, 0.35);
+     transition:.2s ease all;
+}
+
 @media (max-width: 767px) {
   .box-home-main {
     width:100%;
@@ -320,17 +353,27 @@ body{
   
   .box-home-main h1{
     font-size:32px;
-    display:block;
-    margin:2.5px auto;
+    margin:10px auto 0px auto;
     text-align:center;
   }
-  
+  .box-home-main i{
+    margin-left:3px;
+    margin-right:0px;
+    font-size:22px;
+  }
   .box-home-main p{
     display:block;
     font-size:16px;
     text-align:center;
   }
-
+  .box-home-main ul{
+    padding:15px 0 0 0;
+  }
+  .box-home-main ul li a{
+    padding:7.5px 12.5px;
+    font-size:16px;
+    line-height:16px;
+  }
 }
 
 
