@@ -52,11 +52,11 @@
           <div class="box-c">
             <div>
               <h4>Phone</h4>
-              <a href="tel:443-904-5555">(443) 904 7358</a>
+              <a href="" id="phonenumber"></a>
             </div>
             <div>
               <h4>Email</h4>
-              <a href="mailto:twilson@userworks.com">twilson@userworks.com</a>
+              <a href="" id="emailaddress"></a>
             </div>
             <div>
               <h4>Location</h4>
@@ -257,6 +257,23 @@
         };
       });
     };
+    </script>
+    
+    <script>
+      var user = 'twilson',
+          domain = 'userworks.com',
+          element = document.getElementById('emailaddress');
+
+          element.innerHTML = user + '@' + domain;
+          element.href = 'mailto:' + user + '@' + domain;
+      
+      var area = '443',
+          mid = '904',
+          phone= '7358',
+          elementB = document.getElementById('phonenumber');
+
+          elementB.innerHTML = ' (' + area + ') ' + " " + mid + " " + phone;
+          elementB.href = 'tel:' + area + mid + phone;
     </script>
    
     <!-- jQuery  --> 
