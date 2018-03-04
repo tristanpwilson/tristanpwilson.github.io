@@ -260,7 +260,7 @@ body{
 /* ----------------------------------- */
 
 .col-home-main {
-  padding-top:20vh;
+  padding-top:12.5vh;
 }
 
 .box-home-main {
@@ -269,7 +269,6 @@ body{
 }
 
 .box-img-self{
-
   overflow:hidden;
   margin:15px auto;
 }
