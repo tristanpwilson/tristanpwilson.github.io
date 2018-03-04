@@ -269,17 +269,17 @@ body{
 }
 
 .box-img-self{
-  height:120px;
+
   overflow:hidden;
   margin:15px auto;
 }
 
 .box-img-self img{
   display:block;
-  height:120px;
+  width:250px;
   margin:0px auto 0 auto;
   border-radius:2px;
-  box-shadow:0 0 2px 0 rgba(0,0,0,0.2);
+  /*box-shadow:0 0 2px 0 rgba(0,0,0,0.2);*/
   transition: .3s ease margin .4s;
 }
 
@@ -318,9 +318,9 @@ body{
 .box-home-main ul li a{
    display:inline-block;
    margin:0 10px;
-   padding:10px 20px;
+   padding:7.5px 15px;
    list-style:none;
-   font-size:20px;
+   font-size:18px;
    color:#767676;
    text-align:center;
    line-height:20px;
@@ -343,13 +343,13 @@ body{
     max-width:320px;
   }
   
-  .box-img-self{
-    height:110px;
+  .box-img-self{ 
     margin:7.5px auto;
   }
   
   .box-img-self img{
-    height:110px;
+    width:70%;
+    max-width:200px;
   }
   
   .box-home-main h1{
