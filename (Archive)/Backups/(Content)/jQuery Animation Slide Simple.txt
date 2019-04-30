@@ -1,0 +1,4 @@
+      $(document).ready(function(){
+        $("img").css("margin-bottom", "-250px");
+        $("img").animate({top: '-250px'});
+      });

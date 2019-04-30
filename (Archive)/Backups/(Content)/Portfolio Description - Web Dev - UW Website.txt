@@ -1,0 +1,9 @@
+                  <!--<p>A few of the goals I set and achieved for the new site were:</p>
+                  <ul>
+                    <li>Simplify and streamline the organization of content</li>
+                    <li>Restructure the IA using data from internal card sorts and heuristic evaluation</li>
+                    <li>Ensure the site is responsive, offering a complete experience across devices</li>
+                    <li>Improve accessibility in all areas using modern techniques</li>
+                    <li>Implement an automated participant database sign up form (PHP, SQL)</li>
+                    <li>Modernizing the look and feel of the site as a whole</li>
+                  </ul>-->

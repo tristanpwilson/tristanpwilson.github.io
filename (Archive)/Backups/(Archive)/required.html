@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+  
+   <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+   <title>A11Y Examples</title>
+
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+    
+  </head>
+  
+  <body>
+
+   <div class="container">
+   
+     <div class="col-xs-12 col-top">
+     
+       <h1>Accessibility Examples</h1>
+       <h3>HTML5 - Input Restrictions</h3>
+       
+       
+     </div>
+   </div>
+
+   <div class="container">
+   
+     <div class="col-sm-6">
+       <div class="col-inner">
+   
+         <h2>Without HTML5</h2>
+   
+         <form>
+          
+          <div class="col-form">
+            <label for="form-a">Name</label>*
+            <input class="form-control" placeholder="John Smith" id="form-a" name="form-a" type="text">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+
+         </form>
+            
+         <div class="col-markup">
+           <p>&lt;label for=&quot;form-a&quot;&gt;Name&lt;/label&gt;*</p>
+           <p>&lt;input placeholder=&quot;John Smith&quot; id=&quot;form-a&quot; type=&quot;text&quot;&gt;</p>
+         </div>
+   
+       </div>
+     </div>
+   
+     <div class="col-sm-6">
+       <div class="col-inner">
+   
+         <h2>With HTML5</h2>
+   
+         <form>
+    
+          <div class="col-form">
+            <label id="label-b" for="form-b">Name</label>*
+            <input class="form-control" placeholder="John Smith" id="form-b" name="form-b" type="text" required>
+            <button type="submit" class="btn">Submit</button>
+          </div>
+
+         </form>
+         
+         <div class="col-markup">
+           <p>&lt;label for=&quot;form-b&quot;&gt;Name&lt;/label&gt;*</p>
+           <p>&lt;input placeholder=&quot;John Smith&quot; id=&quot;form-b&quot; type=&quot;text&quot; <b>required</b>&gt;</p>
+         </div>
+         
+       </div>
+     </div>
+     
+   </div>
+  
+  
+	<!-- jQuery 3.1.1 --> 
+	<script src="js/jquery-3.1.1.min.js"></script>
+
+	<!-- Bootstrap js --> 
+	<script src="js/bootstrap.js"></script>
+    
+  </body>
+  
+</html>

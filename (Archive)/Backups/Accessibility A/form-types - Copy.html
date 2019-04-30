@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+  
+   <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+   <title>A11Y Examples</title>
+
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/styles-b.css" rel="stylesheet" type="text/css">
+    
+  </head>
+  
+  <body>
+
+   <div class="container">
+   
+     <div class="col-xs-12 col-top">
+     
+       <h1>Accessibility Examples</h1>
+       <h3>HTML5 Form Types</h3>
+       
+       
+     </div>
+   </div>
+
+   <div class="container">
+   
+     <div class="col-sm-6">
+       <div class="col-inner">
+   
+         <h2>Without HTML5</h2>
+   
+         <form>
+          
+          <div class="col-form">
+            <label for="form-a">Email Address</label>
+            <input class="form-control" placeholder="email@address.com" id="form-a" name="form-a" type="text" required>
+            <button type="submit" class="btn">Submit</button>
+          </div>
+
+         </form>
+            
+         <div class="col-markup">
+           <p>&lt;label for=&quot;form-a&quot;&gt;Email Address&lt;/label&gt;</p>
+           <p>&lt;input placeholder=&quot;email@address.com&quot; id=&quot;form-a&quot; <b>type=&quot;text&quot;</b>&gt;</p>
+         </div>
+   
+       </div>
+     </div>
+   
+     <div class="col-sm-6">
+       <div class="col-inner">
+   
+         <h2>With HTML5</h2>
+   
+         <form>
+    
+          <div class="col-form">
+            <label for="form-b">Email Address</label>
+            <input class="form-control" placeholder="email@address.com" id="form-b" name="form-b" type="date">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+
+         </form>
+         
+         <div class="col-markup">
+           <p>&lt;label for=&quot;form-b&quot;&gt;Email Address&lt;/label&gt;</p>
+           <p>&lt;input placeholder=&quot;email@address.com&quot; id=&quot;form-b&quot; <b>type=&quot;email&quot;</b>&gt;</p>
+         </div>
+         
+       </div>
+     </div>
+     
+   </div>
+  
+  
+	<!-- jQuery 3.1.1 --> 
+	<script src="js/jquery-3.1.1.min.js"></script>
+
+	<!-- Bootstrap js --> 
+	<script src="js/bootstrap.js"></script>
+    
+  </body>
+  
+</html>
