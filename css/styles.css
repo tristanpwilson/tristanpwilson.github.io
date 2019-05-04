@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Hind+Vadodara:300|Muli:200,300,400);
+@import url(https://fonts.googleapis.com/css?family=Hind+Vadodara:300|Muli:200,300,400,600);
 
 *, *:before, *:after {font-family:'Muli', sans-serif; box-sizing: border-box !important;}
 *:focus{outline:1px dashed rgba(0,0,0,0.3) !important; outline-offset: 4px !important;}
@@ -96,6 +96,9 @@ body{
   flex-basis: 48%;
 }
 
+.col-contact{
+}
+
 .box-a,
 .box-b,
 .box-c,
@@ -107,6 +110,7 @@ body{
 .box-p {
   max-width: 100%;
 }
+
 
 .box-a h3,
 .box-b h3,
@@ -130,6 +134,15 @@ body{
 
 .box-d h4 {
   font-style:italic;
+}
+
+.col-a.col-contact h3{
+ font-weight:600;
+ margin-bottom:6px;
+}
+
+.col-a.col-contact .box-c h4{
+  /* width: 100px; */
 }
 
 @media (max-width: 1299px) {
@@ -210,6 +223,7 @@ body{
 #nav-a ul li a{
    display:inline-block;
    /*min-width:76px;*/
+   min-width:40px;
    margin:0 5px;
    padding:5px 10px;
    list-style:none;
@@ -219,38 +233,46 @@ body{
    font-weight:300;
    border:1px solid rgba(0, 0, 0, 0.1);
    border-radius:2px;
-     transition:.2s ease all;
+     transition:.2s ease border, .2s ease box-shadow, .2s ease color;
 }
 
 #nav-a ul li a i{
   margin-bottom:-1px;
-  color:#999;
+  color:#9a9a9a;
   font-size:18px; 
   line-height:100%; 
   vertical-align:bottom;
-    transition:.2s ease all;
+    transition:.2s ease color;
 }
 
 #nav-a ul li a.active{
    text-decoration:none;
-   color:#333 !important;
-   font-weight:300;
+   font-weight:300; 
    border:1px solid rgba(0, 0, 0, 0.35);
+
+   /*box-shadow: 0 0 0 2px rgba(0,0,0,0.35);*/
    /*background:#fcfcfc;*/
+}
+
+#nav-a ul li a.active i{
+   font-weight:300;
+   color:#666 !important;
+   
 }
 
 #nav-a ul li a:hover,
 #nav-a ul li a:focus{
    text-decoration:none;
-   color:#333 !important;
+   color:#666 !important;
    border:1px solid rgba(0, 0, 0, 0.35);
+      box-shadow: inset 0 0 0 1px #ddd;
      transition:.2s ease all;
 }
 
 #nav-a ul li a:hover i,
-#nav-a ul li a:focus i,
-#nav-a ul li a.active i{
-   color:#555 !important;
+#nav-a ul li a:focus i{
+   font-weight:300;
+   color:#767676 !important;
      transition:.2s ease all;
 }
 
