@@ -136,12 +136,13 @@ body{
   font-style:italic;
 }
 
-.col-a.col-contact h3{
- font-weight:600;
+.col-d.col-contact h3{
+ font-weight:400;
+ margin-top:8px;
  margin-bottom:6px;
 }
 
-.col-a.col-contact .box-c h4{
+.col-d.col-contact .box-c h4{
   /* width: 100px; */
 }
 
