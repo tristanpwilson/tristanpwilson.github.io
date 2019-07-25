@@ -454,6 +454,12 @@ body{
   color:#000 !important;
  }
 
+.modal-port h4{
+  font-size:18px !important;
+  font-weight:400;
+  padding:0 0 5px 0;
+}
+
 .modal-port p {
   margin:5px 0;
  }
@@ -472,13 +478,8 @@ body{
 }
 
 .modal-port .modal-header{
-  background:#fafafa;
+  background:#fdfdfd;
   padding:15px 15px 7.5px 15px;
- }
- 
-.modal-port .modal-header h4{
-  font-size:20px;
-  font-weight:400;
  }
  
 .modal-port .modal-body{
@@ -508,7 +509,6 @@ body{
   }
   
   .modal-port .modal-header h4{
-   font-size:16px;
    font-weight:400;
   }
 }
