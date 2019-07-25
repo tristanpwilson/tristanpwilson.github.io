@@ -65,10 +65,15 @@ body{
   border-bottom: 1px solid rgba(0, 0, 0, 0.05)
 }
 
+
 .col-t {
   padding: 45px 0 7.5px 0;
   margin: 0 7.5px 5px 7.5px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05)
+}
+
+.col-t-1 {
+  padding: 10px 0 7.5px 0;
 }
 
 .col-a,
