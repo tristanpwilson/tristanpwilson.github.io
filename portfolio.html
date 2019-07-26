@@ -115,6 +115,21 @@
                   <a href="https://jayhagram.com" target="_blank" aria-label="External link opens in new tab" style="display:inline-block; color:#3273CB; font-weight:600; margin:10px 0 5px 0!important;">Visit JayHagram.com</a>
                 </div>
                 <div class="modal-body">
+                <!--<style>
+                
+                </style>
+                  <div class="scroll-arrow" id="scroll-left">
+                      &larr;
+                  </div>
+                  <div class="scroll-arrow" id="scroll-right" onclick="scrollRight()">
+                      &rarr;
+                  </div>
+                  <ul id="imgList">
+                    <li class="imgListItem"><img src="img/Web-Dev-B-Large-With-Mobile3.png" alt="Expanded view of the website originally shown in the thumbnail"/></li>
+                    <li class="imgListItem"><img src="img/Web-Dev-B-Large.png" alt="Expanded view of the website originally shown in the thumbnail"/></li>
+                    <li class="imgListItem"><img src="img/Web-Dev-B-Large-With-Mobile2.png" alt="Expanded view of the website originally shown in the thumbnail"/></li>
+                  </ul>-->
+
                   <img data-src="img/Web-Dev-B-Large-With-Mobile3.png" alt="Expanded view of the website originally shown in the thumbnail">
                 </div>
               </div>
@@ -290,6 +305,32 @@
         };
       });
     };
+    </script>
+    <script type="text/javascript">
+      $(document).ready(boxSizer);
+      $(window).resize(boxSizer);
+      
+      function boxSizer(){
+        var carouselMaxHeight = $('.imgListItem img:first-child').height();
+        $('#imgList').css({'max-height':carouselMaxHeight + 'px'});
+      }
+    </script>
+    <script type="text/javascript">
+        var imgList = document.getElementById('imgList');
+        var imgWidth = document.getElementById('imgList').parentElement;
+        var scrollRight = document.getElementById('scroll-right');
+        var scrollLeft = document.getElementById('scroll-left');
+        
+      
+      // When a user clicks on the right arrow, the ul will scroll 750px to the right
+        scrollRight.addEventListener('click', (event) => {
+          imgList.scrollBy(imgWidth.scrollWidth, 0);
+        });
+      
+      // When a user clicks on the left arrow, the ul will scroll 750px to the left
+        scrollLeft.addEventListener('click', (event) => {
+          imgList.scrollBy(-imgWidth.scrollWidth, 0);
+      });
     </script>
     
     <script>
