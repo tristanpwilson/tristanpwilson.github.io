@@ -22,7 +22,11 @@
 
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/latest.js"></script>
   <script type="text/javascript">
+  
+
+  
   var mainmap = L.map('mapMain').setView([38.93, -77.34], 8);
   
   L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
@@ -48,7 +52,7 @@ info.onAdd = function (mainmap) {
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
     this._div.innerHTML = '<h3>Details</h3>' + (props ?
-          '<h4>' + props.name + '</h4>' + '<p>' + props.cases + ' confirmed cases</p>'
+          '<h4>' + props.name + '</h4>' + '<p>' + props.cases + ' cases</p>' + '<p>' + props.deaths + ' deaths</p>' + '<p>' + props.recoveries + ' recoveries</p>'
         // This is the default content that is shown when there is no hover
         : '<h4><i>Hover over a county</i></h4>');
     $(".info").toggleClass("infoActive");       
@@ -59,13 +63,13 @@ info.addTo(mainmap);
   
 // Color scale of shading depending on case count value
 	function getColor(d) {
-		return d > 400 ? '#A60000' :
-           d > 200  ? '#DA2A1A' :
+		return d > 450 ? '#A60000' :
+           d > 300  ? '#DA2A1A' :
            d > 100  ? '#E24911' :
-           d > 50  ? '#EB6E09' :
-           d > 10   ? '#F39A00' :
-           d > 5   ? '#F7AD2E' :
-           d > 1   ? '#F0BC35' :
+           d > 25  ? '#EB6E09' :
+           d > 5   ? '#F39A00' :
+           d > 3   ? '#F7AD2E' :
+           d > 0   ? '#F0BC35' :
                   '#aaaaaa';
 	}
 
@@ -129,12 +133,10 @@ info.addTo(mainmap);
 		style: style,
 		onEachFeature: onEachFeature
 	}).addTo(mainmap);
+//alert(countiesData.features[1].properties.name);
 
 
 
-
-
-	
   </script>
  
 

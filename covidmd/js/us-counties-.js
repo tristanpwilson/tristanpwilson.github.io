@@ -1,38 +1,8 @@
-
-
-
 var countiesData = 
-{
-  "type": "FeatureCollection",
+{"type": "FeatureCollection",
   "features": [
     {
       "type": "Feature",
-      "properties": {
-        "name": "Allegany",
-        "cases": 1,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+39.6123134",
-        "countyfp_nozero": "1",
-        "lsad": "06",
-        "intptlon": "-078.7031037",
-        "funcstat": "A",
-        "geo_point_2d": [
-          39.6214732187,
-          -78.6975385506
-        ],
-        "stusab": "MD",
-        "namelsad": "Allegany County",
-        "awater": 14801442,
-        "countyns": "01713506",
-        "countyfp": "001",
-        "geoid": "24001",
-        "cbsafp": "19060",
-        "mtfcc": "G4020",
-        "classfp": "H1",
-        "statefp": "24"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -459,37 +429,33 @@ var countiesData =
             ]
           ]
         ]
+      },
+      "properties": {
+        "cases": 1,
+        "name": "Allegany",
+        "intptlat": "+39.6123134",
+        "countyfp_nozero": "1",
+        "lsad": "06",
+        "intptlon": "-078.7031037",
+        "funcstat": "A",
+        "geo_point_2d": [
+          39.6214732187,
+          -78.6975385506
+        ],
+        "stusab": "MD",
+        "namelsad": "Allegany County",
+        "awater": 14801442,
+        "countyns": "01713506",
+        "countyfp": "001",
+        "geoid": "24001",
+        "cbsafp": "19060",
+        "mtfcc": "G4020",
+        "classfp": "H1",
+        "statefp": "24"
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Anne Arundel",
-        "cases": 206,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+38.9916174",
-        "countyfp_nozero": "3",
-        "lsad": "06",
-        "intptlon": "-076.5608941",
-        "funcstat": "A",
-        "geo_point_2d": [
-          38.9941571642,
-          -76.5675970619
-        ],
-        "stusab": "MD",
-        "namelsad": "Anne Arundel County",
-        "awater": 448033072,
-        "countyns": "01710958",
-        "countyfp": "003",
-        "geoid": "24003",
-        "csafp": "548",
-        "cbsafp": "12580",
-        "mtfcc": "G4020",
-        "classfp": "H1",
-        "statefp": "24"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -812,38 +778,108 @@ var countiesData =
             ]
           ]
         ]
-      }
-    },
-
-    {
-      "type": "Feature",
+      },
       "properties": {
-        "name": "Baltimore",
-        "cases": 353,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+39.4431666",
-        "countyfp_nozero": "5",
+        "cases": 206,
+        "name": "Anne Arundel",
+        "intptlat": "+38.9916174",
+        "countyfp_nozero": "3",
         "lsad": "06",
-        "intptlon": "-076.6165693",
+        "intptlon": "-076.5608941",
         "funcstat": "A",
         "geo_point_2d": [
-          39.443072852,
-          -76.6163229502
+          38.9941571642,
+          -76.5675970619
         ],
         "stusab": "MD",
-        "namelsad": "Baltimore County",
-        "awater": 215959023,
-        "countyns": "01695314",
-        "countyfp": "005",
-        "geoid": "24005",
+        "namelsad": "Anne Arundel County",
+        "awater": 448033072,
+        "countyns": "01710958",
+        "countyfp": "003",
+        "geoid": "24003",
         "csafp": "548",
         "cbsafp": "12580",
         "mtfcc": "G4020",
         "classfp": "H1",
         "statefp": "24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -76.529486,
+              39.218408
+            ],
+            [
+              -76.529785,
+              39.209907
+            ],
+            [
+              -76.550086,
+              39.197207
+            ],
+            [
+              -76.58328,
+              39.207404
+            ],
+            [
+              -76.611695,
+              39.2344
+            ],
+            [
+              -76.618612,
+              39.237398
+            ],
+            [
+              -76.711054,
+              39.277889
+            ],
+            [
+              -76.711313,
+              39.371933
+            ],
+            [
+              -76.529793,
+              39.372058
+            ],
+            [
+              -76.529486,
+              39.218408
+            ]
+          ]
+        ]
       },
+      "properties": {
+        "cases": 265,
+        "name": "Baltimore City",
+        "intptlat": "+39.3000324",
+        "countyfp_nozero": "510",
+        "lsad": "25",
+        "intptlon": "-076.6104761",
+        "funcstat": "F",
+        "geo_point_2d": [
+          39.3009797143,
+          -76.610646905
+        ],
+        "stusab": "MD",
+        "namelsad": "Baltimore city",
+        "awater": 28758714,
+        "countyns": "01702381",
+        "countyfp": "510",
+        "geoid": "24510",
+        "csafp": "548",
+        "cbsafp": "12580",
+        "mtfcc": "G4020",
+        "classfp": "C7",
+        "statefp": "24"
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1194,115 +1230,34 @@ var countiesData =
             ]
           ]
         ]
-      }
-    },
-    {
-      "type": "Feature",
+      },
       "properties": {
-        "name": "Baltimore City",
-        "cases": 265,
-        "deaths": 2,
-        "recoveries": 0,
-        "new": 2,
-        "intptlat": "+39.3000324",
-        "countyfp_nozero": "510",
-        "lsad": "25",
-        "intptlon": "-076.6104761",
-        "funcstat": "F",
+        "cases": 353,
+        "name": "Baltimore",
+        "intptlat": "+39.4431666",
+        "countyfp_nozero": "5",
+        "lsad": "06",
+        "intptlon": "-076.6165693",
+        "funcstat": "A",
         "geo_point_2d": [
-          39.3009797143,
-          -76.610646905
+          39.443072852,
+          -76.6163229502
         ],
         "stusab": "MD",
-        "namelsad": "Baltimore city",
-        "awater": 28758714,
-        "countyns": "01702381",
-        "countyfp": "510",
-        "geoid": "24510",
+        "namelsad": "Baltimore County",
+        "awater": 215959023,
+        "countyns": "01695314",
+        "countyfp": "005",
+        "geoid": "24005",
         "csafp": "548",
         "cbsafp": "12580",
         "mtfcc": "G4020",
-        "classfp": "C7",
+        "classfp": "H1",
         "statefp": "24"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -76.529486,
-              39.218408
-            ],
-            [
-              -76.529785,
-              39.209907
-            ],
-            [
-              -76.550086,
-              39.197207
-            ],
-            [
-              -76.58328,
-              39.207404
-            ],
-            [
-              -76.611695,
-              39.2344
-            ],
-            [
-              -76.618612,
-              39.237398
-            ],
-            [
-              -76.711054,
-              39.277889
-            ],
-            [
-              -76.711313,
-              39.371933
-            ],
-            [
-              -76.529793,
-              39.372058
-            ],
-            [
-              -76.529486,
-              39.218408
-            ]
-          ]
-        ]
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Calvert",
-        "cases": 22,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+38.5227191",
-        "countyfp_nozero": "9",
-        "lsad": "06",
-        "intptlon": "-076.5297621",
-        "funcstat": "A",
-        "geo_point_2d": [
-          38.5347120041,
-          -76.5305644689
-        ],
-        "stusab": "MD",
-        "metdivfp": "47894",
-        "awater": 341577085,
-        "countyns": "01676636",
-        "countyfp": "009",
-        "classfp": "H1",
-        "geoid": "24009",
-        "csafp": "548",
-        "cbsafp": "47900",
-        "mtfcc": "G4020",
-        "namelsad": "Calvert County",
-        "statefp": "24"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1533,35 +1488,35 @@ var countiesData =
             ]
           ]
         ]
+      },
+      "properties": {
+        "cases": 22,
+        "name": "Calvert",
+        "intptlat": "+38.5227191",
+        "countyfp_nozero": "9",
+        "lsad": "06",
+        "intptlon": "-076.5297621",
+        "funcstat": "A",
+        "geo_point_2d": [
+          38.5347120041,
+          -76.5305644689
+        ],
+        "stusab": "MD",
+        "metdivfp": "47894",
+        "awater": 341577085,
+        "countyns": "01676636",
+        "countyfp": "009",
+        "classfp": "H1",
+        "geoid": "24009",
+        "csafp": "548",
+        "cbsafp": "47900",
+        "mtfcc": "G4020",
+        "namelsad": "Calvert County",
+        "statefp": "24"
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Caroline",
-        "cases": 4,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+38.8715306",
-        "countyfp_nozero": "11",
-        "lsad": "06",
-        "intptlon": "-075.8316620",
-        "funcstat": "A",
-        "geo_point_2d": [
-          38.8717218127,
-          -75.8316009642
-        ],
-        "stusab": "MD",
-        "namelsad": "Caroline County",
-        "awater": 16777066,
-        "countyfp": "011",
-        "geoid": "24011",
-        "countyns": "00595737",
-        "mtfcc": "G4020",
-        "classfp": "H1",
-        "statefp": "24"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -1824,37 +1779,32 @@ var countiesData =
             ]
           ]
         ]
+      },
+      "properties": {
+        "cases": 4,
+        "name": "Caroline",
+        "intptlat": "+38.8715306",
+        "countyfp_nozero": "11",
+        "lsad": "06",
+        "intptlon": "-075.8316620",
+        "funcstat": "A",
+        "geo_point_2d": [
+          38.8717218127,
+          -75.8316009642
+        ],
+        "stusab": "MD",
+        "namelsad": "Caroline County",
+        "awater": 16777066,
+        "countyfp": "011",
+        "geoid": "24011",
+        "countyns": "00595737",
+        "mtfcc": "G4020",
+        "classfp": "H1",
+        "statefp": "24"
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Carroll",
-        "cases": 105,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+39.5633308",
-        "countyfp_nozero": "13",
-        "lsad": "06",
-        "intptlon": "-077.0153276",
-        "funcstat": "A",
-        "geo_point_2d": [
-          39.5628541642,
-          -77.0225227247
-        ],
-        "stusab": "MD",
-        "namelsad": "Carroll County",
-        "awater": 13112465,
-        "countyns": "01696228",
-        "countyfp": "013",
-        "geoid": "24013",
-        "csafp": "548",
-        "cbsafp": "12580",
-        "mtfcc": "G4020",
-        "classfp": "H1",
-        "statefp": "24"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -2173,38 +2123,34 @@ var countiesData =
             ]
           ]
         ]
+      },
+      "properties": {
+        "cases": 105,
+        "name": "Carroll",
+        "intptlat": "+39.5633308",
+        "countyfp_nozero": "13",
+        "lsad": "06",
+        "intptlon": "-077.0153276",
+        "funcstat": "A",
+        "geo_point_2d": [
+          39.5628541642,
+          -77.0225227247
+        ],
+        "stusab": "MD",
+        "namelsad": "Carroll County",
+        "awater": 13112465,
+        "countyns": "01696228",
+        "countyfp": "013",
+        "geoid": "24013",
+        "csafp": "548",
+        "cbsafp": "12580",
+        "mtfcc": "G4020",
+        "classfp": "H1",
+        "statefp": "24"
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Cecil",
-        "cases": 20,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+39.5623537",
-        "countyfp_nozero": "15",
-        "lsad": "06",
-        "intptlon": "-075.9415852",
-        "funcstat": "A",
-        "geo_point_2d": [
-          39.5624202546,
-          -75.9481069728
-        ],
-        "stusab": "MD",
-        "metdivfp": "48864",
-        "awater": 185283751,
-        "countyns": "00596115",
-        "countyfp": "015",
-        "classfp": "H1",
-        "geoid": "24015",
-        "csafp": "428",
-        "cbsafp": "37980",
-        "mtfcc": "G4020",
-        "namelsad": "Cecil County",
-        "statefp": "24"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -2359,38 +2305,35 @@ var countiesData =
             ]
           ]
         ]
+      },
+      "properties": {
+        "cases": 20,
+        "name": "Cecil",
+        "intptlat": "+39.5623537",
+        "countyfp_nozero": "15",
+        "lsad": "06",
+        "intptlon": "-075.9415852",
+        "funcstat": "A",
+        "geo_point_2d": [
+          39.5624202546,
+          -75.9481069728
+        ],
+        "stusab": "MD",
+        "metdivfp": "48864",
+        "awater": 185283751,
+        "countyns": "00596115",
+        "countyfp": "015",
+        "classfp": "H1",
+        "geoid": "24015",
+        "csafp": "428",
+        "cbsafp": "37980",
+        "mtfcc": "G4020",
+        "namelsad": "Cecil County",
+        "statefp": "24"
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Charles",
-        "cases": 69,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+38.4728532",
-        "countyfp_nozero": "17",
-        "lsad": "06",
-        "intptlon": "-077.0154272",
-        "funcstat": "A",
-        "geo_point_2d": [
-          38.4736812339,
-          -77.0134840998
-        ],
-        "stusab": "MD",
-        "metdivfp": "47894",
-        "awater": 479508078,
-        "countyns": "01676992",
-        "countyfp": "017",
-        "classfp": "H1",
-        "geoid": "24017",
-        "csafp": "548",
-        "cbsafp": "47900",
-        "mtfcc": "G4020",
-        "namelsad": "Charles County",
-        "statefp": "24"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -2749,37 +2692,35 @@ var countiesData =
             ]
           ]
         ]
+      },
+      "properties": {
+        "cases": 69,
+        "name": "Charles",
+        "intptlat": "+38.4728532",
+        "countyfp_nozero": "17",
+        "lsad": "06",
+        "intptlon": "-077.0154272",
+        "funcstat": "A",
+        "geo_point_2d": [
+          38.4736812339,
+          -77.0134840998
+        ],
+        "stusab": "MD",
+        "metdivfp": "47894",
+        "awater": 479508078,
+        "countyns": "01676992",
+        "countyfp": "017",
+        "classfp": "H1",
+        "geoid": "24017",
+        "csafp": "548",
+        "cbsafp": "47900",
+        "mtfcc": "G4020",
+        "namelsad": "Charles County",
+        "statefp": "24"
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Dorchester",
-        "cases": 1,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+38.4291957",
-        "countyfp_nozero": "19",
-        "lsad": "06",
-        "intptlon": "-076.0474333",
-        "funcstat": "A",
-        "geo_point_2d": [
-          38.4226080428,
-          -76.0833253109
-        ],
-        "stusab": "MD",
-        "namelsad": "Dorchester County",
-        "awater": 1145353068,
-        "countyns": "00596495",
-        "countyfp": "019",
-        "geoid": "24019",
-        "csafp": "480",
-        "cbsafp": "15700",
-        "mtfcc": "G4020",
-        "classfp": "H1",
-        "statefp": "24"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -3158,38 +3099,34 @@ var countiesData =
             ]
           ]
         ]
+      },
+      "properties": {
+        "cases": 1,
+        "name": "Dorchester",
+        "intptlat": "+38.4291957",
+        "countyfp_nozero": "19",
+        "lsad": "06",
+        "intptlon": "-076.0474333",
+        "funcstat": "A",
+        "geo_point_2d": [
+          38.4226080428,
+          -76.0833253109
+        ],
+        "stusab": "MD",
+        "namelsad": "Dorchester County",
+        "awater": 1145353068,
+        "countyns": "00596495",
+        "countyfp": "019",
+        "geoid": "24019",
+        "csafp": "480",
+        "cbsafp": "15700",
+        "mtfcc": "G4020",
+        "classfp": "H1",
+        "statefp": "24"
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Frederick",
-        "cases": 45,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+39.4702139",
-        "countyfp_nozero": "21",
-        "lsad": "06",
-        "intptlon": "-077.3976277",
-        "funcstat": "A",
-        "geo_point_2d": [
-          39.4722125305,
-          -77.3979843347
-        ],
-        "stusab": "MD",
-        "metdivfp": "23224",
-        "awater": 17840723,
-        "countyns": "01711211",
-        "countyfp": "021",
-        "classfp": "H1",
-        "geoid": "24021",
-        "csafp": "548",
-        "cbsafp": "47900",
-        "mtfcc": "G4020",
-        "namelsad": "Frederick County",
-        "statefp": "24"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -3560,35 +3497,35 @@ var countiesData =
             ]
           ]
         ]
+      },
+      "properties": {
+        "cases": 45,
+        "name": "Frederick",
+        "intptlat": "+39.4702139",
+        "countyfp_nozero": "21",
+        "lsad": "06",
+        "intptlon": "-077.3976277",
+        "funcstat": "A",
+        "geo_point_2d": [
+          39.4722125305,
+          -77.3979843347
+        ],
+        "stusab": "MD",
+        "metdivfp": "23224",
+        "awater": 17840723,
+        "countyns": "01711211",
+        "countyfp": "021",
+        "classfp": "H1",
+        "geoid": "24021",
+        "csafp": "548",
+        "cbsafp": "47900",
+        "mtfcc": "G4020",
+        "namelsad": "Frederick County",
+        "statefp": "24"
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Garrett",
-        "cases": 3,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+39.5472985",
-        "countyfp_nozero": "23",
-        "lsad": "06",
-        "intptlon": "-079.2746192",
-        "funcstat": "A",
-        "geo_point_2d": [
-          39.5288947088,
-          -79.2729932831
-        ],
-        "stusab": "MD",
-        "namelsad": "Garrett County",
-        "awater": 22498420,
-        "countyfp": "023",
-        "geoid": "24023",
-        "countyns": "01711058",
-        "mtfcc": "G4020",
-        "classfp": "H1",
-        "statefp": "24"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -3799,37 +3736,32 @@ var countiesData =
             ]
           ]
         ]
+      },
+      "properties": {
+        "cases": 3,
+        "name": "Garrett",
+        "intptlat": "+39.5472985",
+        "countyfp_nozero": "23",
+        "lsad": "06",
+        "intptlon": "-079.2746192",
+        "funcstat": "A",
+        "geo_point_2d": [
+          39.5288947088,
+          -79.2729932831
+        ],
+        "stusab": "MD",
+        "namelsad": "Garrett County",
+        "awater": 22498420,
+        "countyfp": "023",
+        "geoid": "24023",
+        "countyns": "01711058",
+        "mtfcc": "G4020",
+        "classfp": "H1",
+        "statefp": "24"
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Harford",
-        "cases": 37,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+39.5374292",
-        "countyfp_nozero": "25",
-        "lsad": "06",
-        "intptlon": "-076.2997894",
-        "funcstat": "A",
-        "geo_point_2d": [
-          39.5364361834,
-          -76.2988753861
-        ],
-        "stusab": "MD",
-        "namelsad": "Harford County",
-        "awater": 231889650,
-        "countyns": "01698178",
-        "countyfp": "025",
-        "geoid": "24025",
-        "csafp": "548",
-        "cbsafp": "12580",
-        "mtfcc": "G4020",
-        "classfp": "H1",
-        "statefp": "24"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -4056,37 +3988,34 @@ var countiesData =
             ]
           ]
         ]
-      }
-    },
-    {
-      "type": "Feature",
+      },
       "properties": {
-        "name": "Howard",
-        "cases": 152,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+39.2522639",
-        "countyfp_nozero": "27",
+        "cases": 37,
+        "name": "Harford",
+        "intptlat": "+39.5374292",
+        "countyfp_nozero": "25",
         "lsad": "06",
-        "intptlon": "-076.9244057",
+        "intptlon": "-076.2997894",
         "funcstat": "A",
         "geo_point_2d": [
-          39.2507169303,
-          -76.9311943444
+          39.5364361834,
+          -76.2988753861
         ],
         "stusab": "MD",
-        "namelsad": "Howard County",
-        "awater": 6336142,
-        "countyns": "01709077",
-        "countyfp": "027",
-        "geoid": "24027",
+        "namelsad": "Harford County",
+        "awater": 231889650,
+        "countyns": "01698178",
+        "countyfp": "025",
+        "geoid": "24025",
         "csafp": "548",
         "cbsafp": "12580",
         "mtfcc": "G4020",
         "classfp": "H1",
         "statefp": "24"
-      },
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -4397,35 +4326,34 @@ var countiesData =
             ]
           ]
         ]
+      },
+      "properties": {
+        "cases": 152,
+        "name": "Howard",
+        "intptlat": "+39.2522639",
+        "countyfp_nozero": "27",
+        "lsad": "06",
+        "intptlon": "-076.9244057",
+        "funcstat": "A",
+        "geo_point_2d": [
+          39.2507169303,
+          -76.9311943444
+        ],
+        "stusab": "MD",
+        "namelsad": "Howard County",
+        "awater": 6336142,
+        "countyns": "01709077",
+        "countyfp": "027",
+        "geoid": "24027",
+        "csafp": "548",
+        "cbsafp": "12580",
+        "mtfcc": "G4020",
+        "classfp": "H1",
+        "statefp": "24"
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Kent",
-        "cases": 5,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+39.2412793",
-        "countyfp_nozero": "29",
-        "lsad": "06",
-        "intptlon": "-076.1259867",
-        "funcstat": "A",
-        "geo_point_2d": [
-          39.2356038944,
-          -76.0958206019
-        ],
-        "stusab": "MD",
-        "namelsad": "Kent County",
-        "awater": 353302295,
-        "countyfp": "029",
-        "geoid": "24029",
-        "countyns": "00593907",
-        "mtfcc": "G4020",
-        "classfp": "H1",
-        "statefp": "24"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -4712,38 +4640,32 @@ var countiesData =
             ]
           ]
         ]
+      },
+      "properties": {
+        "cases": 5,
+        "name": "Kent",
+        "intptlat": "+39.2412793",
+        "countyfp_nozero": "29",
+        "lsad": "06",
+        "intptlon": "-076.1259867",
+        "funcstat": "A",
+        "geo_point_2d": [
+          39.2356038944,
+          -76.0958206019
+        ],
+        "stusab": "MD",
+        "namelsad": "Kent County",
+        "awater": 353302295,
+        "countyfp": "029",
+        "geoid": "24029",
+        "countyns": "00593907",
+        "mtfcc": "G4020",
+        "classfp": "H1",
+        "statefp": "24"
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Montgomery",
-        "cases": 498,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+39.1373815",
-        "countyfp_nozero": "31",
-        "lsad": "06",
-        "intptlon": "-077.2030633",
-        "funcstat": "A",
-        "geo_point_2d": [
-          39.1363621482,
-          -77.2042373226
-        ],
-        "stusab": "MD",
-        "metdivfp": "23224",
-        "awater": 35852731,
-        "countyns": "01712500",
-        "countyfp": "031",
-        "classfp": "H1",
-        "geoid": "24031",
-        "csafp": "548",
-        "cbsafp": "47900",
-        "mtfcc": "G4020",
-        "namelsad": "Montgomery County",
-        "statefp": "24"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -5026,38 +4948,35 @@ var countiesData =
             ]
           ]
         ]
+      },
+      "properties": {
+        "cases": 498,
+        "name": "Montgomery",
+        "intptlat": "+39.1373815",
+        "countyfp_nozero": "31",
+        "lsad": "06",
+        "intptlon": "-077.2030633",
+        "funcstat": "A",
+        "geo_point_2d": [
+          39.1363621482,
+          -77.2042373226
+        ],
+        "stusab": "MD",
+        "metdivfp": "23224",
+        "awater": 35852731,
+        "countyns": "01712500",
+        "countyfp": "031",
+        "classfp": "H1",
+        "geoid": "24031",
+        "csafp": "548",
+        "cbsafp": "47900",
+        "mtfcc": "G4020",
+        "namelsad": "Montgomery County",
+        "statefp": "24"
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Prince George's",
-        "cases": 473,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+38.8292875",
-        "countyfp_nozero": "33",
-        "lsad": "06",
-        "intptlon": "-076.8481800",
-        "funcstat": "A",
-        "geo_point_2d": [
-          38.8295152487,
-          -76.8472924091
-        ],
-        "stusab": "MD",
-        "metdivfp": "47894",
-        "awater": 41917744,
-        "countyns": "01714670",
-        "countyfp": "033",
-        "classfp": "H1",
-        "geoid": "24033",
-        "csafp": "548",
-        "cbsafp": "47900",
-        "mtfcc": "G4020",
-        "namelsad": "Prince George's County",
-        "statefp": "24"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -5404,37 +5323,35 @@ var countiesData =
             ]
           ]
         ]
+      },
+      "properties": {
+        "cases": 473,
+        "name": "Prince George's",
+        "intptlat": "+38.8292875",
+        "countyfp_nozero": "33",
+        "lsad": "06",
+        "intptlon": "-076.8481800",
+        "funcstat": "A",
+        "geo_point_2d": [
+          38.8295152487,
+          -76.8472924091
+        ],
+        "stusab": "MD",
+        "metdivfp": "47894",
+        "awater": 41917744,
+        "countyns": "01714670",
+        "countyfp": "033",
+        "classfp": "H1",
+        "geoid": "24033",
+        "csafp": "548",
+        "cbsafp": "47900",
+        "mtfcc": "G4020",
+        "namelsad": "Prince George's County",
+        "statefp": "24"
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Queen Anne's",
-        "cases": 8,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+39.0406929",
-        "countyfp_nozero": "35",
-        "lsad": "06",
-        "intptlon": "-076.0824053",
-        "funcstat": "A",
-        "geo_point_2d": [
-          39.0376284098,
-          -76.0850360056
-        ],
-        "stusab": "MD",
-        "namelsad": "Queen Anne's County",
-        "awater": 360020725,
-        "countyns": "00596089",
-        "countyfp": "035",
-        "geoid": "24035",
-        "csafp": "548",
-        "cbsafp": "12580",
-        "mtfcc": "G4020",
-        "classfp": "H1",
-        "statefp": "24"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -5821,354 +5738,34 @@ var countiesData =
             ]
           ]
         ]
-      }
-    },
-    {
-      "type": "Feature",
+      },
       "properties": {
-        "name": "St. Mary's",
-        "cases": 27,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+38.2202894",
-        "countyfp_nozero": "37",
+        "cases": 8,
+        "name": "Queen Anne's",
+        "intptlat": "+39.0406929",
+        "countyfp_nozero": "35",
         "lsad": "06",
-        "intptlon": "-076.5303837",
+        "intptlon": "-076.0824053",
         "funcstat": "A",
         "geo_point_2d": [
-          38.2158624014,
-          -76.5290606633
+          39.0376284098,
+          -76.0850360056
         ],
         "stusab": "MD",
-        "namelsad": "St. Mary's County",
-        "awater": 1050381198,
-        "countyns": "01697853",
-        "countyfp": "037",
-        "geoid": "24037",
+        "namelsad": "Queen Anne's County",
+        "awater": 360020725,
+        "countyns": "00596089",
+        "countyfp": "035",
+        "geoid": "24035",
         "csafp": "548",
-        "cbsafp": "15680",
+        "cbsafp": "12580",
         "mtfcc": "G4020",
         "classfp": "H1",
         "statefp": "24"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -76.674118,
-              38.499622
-            ],
-            [
-              -76.665949,
-              38.494389
-            ],
-            [
-              -76.652142,
-              38.473753
-            ],
-            [
-              -76.654345,
-              38.465174
-            ],
-            [
-              -76.624192,
-              38.443498
-            ],
-            [
-              -76.608373,
-              38.424445
-            ],
-            [
-              -76.597528,
-              38.423425
-            ],
-            [
-              -76.578631,
-              38.411283
-            ],
-            [
-              -76.563902,
-              38.406002
-            ],
-            [
-              -76.553435,
-              38.395043
-            ],
-            [
-              -76.534075,
-              38.397766
-            ],
-            [
-              -76.516663,
-              38.381668
-            ],
-            [
-              -76.501475,
-              38.372497
-            ],
-            [
-              -76.486618,
-              38.354038
-            ],
-            [
-              -76.48313,
-              38.342446
-            ],
-            [
-              -76.489029,
-              38.328874
-            ],
-            [
-              -76.469869,
-              38.3229
-            ],
-            [
-              -76.461609,
-              38.30854
-            ],
-            [
-              -76.445334,
-              38.30521
-            ],
-            [
-              -76.378847,
-              38.327366
-            ],
-            [
-              -76.321908,
-              38.327284
-            ],
-            [
-              -76.314094,
-              38.296813
-            ],
-            [
-              -76.225166,
-              38.125125
-            ],
-            [
-              -76.201477,
-              38.077308
-            ],
-            [
-              -76.204719,
-              38.05841
-            ],
-            [
-              -76.214782,
-              38.000123
-            ],
-            [
-              -76.236141,
-              37.888468
-            ],
-            [
-              -76.247906,
-              37.894869
-            ],
-            [
-              -76.257527,
-              37.905738
-            ],
-            [
-              -76.338617,
-              37.945286
-            ],
-            [
-              -76.359325,
-              37.952273
-            ],
-            [
-              -76.389012,
-              37.95835
-            ],
-            [
-              -76.412934,
-              37.966332
-            ],
-            [
-              -76.4339,
-              37.981847
-            ],
-            [
-              -76.465008,
-              38.01322
-            ],
-            [
-              -76.496591,
-              38.018937
-            ],
-            [
-              -76.516609,
-              38.026783
-            ],
-            [
-              -76.51616,
-              38.04492
-            ],
-            [
-              -76.534191,
-              38.063539
-            ],
-            [
-              -76.535402,
-              38.073626
-            ],
-            [
-              -76.556192,
-              38.085609
-            ],
-            [
-              -76.579575,
-              38.095329
-            ],
-            [
-              -76.596128,
-              38.106892
-            ],
-            [
-              -76.610384,
-              38.148516
-            ],
-            [
-              -76.700899,
-              38.161359
-            ],
-            [
-              -76.749686,
-              38.164698
-            ],
-            [
-              -76.763973,
-              38.167791
-            ],
-            [
-              -76.800199,
-              38.16888
-            ],
-            [
-              -76.822294,
-              38.163946
-            ],
-            [
-              -76.839368,
-              38.163609
-            ],
-            [
-              -76.868859,
-              38.171372
-            ],
-            [
-              -76.828909,
-              38.250128
-            ],
-            [
-              -76.821256,
-              38.268758
-            ],
-            [
-              -76.846167,
-              38.327785
-            ],
-            [
-              -76.853623,
-              38.3401
-            ],
-            [
-              -76.84736,
-              38.359815
-            ],
-            [
-              -76.849933,
-              38.365815
-            ],
-            [
-              -76.8713,
-              38.377643
-            ],
-            [
-              -76.87146,
-              38.389937
-            ],
-            [
-              -76.850317,
-              38.398336
-            ],
-            [
-              -76.848141,
-              38.406083
-            ],
-            [
-              -76.822695,
-              38.428378
-            ],
-            [
-              -76.820861,
-              38.434016
-            ],
-            [
-              -76.774955,
-              38.5089
-            ],
-            [
-              -76.76829,
-              38.512949
-            ],
-            [
-              -76.726627,
-              38.511769
-            ],
-            [
-              -76.71053,
-              38.50917
-            ],
-            [
-              -76.699317,
-              38.497125
-            ],
-            [
-              -76.68382,
-              38.495251
-            ],
-            [
-              -76.674118,
-              38.499622
-            ]
-          ]
-        ]
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Somerset",
-        "cases": 4,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+38.0744501",
-        "countyfp_nozero": "39",
-        "lsad": "06",
-        "intptlon": "-075.8533228",
-        "funcstat": "A",
-        "geo_point_2d": [
-          38.080066116,
-          -75.8534705783
-        ],
-        "stusab": "MD",
-        "namelsad": "Somerset County",
-        "awater": 752652868,
-        "countyns": "00596907",
-        "countyfp": "039",
-        "geoid": "24039",
-        "csafp": "480",
-        "cbsafp": "41540",
-        "mtfcc": "G4020",
-        "classfp": "H1",
-        "statefp": "24"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -6487,37 +6084,348 @@ var countiesData =
             ]
           ]
         ]
+      },
+      "properties": {
+        "cases": 4,
+        "name": "Somerset",
+        "intptlat": "+38.0744501",
+        "countyfp_nozero": "39",
+        "lsad": "06",
+        "intptlon": "-075.8533228",
+        "funcstat": "A",
+        "geo_point_2d": [
+          38.080066116,
+          -75.8534705783
+        ],
+        "stusab": "MD",
+        "namelsad": "Somerset County",
+        "awater": 752652868,
+        "countyns": "00596907",
+        "countyfp": "039",
+        "geoid": "24039",
+        "csafp": "480",
+        "cbsafp": "41540",
+        "mtfcc": "G4020",
+        "classfp": "H1",
+        "statefp": "24"
       }
     },
     {
       "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -76.674118,
+              38.499622
+            ],
+            [
+              -76.665949,
+              38.494389
+            ],
+            [
+              -76.652142,
+              38.473753
+            ],
+            [
+              -76.654345,
+              38.465174
+            ],
+            [
+              -76.624192,
+              38.443498
+            ],
+            [
+              -76.608373,
+              38.424445
+            ],
+            [
+              -76.597528,
+              38.423425
+            ],
+            [
+              -76.578631,
+              38.411283
+            ],
+            [
+              -76.563902,
+              38.406002
+            ],
+            [
+              -76.553435,
+              38.395043
+            ],
+            [
+              -76.534075,
+              38.397766
+            ],
+            [
+              -76.516663,
+              38.381668
+            ],
+            [
+              -76.501475,
+              38.372497
+            ],
+            [
+              -76.486618,
+              38.354038
+            ],
+            [
+              -76.48313,
+              38.342446
+            ],
+            [
+              -76.489029,
+              38.328874
+            ],
+            [
+              -76.469869,
+              38.3229
+            ],
+            [
+              -76.461609,
+              38.30854
+            ],
+            [
+              -76.445334,
+              38.30521
+            ],
+            [
+              -76.378847,
+              38.327366
+            ],
+            [
+              -76.321908,
+              38.327284
+            ],
+            [
+              -76.314094,
+              38.296813
+            ],
+            [
+              -76.225166,
+              38.125125
+            ],
+            [
+              -76.201477,
+              38.077308
+            ],
+            [
+              -76.204719,
+              38.05841
+            ],
+            [
+              -76.214782,
+              38.000123
+            ],
+            [
+              -76.236141,
+              37.888468
+            ],
+            [
+              -76.247906,
+              37.894869
+            ],
+            [
+              -76.257527,
+              37.905738
+            ],
+            [
+              -76.338617,
+              37.945286
+            ],
+            [
+              -76.359325,
+              37.952273
+            ],
+            [
+              -76.389012,
+              37.95835
+            ],
+            [
+              -76.412934,
+              37.966332
+            ],
+            [
+              -76.4339,
+              37.981847
+            ],
+            [
+              -76.465008,
+              38.01322
+            ],
+            [
+              -76.496591,
+              38.018937
+            ],
+            [
+              -76.516609,
+              38.026783
+            ],
+            [
+              -76.51616,
+              38.04492
+            ],
+            [
+              -76.534191,
+              38.063539
+            ],
+            [
+              -76.535402,
+              38.073626
+            ],
+            [
+              -76.556192,
+              38.085609
+            ],
+            [
+              -76.579575,
+              38.095329
+            ],
+            [
+              -76.596128,
+              38.106892
+            ],
+            [
+              -76.610384,
+              38.148516
+            ],
+            [
+              -76.700899,
+              38.161359
+            ],
+            [
+              -76.749686,
+              38.164698
+            ],
+            [
+              -76.763973,
+              38.167791
+            ],
+            [
+              -76.800199,
+              38.16888
+            ],
+            [
+              -76.822294,
+              38.163946
+            ],
+            [
+              -76.839368,
+              38.163609
+            ],
+            [
+              -76.868859,
+              38.171372
+            ],
+            [
+              -76.828909,
+              38.250128
+            ],
+            [
+              -76.821256,
+              38.268758
+            ],
+            [
+              -76.846167,
+              38.327785
+            ],
+            [
+              -76.853623,
+              38.3401
+            ],
+            [
+              -76.84736,
+              38.359815
+            ],
+            [
+              -76.849933,
+              38.365815
+            ],
+            [
+              -76.8713,
+              38.377643
+            ],
+            [
+              -76.87146,
+              38.389937
+            ],
+            [
+              -76.850317,
+              38.398336
+            ],
+            [
+              -76.848141,
+              38.406083
+            ],
+            [
+              -76.822695,
+              38.428378
+            ],
+            [
+              -76.820861,
+              38.434016
+            ],
+            [
+              -76.774955,
+              38.5089
+            ],
+            [
+              -76.76829,
+              38.512949
+            ],
+            [
+              -76.726627,
+              38.511769
+            ],
+            [
+              -76.71053,
+              38.50917
+            ],
+            [
+              -76.699317,
+              38.497125
+            ],
+            [
+              -76.68382,
+              38.495251
+            ],
+            [
+              -76.674118,
+              38.499622
+            ]
+          ]
+        ]
+      },
       "properties": {
-        "name": "Talbot",
-        "cases": 4,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+38.7483486",
-        "countyfp_nozero": "41",
+        "cases": 27,
+        "name": "St. Mary's",
+        "intptlat": "+38.2202894",
+        "countyfp_nozero": "37",
         "lsad": "06",
-        "intptlon": "-076.1784757",
+        "intptlon": "-076.5303837",
         "funcstat": "A",
         "geo_point_2d": [
-          38.7491001783,
-          -76.1786170603
+          38.2158624014,
+          -76.5290606633
         ],
         "stusab": "MD",
-        "namelsad": "Talbot County",
-        "awater": 539363462,
-        "countyns": "00592947",
-        "countyfp": "041",
-        "geoid": "24041",
+        "namelsad": "St. Mary's County",
+        "awater": 1050381198,
+        "countyns": "01697853",
+        "countyfp": "037",
+        "geoid": "24037",
         "csafp": "548",
-        "cbsafp": "20660",
+        "cbsafp": "15680",
         "mtfcc": "G4020",
         "classfp": "H1",
         "statefp": "24"
-      },
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -6880,37 +6788,34 @@ var countiesData =
             ]
           ]
         ]
+      },
+      "properties": {
+        "cases": 4,
+        "name": "Talbot",
+        "intptlat": "+38.7483486",
+        "countyfp_nozero": "41",
+        "lsad": "06",
+        "intptlon": "-076.1784757",
+        "funcstat": "A",
+        "geo_point_2d": [
+          38.7491001783,
+          -76.1786170603
+        ],
+        "stusab": "MD",
+        "namelsad": "Talbot County",
+        "awater": 539363462,
+        "countyns": "00592947",
+        "countyfp": "041",
+        "geoid": "24041",
+        "csafp": "548",
+        "cbsafp": "20660",
+        "mtfcc": "G4020",
+        "classfp": "H1",
+        "statefp": "24"
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Washington",
-        "cases": 17,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+39.6036207",
-        "countyfp_nozero": "43",
-        "lsad": "06",
-        "intptlon": "-077.8146709",
-        "funcstat": "A",
-        "geo_point_2d": [
-          39.6036746811,
-          -77.8139806631
-        ],
-        "stusab": "MD",
-        "namelsad": "Washington County",
-        "awater": 24801555,
-        "countyns": "01714220",
-        "countyfp": "043",
-        "geoid": "24043",
-        "csafp": "548",
-        "cbsafp": "25180",
-        "mtfcc": "G4020",
-        "classfp": "H1",
-        "statefp": "24"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -7397,37 +7302,34 @@ var countiesData =
             ]
           ]
         ]
+      },
+      "properties": {
+        "cases": 17,
+        "name": "Washington",
+        "intptlat": "+39.6036207",
+        "countyfp_nozero": "43",
+        "lsad": "06",
+        "intptlon": "-077.8146709",
+        "funcstat": "A",
+        "geo_point_2d": [
+          39.6036746811,
+          -77.8139806631
+        ],
+        "stusab": "MD",
+        "namelsad": "Washington County",
+        "awater": 24801555,
+        "countyns": "01714220",
+        "countyfp": "043",
+        "geoid": "24043",
+        "csafp": "548",
+        "cbsafp": "25180",
+        "mtfcc": "G4020",
+        "classfp": "H1",
+        "statefp": "24"
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Wicomico",
-        "cases": 7,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+38.3673699",
-        "countyfp_nozero": "45",
-        "lsad": "06",
-        "intptlon": "-075.6320828",
-        "funcstat": "A",
-        "geo_point_2d": [
-          38.3694102763,
-          -75.6315310797
-        ],
-        "stusab": "MD",
-        "namelsad": "Wicomico County",
-        "awater": 66787195,
-        "countyns": "01668606",
-        "countyfp": "045",
-        "geoid": "24045",
-        "csafp": "480",
-        "cbsafp": "41540",
-        "mtfcc": "G4020",
-        "classfp": "H1",
-        "statefp": "24"
-      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -7718,37 +7620,34 @@ var countiesData =
             ]
           ]
         ]
-      }
-    },
-    {
-      "type": "Feature",
+      },
       "properties": {
-        "name": "Worcester",
-        "cases": 5,
-        "deaths": 0,
-        "recoveries": 0,
-        "new": 0,
-        "intptlat": "+38.2221332",
-        "countyfp_nozero": "47",
+        "cases": 7,
+        "name": "Wicomico",
+        "intptlat": "+38.3673699",
+        "countyfp_nozero": "45",
         "lsad": "06",
-        "intptlon": "-075.3099315",
+        "intptlon": "-075.6320828",
         "funcstat": "A",
         "geo_point_2d": [
-          38.2164999843,
-          -75.2966708247
+          38.3694102763,
+          -75.6315310797
         ],
         "stusab": "MD",
-        "namelsad": "Worcester County",
-        "awater": 586532498,
-        "countyns": "01668802",
-        "countyfp": "047",
-        "geoid": "24047",
+        "namelsad": "Wicomico County",
+        "awater": 66787195,
+        "countyns": "01668606",
+        "countyfp": "045",
+        "geoid": "24045",
         "csafp": "480",
         "cbsafp": "41540",
         "mtfcc": "G4020",
         "classfp": "H1",
         "statefp": "24"
-      },
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -8003,8 +7902,31 @@ var countiesData =
             ]
           ]
         ]
+      },
+      "properties": {
+        "cases": 5,
+        "name": "Worcester",
+        "intptlat": "+38.2221332",
+        "countyfp_nozero": "47",
+        "lsad": "06",
+        "intptlon": "-075.3099315",
+        "funcstat": "A",
+        "geo_point_2d": [
+          38.2164999843,
+          -75.2966708247
+        ],
+        "stusab": "MD",
+        "namelsad": "Worcester County",
+        "awater": 586532498,
+        "countyns": "01668802",
+        "countyfp": "047",
+        "geoid": "24047",
+        "csafp": "480",
+        "cbsafp": "41540",
+        "mtfcc": "G4020",
+        "classfp": "H1",
+        "statefp": "24"
       }
     }
   ]
-};
-
+}
