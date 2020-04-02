@@ -1,5 +1,5 @@
-{
-  "type": "FeatureCollection",
+var countiesData = 
+{"type": "FeatureCollection",
   "features": [
     {
       "type": "Feature",
