@@ -1,4 +1,4 @@
-{
+var countiesData = {
   "type": "FeatureCollection",
   "features": [
     {
@@ -431,7 +431,7 @@
         ]
       },
       "properties": {
-        "cases": 1,
+        "cases": 0,
         "name": "Allegany",
         "intptlat": "+39.6123134",
         "countyfp_nozero": "1",
@@ -780,7 +780,7 @@
         ]
       },
       "properties": {
-        "cases": 206,
+        "cases": 158,
         "name": "Anne Arundel",
         "intptlat": "+38.9916174",
         "countyfp_nozero": "3",
@@ -854,7 +854,7 @@
         ]
       },
       "properties": {
-        "cases": 265,
+        "cases": 221,
         "name": "Baltimorecity",
         "intptlat": "+39.3000324",
         "countyfp_nozero": "510",
@@ -1232,7 +1232,7 @@
         ]
       },
       "properties": {
-        "cases": 353,
+        "cases": 289,
         "name": "Baltimore",
         "intptlat": "+39.4431666",
         "countyfp_nozero": "5",
@@ -1490,7 +1490,7 @@
         ]
       },
       "properties": {
-        "cases": 22,
+        "cases": 18,
         "name": "Calvert",
         "intptlat": "+38.5227191",
         "countyfp_nozero": "9",
@@ -2125,7 +2125,7 @@
         ]
       },
       "properties": {
-        "cases": 105,
+        "cases": 96,
         "name": "Carroll",
         "intptlat": "+39.5633308",
         "countyfp_nozero": "13",
@@ -2307,7 +2307,7 @@
         ]
       },
       "properties": {
-        "cases": 20,
+        "cases": 16,
         "name": "Cecil",
         "intptlat": "+39.5623537",
         "countyfp_nozero": "15",
@@ -2694,7 +2694,7 @@
         ]
       },
       "properties": {
-        "cases": 69,
+        "cases": 56,
         "name": "Charles",
         "intptlat": "+38.4728532",
         "countyfp_nozero": "17",
@@ -3499,7 +3499,7 @@
         ]
       },
       "properties": {
-        "cases": 45,
+        "cases": 35,
         "name": "Frederick",
         "intptlat": "+39.4702139",
         "countyfp_nozero": "21",
@@ -3990,7 +3990,7 @@
         ]
       },
       "properties": {
-        "cases": 37,
+        "cases": 34,
         "name": "Harford",
         "intptlat": "+39.5374292",
         "countyfp_nozero": "25",
@@ -4328,7 +4328,7 @@
         ]
       },
       "properties": {
-        "cases": 152,
+        "cases": 142,
         "name": "Howard",
         "intptlat": "+39.2522639",
         "countyfp_nozero": "27",
@@ -4642,7 +4642,7 @@
         ]
       },
       "properties": {
-        "cases": 5,
+        "cases": 3,
         "name": "Kent",
         "intptlat": "+39.2412793",
         "countyfp_nozero": "29",
@@ -4950,7 +4950,7 @@
         ]
       },
       "properties": {
-        "cases": 498,
+        "cases": 447,
         "name": "Montgomery",
         "intptlat": "+39.1373815",
         "countyfp_nozero": "31",
@@ -5325,7 +5325,7 @@
         ]
       },
       "properties": {
-        "cases": 473,
+        "cases": 403,
         "name": "Prince George's",
         "intptlat": "+38.8292875",
         "countyfp_nozero": "33",
@@ -5740,7 +5740,7 @@
         ]
       },
       "properties": {
-        "cases": 8,
+        "cases": 7,
         "name": "Queen Anne's",
         "intptlat": "+39.0406929",
         "countyfp_nozero": "35",
@@ -6400,7 +6400,7 @@
         ]
       },
       "properties": {
-        "cases": 27,
+        "cases": 19,
         "name": "St. Mary's",
         "intptlat": "+38.2202894",
         "countyfp_nozero": "37",
@@ -6790,7 +6790,7 @@
         ]
       },
       "properties": {
-        "cases": 4,
+        "cases": 3,
         "name": "Talbot",
         "intptlat": "+38.7483486",
         "countyfp_nozero": "41",
@@ -7304,7 +7304,7 @@
         ]
       },
       "properties": {
-        "cases": 17,
+        "cases": 15,
         "name": "Washington",
         "intptlat": "+39.6036207",
         "countyfp_nozero": "43",
@@ -7904,7 +7904,7 @@
         ]
       },
       "properties": {
-        "cases": 5,
+        "cases": 4,
         "name": "Worcester",
         "intptlat": "+38.2221332",
         "countyfp_nozero": "47",
