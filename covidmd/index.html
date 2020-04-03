@@ -121,11 +121,10 @@
 	}
 
 	function onEachFeature(feature, layer) {
-		layer.on({
-      taphold: highlightFeature,
-      tap: highlightFeature,
+		layer.on({      
 			mouseover: highlightFeature,
 			mouseout: resetHighlight,
+      tap: highlightFeature,
 			//click: zoomToFeature
 		});
     
