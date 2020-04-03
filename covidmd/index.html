@@ -92,7 +92,12 @@
 	}
 
   function highlightFeature(e) {
+    
     var layer = e.target;
+
+    if (L.Browser.mobile) {
+	  	info.update(layer.feature.properties);
+    } else
 
 		layer.setStyle({
 			weight: 3,
@@ -105,12 +110,10 @@
 		if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge && !L.Browser.mobile) {
 			layer.bringToFront();
 		}
-  //  if (L.Browser.mobile) {
-
-   // }
 
 		info.update(layer.feature.properties);
 	}
+
 
 	var geojson;
 
@@ -127,9 +130,7 @@
 		layer.on({      
 			mouseover: highlightFeature,
 			mouseout: resetHighlight,
-			touchstart: resetHighlight,
-			touchend: highlightFeature,
-	//click: highlightFeature
+			click: highlightFeature
       //click: zoomToFeature
 		});
     
