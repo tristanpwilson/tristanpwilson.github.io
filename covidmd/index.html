@@ -90,8 +90,8 @@
 		};
 	}
 
-		function highlightFeature(e) {
-		var layer = e.target;
+  function highlightFeature(e) {
+    var layer = e.target;
 
 		layer.setStyle({
 			weight: 3,
@@ -118,12 +118,15 @@
 	function zoomToFeature(e) {
 		mainmap.fitBounds(e.target.getBounds());
 	}
-
+  function notify() {
+    alert("The element was tapped.");
+    highlightFeature(e);
+  }
 	function onEachFeature(feature, layer) {
 		layer.on({
 			mouseover: highlightFeature,
 			mouseout: resetHighlight,
-      tap: highlightFeature,
+      tap: notify,
       
 			//click: zoomToFeature
 		});
