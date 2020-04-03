@@ -124,7 +124,8 @@
 		layer.on({      
 			mouseover: highlightFeature,
 			mouseout: resetHighlight,
-      tap: highlightFeature,
+      touchstart: resetHighlight,
+      touchend: highlightFeature,
 			//click: zoomToFeature
 		});
     
