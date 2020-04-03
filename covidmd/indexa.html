@@ -102,12 +102,9 @@
 			fillOpacity: 1
 		});
 
-		if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge && !L.Browser.mobile) {
+		if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
 			layer.bringToFront();
 		}
-  //  if (L.Browser.mobile) {
-
-   // }
 
 		info.update(layer.feature.properties);
 	}
@@ -144,7 +141,9 @@
 		onEachFeature: onEachFeature
 	}).addTo(mainmap);
   
+  if (L.Browser.mobile) {
 
+  }
 //alert(countiesData.features[1].properties.name);
 
 
