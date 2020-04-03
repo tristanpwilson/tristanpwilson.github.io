@@ -123,7 +123,8 @@
 		layer.on({
 			mouseover: highlightFeature,
 			mouseout: resetHighlight,
-      click: highlightFeature,
+      tap: highlightFeature,
+      
 			//click: zoomToFeature
 		});
   	layer.bindTooltip('<h5>' + feature.properties.name + '</h5>' + '<p class="mapCases">' + feature.properties.cases + '</p>',{ 
