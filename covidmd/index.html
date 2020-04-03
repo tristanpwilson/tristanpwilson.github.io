@@ -120,13 +120,14 @@
 	}
   function notify() {
     alert("The element was tapped.");
-    highlightFeature(e);
+    highlightFeature();
   }
 	function onEachFeature(feature, layer) {
 		layer.on({
 			mouseover: highlightFeature,
 			mouseout: resetHighlight,
-      tap: notify,
+      tap: highlightFeature,
+      tap: resetHighlight
       
 			//click: zoomToFeature
 		});
