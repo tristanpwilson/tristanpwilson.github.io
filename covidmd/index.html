@@ -24,7 +24,7 @@
 
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
   <script type="text/javascript" src="js/latest.js"></script>
   <script type="text/javascript">
   
@@ -126,10 +126,9 @@
       tap: highlightFeature,
 			mouseover: highlightFeature,
 			mouseout: resetHighlight,
-
-      
 			//click: zoomToFeature
 		});
+    
   	layer.bindTooltip('<h5>' + feature.properties.name + '</h5>' + '<p class="mapCases">' + feature.properties.cases + '</p>',{ 
       permanent: true, 
       interactive: false,
