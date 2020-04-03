@@ -21,6 +21,7 @@
 <body>
 
   <div id="mapMain"></div>
+  <div id="stateTotals"></div>
 
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
@@ -53,14 +54,21 @@
       this.update();
       return this._div;
   };
+
   
   // method that we will use to update the control based on feature properties passed
   info.update = function (props) {
-      this._div.innerHTML = '<h3>Details</h3>' + (props ?
+      this._div.innerHTML = 
+            '<div id="statecases"><h3>Maryland (Total)</h3><p>' + countiesData.features[24].properties.cases + ' cases</p></div>' + 
+
+            //'<h3>Details</h3>' + 
+            '<div id="countycases">' + 
+            (props ?
             '<h4>' + props.name + '</h4>' + '<p>' + props.cases + ' cases</p>' + '<p>' + props.deaths + ' deaths</p>' + '<p>' + props.recoveries + ' recoveries</p>'
           // This is the default content that is shown when there is no hover
-          : '<h4><i>Hover over a county</i></h4>');
-      $(".info").toggleClass("infoActive");       
+          : '<h4><i>County (Hover)</i></h4>' + '<p><i> --- </i></p>' + '<p><i> --- </i></p>' + '<p><i> --- </i></p>');
+            + '</div>'
+      $(".info").toggleClass("infoActive");
   };
   
   info.addTo(mainmap);
@@ -68,11 +76,11 @@
     
   // Color scale of shading depending on case count value
   function getColor(d) {
-    return d > 450 ? '#A60000' :
-           d > 300  ? '#DA2A1A' :
-           d > 100  ? '#E24911' :
-           d > 25  ? '#EB6E09' :
-           d > 5   ? '#F39A00' :
+    return d > 500 ? '#A60000' :
+           d > 400  ? '#DA2A1A' :
+           d > 200  ? '#E24911' :
+           d > 40  ? '#EB6E09' :
+           d > 10   ? '#F39A00' :
            d > 3   ? '#F7AD2E' :
            d > 0   ? '#F0BC35' :
                   '#aaaaaa';

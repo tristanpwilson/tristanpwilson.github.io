@@ -8004,7 +8004,17 @@ var countiesData =
           ]
         ]
       }
-    }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Total",
+        "cases": 2758,
+        "deaths": 42,
+        "recoveries": 0,
+        "new": 0
+      }
+    },
   ]
 };
 

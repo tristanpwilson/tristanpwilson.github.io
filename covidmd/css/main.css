@@ -11,49 +11,96 @@ border: 1px solid black;
   position:relative !important;
   display:block !important;
   width:200px;
-  min-height:100px;
+  min-height:200px;
   height:auto;
-  padding:5px 7.5px;
+  padding:5px 10px;
   margin:5vh 3vw 0 0 !important;
   border-radius:4px;
   background:#ccc;
-  opacity:.7;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,1),
+              0 1px 10px 0 rgba(0,0,0,.4);
+  opacity:.9;
   transition:.3s ease opacity;
 }
- 
+
 .info.infoActive{
   opacity:1;
   transition:.3s ease opacity;
 }
+
+
+/* State Cases Div */
+.info #statecases{
+  padding: 5px 0 12.5px 0;
+  margin: 0 0 0 0;
+  border-bottom: 1px solid #999;
+} 
  
-.info h3, .info h4, .info p{ 
- position:relative !important;
- display:block !important;
+.info #statecases h3{
+  margin:0 0 0 0;
+  padding:0 0 0 0 !important;
+  font-size:20px;
+  font-weight:300;
+}
+
+.info #statecases p{
+  margin:5px 0 0 0;
+  padding:0 0 0 0 !important;
+  font-size:16px
+} 
+ 
+
+
+
+/* County Cases Div */
+.info #countycases{
+ padding: 0 0 10px 0;
+
+}
+
+.info #countycases h4, 
+.info #countycases p{ 
  padding:0;
  color:#2a2a2a;
- line-height:120%;
+ line-height:100%
 }
 
-.info h3{
- font-size: 16px;
- margin:0 0 10px 0;
-}
-
-.info h4{
- font-size: 14px;
- margin:0;
-}
-.info h4 i{
- color:#666;
+.info #countycases h4{
+ font-size: 18px;
+ margin:15px 0 0 0;
  font-weight:300;
 }
-.info p{
- font-size: 14px;
- margin:0;
+
+.info #countycases p{
+  font-size: 14px;
+  margin:10px 0 0 0;
 }
 
-.leaflet-tooltip{
+.info #countycases h4 i,
+.info #countycases p i{
+  color:#666;
+  font-weight:300;
+  font-style: normal;
+}
 
+@media(max-width: 768px){
+.leaflet-tooltip h5{
+  display:none;
+}
+.leaflet-tooltip p.mapCases{
+  margin:2px 0 0 0;
+  font-size:3.5vw !important;
+  font-weight:600;
+}
+}
+@media(max-width: 575px){
+.leaflet-tooltip p.mapCases{
+  margin:2px 0 0 0;
+  font-size:5vw !important;
+  font-weight:600;
+}
+}
+.leaflet-tooltip{
   background: transparent !important;
   border:none !important;
   box-shadow:none !important;

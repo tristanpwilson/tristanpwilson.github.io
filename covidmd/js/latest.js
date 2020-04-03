@@ -28,6 +28,7 @@ countiesData.features[20].properties.cases = 5;
 countiesData.features[21].properties.cases = 27;
 countiesData.features[22].properties.cases = 7;
 countiesData.features[23].properties.cases = 5;
+countiesData.features[24].properties.cases = 2758;
 
 //Deaths  
 countiesData.features[0].properties.deaths = 0;
