@@ -24,6 +24,7 @@
 
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   <script type="text/javascript" src="js/latest.js"></script>
   <script type="text/javascript">
   
@@ -118,15 +119,12 @@
 	function zoomToFeature(e) {
 		mainmap.fitBounds(e.target.getBounds());
 	}
-  function notify() {
-    alert("The element was tapped.");
-    highlightFeature();
-  }
+
 	function onEachFeature(feature, layer) {
 		layer.on({
 			mouseover: highlightFeature,
 			mouseout: resetHighlight,
-      tap: highlightFeature
+      taphold: highlightFeature
       
 			//click: zoomToFeature
 		});
