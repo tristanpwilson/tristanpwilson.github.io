@@ -31,6 +31,9 @@
   
   //Calls the latest data from latest.js and updates the JSON objects in us-counties.js
   latestData();
+   
+
+
 
   //Instantiates the Leaflet.js map
   var mainmap = L.map('mapMain').setView([38.93, -77.34], 8);
@@ -72,16 +75,31 @@
   };
   
   info.addTo(mainmap);
-  
-    
+
+  // Calculating the maximum and minimum case values for use in color scale  
+    var countiesData, i, caseNumbers = "";
+      for (i in countiesData.features) {
+        caseNumbers += countiesData.features[i].properties.cases + " ";
+      }
+    var caseString = caseNumbers.split(" ");
+    var caseMax = caseString.reduce(function(a, b) {
+          return Math.max(a, b);
+    });
+    //alert(caseMax);
+   
   // Color scale of shading depending on case count value
   function getColor(d) {
-    return d > 500 ? '#A60000' :
-           d > 400  ? '#DA2A1A' :
-           d > 200  ? '#E24911' :
-           d > 40  ? '#EB6E09' :
-           d > 10   ? '#F39A00' :
-           d > 3   ? '#F7AD2E' :
+    
+
+    return d >= caseMax ? '#A60000' :
+           d > caseMax / 1.25  ? '#cc2212' :
+           d > caseMax / 1.50  ? '#d93b23' :
+           d > caseMax / 2.00  ? '#e23e11' :
+           d > caseMax / 3.00  ? '#eb5409' :
+           d > caseMax / 4.00  ? '#EB6E09' :
+           d > caseMax / 7.00  ? '#eb8209' :
+           d > caseMax / 8.00  ? '#F39A00' :
+           d > caseMax / 20.0  ? '#F7AD2E' :
            d > 0   ? '#F0BC35' :
                   '#aaaaaa';
   }

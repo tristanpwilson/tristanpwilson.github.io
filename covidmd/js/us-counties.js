@@ -8009,7 +8009,8 @@ var countiesData =
       "type": "Feature",
       "properties": {
         "name": "Total",
-        "cases": 2758,
+        "cases": 1,
+        "statecases" : 1,
         "deaths": 42,
         "recoveries": 0,
         "new": 0
