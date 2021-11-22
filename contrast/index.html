@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>A11Y Contrast Calculator</title>
+    
+    <!-- Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/contraststyles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png?v=2">
+    <link rel="manifest" href="/img/favicons/site.webmanifest?v=2">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg?v=2" color="#4183d5">
+    <link rel="shortcut icon" href="/img/favicons/favicon.ico?v=2">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113461588-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-113461588-1', {
+       'link_attribution': true
+      });
+    </script>
+    
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="row">
+
+        <!--- Header Content--->
+    <!--     <div class="col-sm-12 col-md-12 col-lg-12 col-header">
+          <h1>Accessibility Contrast Calculator</h1>
+          <p>Enter two hex values, hit submit, and calculate their contrast ratio</p> -->
+        <!--</div>  --->
+        <div class="col-sm-12 col-md-12 col-lg-12 box-contrast-ratio" role="region" aria-live="polite">
+          <h2 id="contrast-label">Contrast Ratio</h2>
+          <p class="contrast-val-text"><span id="contrast-val">3.44</span> : 1</p>
+        </div> 
+
+
+        <!--------------------------->
+        <!--- Form + Box 1 (Left) --->
+        <!--------------------------->
+        <div class="col-sm-12 col-md-6 col-lg-6 box-color-selector">
+
+            <form class="form-hex" onsubmit="return false">
+              <input type="text" value="#4b8abd" class="input-text" id="input-text-a" pattern="^#+([a-fA-F0-9]{6})$" maxlength="7" onClick="this.select();" oninvalid="this.setCustomValidity('Must be a 3 or 6 character hex code prefixed with #')" oninput="this.setCustomValidity('')"  onfocusout="hexConvert(this)" onkeyup="addHash(this)">
+              <!---Regex pattern for 3 character hex codes, whenever I get the JS for that to work: -->
+              <!---pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"---->
+              <input type="color" value="#4b8abd" class="input-color-picker" id="input-picker-a">
+              <button type="submit" value="submit" class="color-submit" id="color-submit-a">Submit</button>
+            </form>
+
+            <div class='box-values'>
+              <p class="value-label">RGB:</p>
+              <p class="value-data" id="rgb-val-X">75, 189, 138</p>
+            </div>
+            <div class='box-values'>
+              <p class="value-label">Luminance:</p>
+              <p class="value-data" id="lum-val-X">0.2335</p>
+            </div>
+
+            <div class="box-color-target" id="box-color-target-a">
+              <div class="box-text-sample">
+                <h2>Sample Text</h2>
+              </div>
+              <div class="box-color-readout">
+                <h3>Text Color:</h3>
+                <p class="hex-color-readout" id="hex-color-b-left">#edfaee</p>
+              </div>
+              <div class="box-color-readout">
+                <h3>Bg. Color:</h3>
+                <p class="hex-color-readout" id="hex-color-a-left">#4b8abd</p> 
+              </div>
+            </div>
+
+
+        </div>
+
+
+        <!--------------------------->
+        <!-- Form + Box 2 (Right) --->
+        <!--------------------------->
+        <div class="col-sm-12 col-md-6 col-lg-6 box-color-selector">
+
+            <form class="form-hex" onsubmit="return false">
+              <input type="text" value="#edfaee" class="input-text" id="input-text-b" pattern="^#+([a-fA-F0-9]{6})$" maxlength="7" onClick="this.select();" oninvalid="this.setCustomValidity('Must be a 3 or 6 character hex code prefixed with #')" oninput="this.setCustomValidity('')" onfocusout="hexConvert(this)" onkeyup="addHash(this)">
+              <!---Regex pattern for 3 character hex codes, whenever I get the JS for that to work: -->
+              <!---pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"---->
+              <input type="color" value="#edfaee" class="input-color-picker" id="input-picker-b">
+              <button type="submit" value="submit" class="color-submit" id="color-submit-b">Submit</button>
+            </form>
+
+            <div class='box-values'>
+              <p class="value-label">RGB:</p>
+              <p class="value-data" id="rgb-val-Y">237, 238, 250</p>
+            </div>
+            <div class='box-values'>
+              <p class="value-label">Luminance:</p>
+              <p class="value-data" id="lum-val-Y">0.9255</p>
+            </div>
+
+            <div class="box-color-target" id="box-color-target-b">
+              <div class="box-text-sample">
+                <h2>Sample Text</h2>
+              </div>
+              <div class="box-color-readout">
+                <h3>Text Color:</h3>
+                <p class="hex-color-readout" id="hex-color-a-right">#4b8abd</p>
+              </div>
+              <div class="box-color-readout">
+                <h3>Bg. Color:</h3>
+                <p class="hex-color-readout" id="hex-color-b-right">#edfaee</p> 
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+
+    <!-- jQuery  --> 
+    <script src="js/jquery.min.js"></script>
+
+    <!-- bootstrap.js --> 
+    <script src="js/bootstrap.min.js"></script>
+   
+    <!-- custom js --> 
+    <script src="js/contrast.js"></script>
+    
+  </body>
+</html>
