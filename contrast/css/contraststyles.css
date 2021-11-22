@@ -132,6 +132,24 @@ p{font-size:12px; font-weight:400; margin:5px 0 5px 0;}
   color:#EB0000;
 }
 
+@media(max-width:767px){
+  .box-pass-fail{
+    flex-wrap:nowrap;
+    gap:0px 7.5px;
+    margin:0 0 15px 0;
+  }
+  .sub-box-pass-fail{
+    flex-basis:50%;
+    max-width:170px;
+    padding:10px 15px;
+  }
+  .pass-fail-label,
+  .pass-fail-sublabel,
+  .pass-fail-val{
+    font-size:16px;
+  }
+}
+
 /*------------------------------------------------*/
 /*------- Color Input and Preview Sections -------*/
 /*------------------------------------------------*/
