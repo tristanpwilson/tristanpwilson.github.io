@@ -81,6 +81,27 @@ function contrastCalc() {
   
   // Update contrast ratio text on page with result
   $('#contrast-val').text(contrastVal)
+  
+  // Update pass / fail text & colors based upon result
+  if(contrastVal >= 4.5){
+    $('#normal-val-aa').text("Pass").css("color", "#008A17");
+    $('#large-val-aaa').text("Pass").css("color", "#008A17");
+  }else{
+    $('#normal-val-aa').text("Fail").css("color", "#EB0000");
+    $('#large-val-aaa').text("Fail").css("color", "#EB0000");
+  }
+
+  if(contrastVal >= 3.0){
+    $('#large-val-aa').text("Pass").css("color", "#008A17");
+  }else{
+    $('#large-val-aa').text("Fail").css("color", "#EB0000");
+  }
+
+  if(contrastVal >= 7.0){
+    $('#normal-val-aaa').text("Pass").css("color", "#008A17");
+  }else{
+    $('#normal-val-aaa').text("Fail").css("color", "#EB0000");
+  }
 }
 
 
