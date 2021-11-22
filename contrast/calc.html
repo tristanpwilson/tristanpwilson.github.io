@@ -36,7 +36,7 @@
   </head>
   
   <body>
-    <div class="container">
+  <div class="container">
       <div class="row">
 
         <!--- Header Content--->
@@ -46,7 +46,7 @@
         <!--</div>  --->
         <div class="col-sm-12 col-md-12 col-lg-12 box-contrast-ratio" role="region" aria-live="polite">
           <h2 id="contrast-label">Contrast Ratio</h2>
-          <p class="contrast-val-text"><span id="contrast-val">3.44</span> : 1</p>
+          <p class="contrast-val-text"><span id="contrast-val">4.57</span> : 1</p>
         </div> 
         <div class="col-sm-12 col-md-12 col-lg-12 box-pass-fail">
           <div class="sub-box-pass-fail">
@@ -68,20 +68,20 @@
         <div class="col-sm-12 col-md-6 col-lg-6 box-color-selector">
 
             <form class="form-hex" onsubmit="return false">
-              <input type="text" value="#4b8abd" class="input-text" id="input-text-a" aria-label="Enter hex code for color" pattern="^#+([a-fA-F0-9]{6})$" maxlength="7" onClick="this.select();" oninvalid="this.setCustomValidity('This has to be a 3 or 6 character hex code; try that again.')" oninput="this.setCustomValidity('')"  onfocusout="hexConvert(this)" onkeyup="addHash(this)">
+              <input type="text" value="#41759F" class="input-text" id="input-text-a" aria-label="Enter hex code for color" pattern="^#+([a-fA-F0-9]{6})$" maxlength="7" onClick="this.select();" oninvalid="this.setCustomValidity('This has to be a 3 or 6 character hex code; try that again.')" oninput="this.setCustomValidity('')"  onfocusout="hexConvert(this)" onkeyup="addHash(this)">
               <!---Regex pattern for 3 character hex codes, whenever I get the JS for that to work: -->
               <!---pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"---->
-              <input type="color" value="#4b8abd" class="input-color-picker" id="input-picker-a">
+              <input type="color" value="#41759F" class="input-color-picker" id="input-picker-a">
               <button type="submit" value="submit" class="color-submit" id="color-submit-a">Submit</button>
             </form>
 
             <div class='box-values'>
               <p class="value-label">RGB:</p>
-              <p class="value-data" id="rgb-val-X">75, 189, 138</p>
+              <p class="value-data" id="rgb-val-X">65, 159, 117</p>
             </div>
             <div class='box-values'>
               <p class="value-label">Luminance:</p>
-              <p class="value-data" id="lum-val-X">0.2335</p>
+              <p class="value-data" id="lum-val-X">0.1635</p>
             </div>
 
             <div class="box-color-target" id="box-color-target-a">
