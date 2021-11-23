@@ -68,11 +68,9 @@
         <div class="col-sm-12 col-md-6 col-lg-6 box-color-selector">
 
             <form class="form-hex" onsubmit="return false">
-              <input type="text" value="#41759F" class="input-text" id="input-text-a" aria-label="Enter hex code for color" pattern="^#+([a-fA-F0-9]{6})$" maxlength="7" onClick="this.select();" oninvalid="this.setCustomValidity('This has to be a 3 or 6 character hex code; try that again.')" oninput="this.setCustomValidity('')"  onfocusout="hexConvert(this)" onkeyup="addHash(this)">
-              <!---Regex pattern for 3 character hex codes, whenever I get the JS for that to work: -->
-              <!---pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"---->
+              <input type="text" value="#41759F" class="input-text" id="input-text-a" aria-label="Enter hex code for color" pattern="^#+([a-fA-F0-9]{6})$" maxlength="7" onClick="this.select();" oninvalid="this.setCustomValidity('This has to be a 3 or 6 character hex code; try that again.')" oninput="this.setCustomValidity('')"  onfocusout="hexConvert(this); textUpdateColorA()" onkeyup="addHash(this)">
               <input type="color" value="#41759F" class="input-color-picker" id="input-picker-a">
-              <button type="submit" value="submit" class="color-submit" id="color-submit-a">Submit</button>
+              <!--<button type="submit" value="submit" class="color-submit" id="color-submit-a">Submit</button>-->
             </form>
 
             <div class='box-values'>
@@ -108,11 +106,9 @@
         <div class="col-sm-12 col-md-6 col-lg-6 box-color-selector">
 
             <form class="form-hex" onsubmit="return false">
-              <input type="text" value="#edfaee" class="input-text" id="input-text-b" aria-label="Enter hex code for color" pattern="^#+([a-fA-F0-9]{6})$" maxlength="7" onClick="this.select();" oninvalid="this.setCustomValidity('This has to be a 3 or 6 character hex code; try that again.')" oninput="this.setCustomValidity('')" onfocusout="hexConvert(this)" onkeyup="addHash(this)">
-              <!---Regex pattern for 3 character hex codes, whenever I get the JS for that to work: -->
-              <!---pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"---->
+              <input type="text" value="#edfaee" class="input-text" id="input-text-b" aria-label="Enter hex code for color" pattern="^#+([a-fA-F0-9]{6})$" maxlength="7" onClick="this.select();" oninvalid="this.setCustomValidity('This has to be a 3 or 6 character hex code; try that again.')" oninput="this.setCustomValidity('')"  onfocusout="hexConvert(this); textUpdateColorB()" onkeyup="addHash(this)">
               <input type="color" value="#edfaee" class="input-color-picker" id="input-picker-b">
-              <button type="submit" value="submit" class="color-submit" id="color-submit-b">Submit</button>
+              <!--<button type="submit" value="submit" class="color-submit" id="color-submit-b">Submit</button>-->
             </form>
 
             <div class='box-values'>
