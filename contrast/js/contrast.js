@@ -212,63 +212,59 @@ function updateFirstB(event) {
 // ------------------------------------------------------------------------------
 
 // Update colors, then perform luminance and contrast calculation based upon user hex input on left side
-$(function(){
-  $('#color-submit-a').click(function() {
+ function textUpdateColorA() {
       
-    // Get hex value from text input a
-    var hexColorA = $('#input-text-a').val();
+   // Get hex value from text input a
+   var hexColorA = $('#input-text-a').val();
 
-    // Set 'background-color' CSS parameter in left box to submitted hex value
-    $('#box-color-target-a').css("background-color", hexColorA);
-    // Update text of color-a in left box with hex value
-    $('#hex-color-a-left').text(hexColorA);
-    
-    // Set 'color' CSS parameter in right box to submitted hex value
-    $('#box-color-target-b').css("color", hexColorA);
-    // Update text for color-a in right box with hex value
-    $('#hex-color-a-right').text(hexColorA);
-    
-    // Set color picker A value to whatever user entered into text input A
-    $("#input-picker-a").val(hexColorA);
-    
-    // Perform luminance calculation for Color A, then store the value globally
-    window.rgbLumX = luminanceCalc(hexColorA, '#rgb-val-X', '#lum-val-X')
-    
-    // Perform contrast calculation with updated LumX and LumY values
-    contrastCalc();
+   // Set 'background-color' CSS parameter in left box to submitted hex value
+   $('#box-color-target-a').css("background-color", hexColorA);
+   // Update text of color-a in left box with hex value
+   $('#hex-color-a-left').text(hexColorA);
 
-  });
-});
+   // Set 'color' CSS parameter in right box to submitted hex value
+   $('#box-color-target-b').css("color", hexColorA);
+   // Update text for color-a in right box with hex value
+   $('#hex-color-a-right').text(hexColorA);
+
+   // Set color picker A value to whatever user entered into text input A
+   $("#input-picker-a").val(hexColorA);
+
+   // Perform luminance calculation for Color A, then store the value globally
+   window.rgbLumX = luminanceCalc(hexColorA, '#rgb-val-X', '#lum-val-X')
+
+   // Perform contrast calculation with updated LumX and LumY values
+   contrastCalc();
+
+};
 
 
 // Update colors, then perform luminance and contrast calculation based upon user hex input on right side
- $(function(){
-   $('#color-submit-b').click(function() {
+function textUpdateColorB() {
       
-     //Get hex value from text input a
-     var hexColorB = $('#input-text-b').val();
+  //Get hex value from text input a
+  var hexColorB = $('#input-text-b').val();
 
-     // Set 'background-color' CSS parameter in right box to submitted hex value
-     $('#box-color-target-b').css("background-color", hexColorB);
-     // Update text for color-b in right box with hex value
-     $('#hex-color-b-right').text(hexColorB);
+  // Set 'background-color' CSS parameter in right box to submitted hex value
+  $('#box-color-target-b').css("background-color", hexColorB);
+  // Update text for color-b in right box with hex value
+  $('#hex-color-b-right').text(hexColorB);
+
+  // Set 'color' CSS parameter in left box to submitted hex value
+  $('#box-color-target-a').css("color", hexColorB);
+  // Update text for color-b in left box with hex value
+  $('#hex-color-b-left').text(hexColorB);
+
+  // Set color picker A value to whatever user entered into text input A
+  $("#input-picker-b").val(hexColorB);
+
+  // Perform luminance calculation for Color A, then store the value globally
+  window.rgbLumY = luminanceCalc(hexColorB, '#rgb-val-Y', '#lum-val-Y')
+
+  // Perform contrast calculation with updated LumX and LumY values
+  contrastCalc();
     
-     // Set 'color' CSS parameter in left box to submitted hex value
-     $('#box-color-target-a').css("color", hexColorB);
-     // Update text for color-b in left box with hex value
-     $('#hex-color-b-left').text(hexColorB);
-    
-     // Set color picker A value to whatever user entered into text input A
-     $("#input-picker-b").val(hexColorB);
-     
-     // Perform luminance calculation for Color A, then store the value globally
-     window.rgbLumY = luminanceCalc(hexColorB, '#rgb-val-Y', '#lum-val-Y')
-    
-     // Perform contrast calculation with updated LumX and LumY values
-     contrastCalc();
-    
-   });
- });
+};
 
 
 
