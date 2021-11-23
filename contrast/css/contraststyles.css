@@ -38,8 +38,8 @@ p{font-size:12px; font-weight:400; margin:5px 0 5px 0;}
   flex-wrap:wrap;
   align-content:center;
   justify-content:center;
-  height:200px;
-  margin:7.5vh 0 0 0;
+  height:160px;
+  margin:5vh 0 2vh 0;
   color:#4a4a4a;
 }
 
@@ -79,7 +79,7 @@ p{font-size:12px; font-weight:400; margin:5px 0 5px 0;}
   justify-content:center;
   gap: 0px 30px;
   height:auto;
-  margin:0 0 5vh 0;
+  margin:0 0 3vh 0;
   color:#4a4a4a;
 }
 
@@ -121,6 +121,7 @@ p{font-size:12px; font-weight:400; margin:5px 0 5px 0;}
   margin:3px 0 0 0;
   text-align:right;
   font-weight:700;
+  transition: .2s linear color;
 }
 
 #normal-val-aa,
@@ -179,11 +180,10 @@ p{font-size:12px; font-weight:400; margin:5px 0 5px 0;}
   }
 
 .input-text,
-.color-submit,
 .input-color-picker{
   position:relative;
   display:block;
-  height:28px;
+  height:40px;
   line-height:28px;
   border-radius:2px;
 }
@@ -209,34 +209,35 @@ p{font-size:12px; font-weight:400; margin:5px 0 5px 0;}
       background: #D9D9D9;
     }
 
-.input-color-picker
-/*,input[type="color"]*/{
+.input-color-picker{
   flex-basis:15%;
 	-webkit-appearance: none;
-  padding:1px;
+  padding:3px;
   background:#ffffff;
-	border:1px solid rgba(0,0,0,0.25);
-  border-radius:3px;
+	border:1px solid rgba(0,0,0,0.2);
+  border-radius:2px;
   cursor: pointer;
+  color:#fff;
 }
-    .input-color-picker::-webkit-color-swatch-wrapper,
-    .input-color-picker::-webkit-color-swatch{
-      padding: 0px;
-      border-radius:3px;
-      border:none;
-      box-shadow:0 0 0px 1px rgba(0,0,0,0.2) inset;
-    }
     .input-color-picker:hover{
       border:1px solid rgba(0,0,0,0.35);
-      padding:3px;
+      padding:2px;
       background:#f9f9f9;
     }
     .input-color-picker:focus{
-      padding:3px;
+      padding:2px;
       border:1px solid rgba(0,0,0,0.4);
       outline:1px dashed rgba(0,0,0,0.1) !important;
       outline-offset:3px;
       background:#f9f9f9;
+    }
+
+    .input-color-picker::-webkit-color-swatch-wrapper,
+    .input-color-picker::-webkit-color-swatch{
+      padding: 0px;
+      border-radius:2px;
+      border:none;
+      box-shadow:0 0 0px 1px rgba(0,0,0,0.2) inset;
     }
     .input-color-picker:focus::-webkit-color-swatch-wrapper,
     .input-color-picker:focus::-webkit-color-swatch
@@ -245,27 +246,28 @@ p{font-size:12px; font-weight:400; margin:5px 0 5px 0;}
       box-shadow:0 0 0px 1px rgba(0,0,0,0.3) inset;
     }
 
-
-/* .color-submit{
-  flex-basis:13%;  
-  padding:0px 10px;
-  text-align:center;
-  font-size:13px;
-  background:#fafafa;
-  border:1px solid rgba(0,0,0,0.2);
-  cursor:pointer;
-}
-    .color-submit:hover,
-    .color-submit:focus{
-      background:#f6f6f6;
-      border:1px solid rgba(0,0,0,0.3);
-      box-shadow:0 0 2px 1px rgba(0,0,0,0.1) inset;
+    .input-color-picker:after{
+      position:absolute;
+      content: "\e3c9"; /*Pencil Icon*/
+      /*content: "\e3ae"; Brush Icon*/
+      /*content: "\e3b8"; Dropper Icon*/
+      top:5px;
+      right:14px;
+      width:20%;
+      transform: rotate(0deg);
+      text-align:center;
+      font-family: "Material Icons";
+      font-size:16px;
+      z-index:500;
+      /*text-shadow:0 0 1px rgba(0,0,0,1),
+        0 0 1px rgba(0,0,0,1); */
+      transition:.4s ease-in transform, .2s linear color;
     }
-    .color-submit:focus{
-      outline:1px dashed rgba(0,0,0,0.1) !important;
-      outline-offset:3px;
-    } */
-
+    .input-color-picker:hover:after,
+    .input-color-picker:focus:after{
+      transform: rotate(360deg);
+      transition:.5s ease transform .1s, .2s linear color;
+    }
 
 
 /*--------- Color Data Below Hex Submit Forms ---------*/
@@ -313,6 +315,15 @@ p{font-size:12px; font-weight:400; margin:5px 0 5px 0;}
       color:#41759F;
       background-color:#edfaee;
     }
+
+.alt-color{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:50px;
+  height:50px;
+  background-color:#767676;
+}
 
   @media(max-width:767px){
     .box-color-target{
