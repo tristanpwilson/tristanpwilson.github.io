@@ -185,11 +185,11 @@ p{font-size:12px; font-weight:400; margin:5px 0 5px 0;}
   display:block;
   height:28px;
   line-height:28px;
-  border-radius:3px;
+  border-radius:2px;
 }
 
 .input-text{
-  flex-basis:75%;
+  flex-basis:85%;
   text-transform:uppercase;
   border:1px solid rgba(0,0,0,0.2);
   padding:0 7.5px;
@@ -211,7 +211,7 @@ p{font-size:12px; font-weight:400; margin:5px 0 5px 0;}
 
 .input-color-picker
 /*,input[type="color"]*/{
-  flex-basis:12%;
+  flex-basis:15%;
 	-webkit-appearance: none;
   padding:1px;
   background:#ffffff;
@@ -246,7 +246,7 @@ p{font-size:12px; font-weight:400; margin:5px 0 5px 0;}
     }
 
 
-.color-submit{
+/* .color-submit{
   flex-basis:13%;  
   padding:0px 10px;
   text-align:center;
@@ -264,7 +264,8 @@ p{font-size:12px; font-weight:400; margin:5px 0 5px 0;}
     .color-submit:focus{
       outline:1px dashed rgba(0,0,0,0.1) !important;
       outline-offset:3px;
-    }
+    } */
+
 
 
 /*--------- Color Data Below Hex Submit Forms ---------*/
