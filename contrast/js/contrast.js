@@ -1,9 +1,9 @@
 
 // Intial define of global variables for luminance
-window.rgbLumX = 0.2335;
+window.rgbLumX = 0.1635;
 window.rgbLumY = 0.9255;
 
-
+$( document ).ready(contrastCalc());
 
 
 // ------------------------------------------------------------------------------
@@ -23,9 +23,13 @@ function luminanceCalc(hexCode, rgbTarget, lumTarget) {
     var r = parseInt(result[1], 16);
     var g = parseInt(result[2], 16);
     var b = parseInt(result[3], 16);
-
-    var rgb = r + ", " + b + ", " + g;
+  
+  
+    // Combine parsed rgb values for display
+    var rgb = r + ", " + g + ", " + b;
+    // Display rgb values as text under hex input field
     $(rgbTarget).text(rgb);
+  
   
     // Calculate RsRGB, GsRGB, and BsRGB values
     var rSRGB = r / 255;
@@ -71,16 +75,17 @@ function luminanceCalc(hexCode, rgbTarget, lumTarget) {
 // Calculate contrast using luminance values LumX and LumY 
 function contrastCalc() {
 
-  // Perform color contrast ratio calculation on both luminance values (X & Y) depending upon which is larger
-  // Luminance values are pulled from global variables that are updated in multiple locations
+  // Perform contrast ratio calc on both luminance values (X & Y) depending upon which is larger
+  // Luminance values are pulled from global variables
   if(window.rgbLumX > window.rgbLumY){
     var contrastVal = ((window.rgbLumX + 0.05)/(window.rgbLumY + 0.05)).toFixed(2);
   } else{
     var contrastVal = ((window.rgbLumY + 0.05)/(window.rgbLumX + 0.05)).toFixed(2);
   }  
-  
+
   // Update contrast ratio text on page with result
   $('#contrast-val').text(contrastVal)
+  
   
   // Update pass / fail text & colors based upon result
   if(contrastVal >= 4.5){
@@ -90,18 +95,29 @@ function contrastCalc() {
     $('#normal-val-aa').text("Fail").css("color", "#EB0000");
     $('#large-val-aaa').text("Fail").css("color", "#EB0000");
   }
-
   if(contrastVal >= 3.0){
     $('#large-val-aa').text("Pass").css("color", "#008A17");
   }else{
     $('#large-val-aa').text("Fail").css("color", "#EB0000");
   }
-
   if(contrastVal >= 7.0){
     $('#normal-val-aaa').text("Pass").css("color", "#008A17");
   }else{
     $('#normal-val-aaa').text("Fail").css("color", "#EB0000");
   }
+  
+  // Unrelated: Check luminance of selected color and change picker icons color accordingly for contrast 
+  if(window.rgbLumX > .5 ){
+    $("#input-picker-a").css("color","#333333");
+  } else{
+    $("#input-picker-a").css("color","#ffffff");
+  }
+  if(window.rgbLumY > .5 ){
+    $("#input-picker-b").css("color","#333333");
+  } else {
+    $("#input-picker-b").css("color","#ffffff");
+  }
+  
 }
 
 
@@ -274,6 +290,7 @@ function textUpdateColorB() {
 
 
 
+
 // Functions to clean up hex value that users have input into the text fields
 
 // Force text input values to begin with "#"
@@ -303,3 +320,35 @@ function hexConvert(elem) {
   }
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Test code for suggesting new colors
+// This is stupidly simple and needs to be improved to intelligently factor in luminance from both colors
+// Below, all it does is add or subtract a set value from r, g, and b
+
+//     var rAlt1 = r - 12;
+//     var gAlt1 = g - 12;
+//     var bAlt1 = b - 12;
+
+//     function componentToHex(c) {
+//       var hexAlt1 = c.toString(16);
+//       return hexAlt1.length == 1 ? "0" + hexAlt1 : hexAlt1;
+//     }
+
+//     function rgbToHex(rConv, gConv, bConv) {
+//       return "#" + componentToHex(rConv) + componentToHex(gConv) + componentToHex(bConv);
+//     }
+  
+//     var hexAlt1 = rgbToHex(rAlt1, gAlt1, bAlt1);
+//     $('#alt-color-left-1').css("background-color", hexAlt1);
