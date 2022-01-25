@@ -5,13 +5,49 @@
 
 *{
   box-sizing:border-box !important;
-  font-family:"Open Sans", Helvetica, Arial, "sans-serif"
+  font-family:"Open Sans", Helvetica, Arial, "sans-serif";
+  text-size-adjust: none !important;
 }
 *:focus{outline:1px dashed #eee; outline-offset:2px;}
 
-body{font-size:16px}
+h1,h2,h3,h4{
+  line-height:100%;
+}
+p{
+  line-height:160%;
+}
 
+h1{
+  font-size:42px;
+  font-weight:400;
+  margin:0 0 10px 0;
+  color:red;
+}
 
+h2{
+  font-size:24px;
+  font-weight:600;
+  margin:0 0 20px 0;
+  text-transform:uppercase;
+}
+
+h3{
+  font-size:16px;
+  font-weight:600;
+  margin:20px 0 10px 0;
+}
+
+h4{
+  font-size:16px;
+  font-weight:400;
+  margin:5px 0 10px 0;
+}
+
+p{
+  font-size:16px;
+  font-weight:300;
+  margin:5px 0 0 0;
+}
 
 a{
   color:#333;
@@ -24,10 +60,6 @@ a:focus{
   transition:.2s linear all;
 }
 
-.margin-top-20{margin-top:20px;}
-.margin-top-15{margin-top:15px;}
-.margin-top-10{margin-top:10px;}
-.margin-top-5{margin-top:5px;}
 
 
 
@@ -101,7 +133,6 @@ a:focus{
 
 #box-section-education p{margin-top:0px;}
 #box-section-publications p{margin-top:15px;}
-
 
 
 @media(max-width:1179px){
@@ -181,6 +212,7 @@ a:focus{
     display:none;
   }
 }
+
 
 /*Styles for external link icon pseudoelements*/
 
