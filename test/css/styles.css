@@ -83,6 +83,7 @@ a:focus{
   display:block;
   max-width:1200px;
   margin:0 auto;
+  padding:0 0;
 }
 
 .row-flex{
@@ -161,9 +162,16 @@ a:focus{
 }
 
 @media(max-width:768px){
+  .container-main{
+    margin:0 auto;
+    padding:0 15px;
+  }
   .row-flex{
     gap:0px;
     justify-content:flex-start;
+  }
+  .col-head{
+    margin:0 0 30px 0;
   }
   .col-left{
     flex-basis:calc(100% - 45px);
@@ -174,20 +182,20 @@ a:focus{
     justify-content:flex-start;
       transition:none !important;
   }
-  .col-left .box-section-main{
-    flex-basis:100%;
-    flex-shrink:1;
-  }
-
-  
   .col-right{
     flex-basis:calc(100% - 45px);
     flex-grow:1;
       transition:none !important;
   }
+  .box-section-main{
+    margin:0 0 30px 0;
+  }
+  #divider-row-1{
+    margin:0 0 30px 0;
+  }  
   #divider-col-1{
     display:none;
-  }  
+  }
 }
 
 
