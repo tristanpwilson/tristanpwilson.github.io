@@ -162,6 +162,18 @@ a:focus{
 }
 
 @media(max-width:768px){
+  h1{
+    font-size:36px;
+  }
+  h2{
+    margin:0 0 15px 0;
+  }
+  h3{
+    margin:15px 0 7.5px 0;
+  }
+  .col-head p{
+    font-size:18px;
+  }
   .container-main{
     margin:0 auto;
     padding:0 15px;
