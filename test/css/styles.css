@@ -156,6 +156,23 @@ a:focus{
     flex-basis:calc(65% - 46px);
       transition:none !important;
   }
+    h1{
+    font-size:36px;
+  }
+  h2{
+    margin:0 0 15px 0;
+    font-size:24px;
+  }
+  h3{
+    margin:15px 0 7.5px 0;
+    font-size:16px;
+  }
+  h4{
+    font-size:16px;
+  }
+  p{
+    font-size:16px;
+  }
 }
 
 @media(max-width:768px){
@@ -164,17 +181,17 @@ a:focus{
   }
   h2{
     margin:0 0 15px 0;
-    font-size:23px;
+    font-size:24px;
   }
   h3{
     margin:15px 0 7.5px 0;
-    font-size:15px;
+    font-size:16px;
   }
   h4{
-    font-size:15px;
+    font-size:16px;
   }
   p{
-    font-size:15px;
+    font-size:16px;
   }
   .col-head p{
     font-size:18px;
