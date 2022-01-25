@@ -1,0 +1,210 @@
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Work+Sans:wght@400;500;700&display=swap');
+
+/* Same font, but with imported italics - uncomment if needed */
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Work+Sans:wght@400;500;700&display=swap');*/
+
+
+*{
+  box-sizing:border-box !important;
+  font-family:"Open Sans", Helvetica, Arial, "sans-serif"
+}
+*:focus{outline:1px dashed #eee; outline-offset:2px;}
+
+h1,h2,h3,h4{
+  line-height:100%;
+}
+p{
+  line-height:160%;
+}
+
+h1{
+  font-size:42px;
+  font-weight:400;
+  margin:0 0 10px 0;
+}
+
+h2{
+  font-size:24px;
+  font-weight:600;
+  margin:0 0 20px 0;
+  text-transform:uppercase;
+}
+
+h3{
+  font-size:16px;
+  font-weight:600;
+  margin:20px 0 10px 0;
+}
+
+h4{
+  font-size:16px;
+  font-weight:400;
+  margin:5px 0 10px 0;
+}
+
+p{
+  font-size:16px;
+  font-weight:300;
+  margin:5px 0 0 0;
+}
+
+a{
+  color:#333;
+  text-decoration:none;
+}
+a:hover,
+a:focus{
+  color:#1951C3;
+  text-decoration:underline;
+  transition:.2s linear all;
+}
+
+.margin-top-20{margin-top:20px;}
+.margin-top-15{margin-top:15px;}
+.margin-top-10{margin-top:10px;}
+.margin-top-5{margin-top:5px;}
+
+
+
+/* Divider Lines for Separating Rows & Cols */
+
+.divider {position:relative;background:#555;}
+#divider-row-1{position:relative; flex-basis:calc(100% - 45px); flex-grow:1; height:2px;}
+#divider-col-1{position:relative; flex-basis:2px; width:2px;}
+
+
+
+
+
+.container-main{
+  position:relative;
+  display:block;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.row-flex{
+  display:flex;
+  flex-wrap: wrap;
+  gap:45px;
+  justify-content:center;
+}
+
+
+.col-head{
+  flex-basis:calc(100% - 45px);
+  flex-shrink:0; 
+  flex-grow:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  height:125px;
+    transition:.5s ease all;
+}
+
+.col-head p{
+  font-size:20px;
+}
+
+.col-left{
+  flex-basis:calc(25% - 46px);
+  flex-shrink:1;
+  display:flex;
+  flex-direction:column;
+  overflow-x:hidden;
+    transition:.5s ease all;
+}
+
+
+.col-right{
+  flex-basis:calc(75% - 46px);
+  flex-shrink:1;
+  display:flex;
+  flex-direction:column;
+  overflow-x:hidden;
+    transition:.5s ease all;
+}
+
+
+.box-section-main{
+  width:100%;
+  margin:0 0 45px 0;
+}
+
+
+
+#box-section-education p{margin-top:0px;}
+#box-section-publications p{margin-top:15px;}
+
+
+@media(max-width:1179px){
+  .col-left{
+    flex-basis:calc(30% - 46px);
+  }
+
+  .col-right{
+    flex-basis:calc(70% - 46px);
+  }
+}
+
+@media(max-width:991px){
+  .col-left{
+    flex-basis:calc(35% - 46px);
+      transition:none !important;
+  }
+  .col-right{
+    flex-basis:calc(65% - 46px);
+      transition:none !important;
+  }
+}
+
+@media(max-width:768px){
+  .col-left{
+    flex-basis:calc(100% - 45px);
+    flex-direction:row;
+    flex-grow:1;
+    gap:45px;
+    justify-content:flex-start;
+      transition:none !important;
+  }
+  .col-left .box-section-main{
+    flex-basis:calc(33% - 20px);
+  }
+  
+  .col-right{
+    flex-basis:calc(100% - 45px);
+    flex-grow:1;
+      transition:none !important;
+  }
+  #divider-col-1{
+    display:none;
+  }  
+}
+
+
+/*Styles for external link icon pseudoelements*/
+
+.link-external p:after,
+.link-external h4:after{
+  content:"\e89e";
+  position:absolute;
+  display:inline-block;
+  width:3px;
+  height:3px;
+  font-family: 'Material Icons';
+  font-size:10px;
+  margin:-2px 0 0 6px;
+  opacity:.6;
+}
+
+
+.link-external:hover p:after,
+.link-external:focus p:after,
+.link-external:hover h4:after,
+.link-external:focus h4:after{
+  color:#1951C3;
+  opacity:1;
+  transition:.2s linear all;
+}
