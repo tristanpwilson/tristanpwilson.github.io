@@ -161,17 +161,24 @@ a:focus{
 }
 
 @media(max-width:768px){
+  .row-flex{
+    gap:0px;
+    justify-content:flex-start;
+  }
   .col-left{
     flex-basis:calc(100% - 45px);
-    flex-direction:row;
+    flex-direction:column;
+    flex-wrap: nowrap;
     flex-grow:1;
-    gap:45px;
+    gap:0px;
     justify-content:flex-start;
       transition:none !important;
   }
   .col-left .box-section-main{
-    flex-basis:calc(33% - 20px);
+    flex-basis:100%;
+    flex-shrink:1;
   }
+
   
   .col-right{
     flex-basis:calc(100% - 45px);
