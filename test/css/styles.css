@@ -2,9 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Work+Sans:wght@400;500;700&display=swap');
 
-/* Same font, but with imported italics - uncomment if needed */
-/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Work+Sans:wght@400;500;700&display=swap');*/
-
 
 *{
   box-sizing:border-box !important;
@@ -167,9 +164,17 @@ a:focus{
   }
   h2{
     margin:0 0 15px 0;
+    font-size:24px;
   }
   h3{
     margin:15px 0 7.5px 0;
+    font-size:16px;
+  }
+  h4{
+    font-size:16px;
+  }
+  p{
+    font-size:16px;
   }
   .col-head p{
     font-size:18px;
