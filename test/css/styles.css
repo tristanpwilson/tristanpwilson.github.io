@@ -11,44 +11,7 @@
 
 body{font-size:16px}
 
-h1,h2,h3,h4{
-  line-height:100%;
-}
-p{
-  line-height:160%;
-}
 
-h1{
-  font-size:42px;
-  font-weight:400;
-  margin:0 0 10px 0;
-  color:red;
-}
-
-h2{
-  font-size:24px;
-  font-weight:600;
-  margin:0 0 20px 0;
-  text-transform:uppercase;
-}
-
-h3{
-  font-size:16px;
-  font-weight:600;
-  margin:20px 0 10px 0;
-}
-
-h4{
-  font-size:16px;
-  font-weight:400;
-  margin:5px 0 10px 0;
-}
-
-p{
-  font-size:16px;
-  font-weight:300;
-  margin:5px 0 0 0;
-}
 
 a{
   color:#333;
@@ -141,6 +104,83 @@ a:focus{
 
 
 
+@media(max-width:1179px){
+  .col-left{
+    flex-basis:calc(30% - 46px);
+  }
+
+  .col-right{
+    flex-basis:calc(70% - 46px);
+  }
+}
+
+@media(max-width:991px){
+  .col-left{
+    flex-basis:calc(35% - 46px);
+      transition:none !important;
+  }
+  .col-right{
+    flex-basis:calc(65% - 46px);
+      transition:none !important;
+  }
+}
+
+@media(max-width:767px){
+  h1{
+    font-size:36px;
+  }
+  h2{
+    margin:0 0 15px 0;
+    font-size:24px;
+  }
+  h3{
+    margin:15px 0 7.5px 0;
+    font-size:16px;
+  }
+  h4{
+    font-size:16px;
+  }
+  p{
+    font-size:16px;
+  }
+  .col-head p{
+    font-size:18px;
+  }
+  .container-main{
+    margin:0 auto;
+    padding:0 15px;
+  }
+  .row-flex{
+    gap:0px;
+    justify-content:flex-start;
+  }
+  .col-head{
+    margin:0 0 30px 0;
+  }
+  .col-left{
+    flex-basis:calc(100% - 45px);
+    flex-direction:column;
+    flex-wrap: nowrap;
+    flex-grow:1;
+    gap:0px;
+    justify-content:flex-start;
+      transition:none !important;
+  }
+  .col-right{
+    flex-basis:calc(100% - 45px);
+    flex-grow:1;
+      transition:none !important;
+  }
+  .box-section-main{
+    margin:0 0 30px 0;
+  }
+  #divider-row-1{
+    margin:0 0 30px 0;
+  }  
+  #divider-col-1{
+    display:none;
+  }
+}
 
 /*Styles for external link icon pseudoelements*/
 
