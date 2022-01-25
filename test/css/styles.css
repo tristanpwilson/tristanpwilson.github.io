@@ -73,7 +73,7 @@ a:focus{
   display:block;
   max-width:1200px;
   margin:0 auto;
-  padding:0 0;
+  padding:0 15px;
 }
 
 .row-flex{
@@ -124,10 +124,23 @@ a:focus{
   margin:0 0 45px 0;
 }
 
-#box-section-education p{
+#box-section-education{
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  flex-wrap:wrap;
+  gap:0 45px;
+}
+#box-section-education h2{
+  flex-basis:100%;
+  margin-bottom: 0;
+}
+#box-section-education div{
+  flex-basis:calc(50% - 45px);
+}
+#box-section-education div p{
   margin-top:0px;
 }
-
 #box-section-publications p{
   margin-top:15px;
 }
@@ -142,7 +155,7 @@ a:focus{
 
 
 
-@media(max-width:1179px){
+@media(max-width:1199px){
   .col-left{
     flex-basis:calc(30% - 46px);
   }
@@ -163,16 +176,16 @@ a:focus{
   }
 }
 
-@media(max-width:767px){
+@media(max-width:861px){
   h1{
     font-size:36px;
   }
   h2{
-    margin:0 0 15px 0;
-    font-size:24px;
+
+    font-size:22px;
   }
   h3{
-    margin:15px 0 7.5px 0;
+
     font-size:16px;
   }
   h4{
@@ -185,7 +198,6 @@ a:focus{
     font-size:18px;
   }
   .container-main{
-    margin:0 auto;
     padding:0 15px;
   }
   .row-flex{
@@ -211,6 +223,21 @@ a:focus{
   }
   .box-section-main{
     margin:0 0 30px 0;
+  }
+  #box-section-education{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    gap:0;
+  }
+  #box-section-education h2{
+    flex-basis:100%;
+  }
+  #box-section-education div{
+    flex-basis:auto;
+  }
+  #box-section-publications h2{
+    letter-spacing:-1px;
   }
   #divider-row-1{
     margin:0 0 30px 0;
