@@ -9,6 +9,8 @@
 }
 *:focus{outline:1px dashed #eee; outline-offset:2px;}
 
+body{font-size:16px}
+
 h1,h2,h3,h4{
   line-height:100%;
 }
@@ -20,6 +22,7 @@ h1{
   font-size:42px;
   font-weight:400;
   margin:0 0 10px 0;
+  color:red;
 }
 
 h2{
