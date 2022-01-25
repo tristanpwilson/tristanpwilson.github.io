@@ -161,6 +161,7 @@ a:focus{
 @media (min-width:0px) and (max-width:767px){
   h1{
     font-size:36px;
+    color:red;
   }
   h2{
     margin:0 0 15px 0;
