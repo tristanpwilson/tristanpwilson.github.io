@@ -17,15 +17,13 @@ p{
 }
 
 h1{
-  font-size:42px !important;
+  font-size:42px;
   font-weight:400;
   margin:0 0 10px 0;
-  color:blue;
 }
 
 h2{
   font-size:24px;
-  color: yellow;
   font-weight:600;
   margin:0 0 20px 0;
   text-transform:uppercase;
@@ -160,10 +158,9 @@ a:focus{
   }
 }
 
-@media (min-width:0px) and (max-width:767px){
+@media(max-width:767px){
   h1{
     font-size:36px;
-    color:red;
   }
   h2{
     margin:0 0 15px 0;
