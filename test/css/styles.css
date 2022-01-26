@@ -7,11 +7,14 @@
   box-sizing:border-box !important;
   font-family:"Open Sans", Helvetica, Arial, "sans-serif";
   text-size-adjust: none !important;
+  -webkit-tap-highlight-color: transparent;
 }
 
 *:focus{
   outline:1px dashed #eee;
-  outline-offset:2px;}
+  outline-offset:2px;
+  -webkit-tap-highlight-color: transparent;
+}
 
 h1,h2,h3,h4,p,a{
   color:#222;
