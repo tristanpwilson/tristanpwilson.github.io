@@ -37,26 +37,23 @@
         
         <div class="col-left" id="col-left">
           <div class="box-section-main" id="box-section-contact">
-            <h2>Contact</h2>
-            <p>555 555 5555</p>
-            <a href="mailto:contact@tristanw.com" class="link-external"><p>contact@tristanw.com</p></a>
-            <a href="https://www.google.com/maps/place/Rockville,+MD" class="link-external"><p>Rockville, Maryland</p></a>
-            <a href="linkedin.com/in/tristanpwilson" class="link-external"><p>LinkedIn</p></a>
-            <a href="https://codepen.io/srirachachacha/" class="link-external"><p>CodePen</p></a>
+            <a href="#" onclick="return false;" class="a-expander" id="expander-contact">
+              <h2>Contact <i></i></h2>
+            </a>
+            <div id="wrapper-contact" class="notToggled wrapper-expander">
+              <p>555 555 5555</p>
+              <a href="mailto:contact@tristanw.com" class="link-external"><p>contact@tristanw.com</p></a>
+              <a href="https://www.google.com/maps/place/Rockville,+MD" class="link-external"><p>Rockville, Maryland</p></a>
+              <a href="linkedin.com/in/tristanpwilson" class="link-external"><p>LinkedIn</p></a>
+              <a href="https://codepen.io/srirachachacha/" class="link-external"><p>CodePen</p></a>
+            </div>
           </div>
-      <!--<div class="box-section-main" id="box-section-education">
-            <h2>Education</h2>
-            <h3>M.S. Clinical Psychology</h3>
-            <p>U. of Maryland, College Park</p>
-            <p>2014 – 2015</p>
-            <h3>B.S. Psychology</h3>
-            <p>U. of Maryland, College Park</p>
-            <p>2010 – 2014</p>
-          </div>-->
+          
           <div class="box-section-main" id="box-section-skills">
             <a href="#" onclick="return false;" class="a-expander" id="expander-skills">
-              <h2>Skills <i></i></h2></a>
-            <div id="wrapper-skills" class="notToggled">
+              <h2>Skills <i></i></h2>
+            </a>
+            <div id="wrapper-skills" class="notToggled wrapper-expander">
               <p>User Research Moderation</p>
               <p>User Research Design</p>
               <p>Accessibility Evaluation</p>
@@ -159,30 +156,31 @@
     <script type="text/javascript">
       
       $(window).resize(function() {
+        if (($(this).width() > 861) && $("#wrapper-contact").css("display", "none")){
+          $("#wrapper-contact").css("display", "block");
+        }
         if (($(this).width() > 861) && $("#wrapper-skills").css("display", "none")){
           $("#wrapper-skills").css("display", "block");
         }
-        else if(($(this).width() <= 861) && $("#wrapper-skills").hasClass("notToggled")){
+        if (($(this).width() <= 861) && $("#wrapper-contact").hasClass("notToggled")){
+          $("#wrapper-contact").css("display", "none");
+        }
+        if (($(this).width() <= 861) && $("#wrapper-skills").hasClass("notToggled")){
           $("#wrapper-skills").css("display", "none");
         }
-
-
       });
 
-      $( "#expander-skills" ).click(function() {
+      
+      function expander() {
         if( $(window).width() <= 861 ) {
-          $("#wrapper-skills").slideToggle( "slow", function() {});
-          $("#wrapper-skills").toggleClass("toggled").toggleClass("notToggled");
-          if( $("#wrapper-skills").hasClass("notToggled") ){
-            $("#box-section-skills").css("margin-bottom", "10px");
-          }
-          else{
-            $("#box-section-skills").css("margin-bottom", "15px");
-          }
+          $(this).siblings(".wrapper-expander").slideToggle( 200 );
+          $(this).toggleClass("active");
+          $(this).siblings(".wrapper-expander").toggleClass("toggled").toggleClass("notToggled");
         }
         
-      });
-
+      };
+      $( "#expander-contact" ).click(expander);
+      $( "#expander-skills" ).click(expander);
 
       
     </script>
