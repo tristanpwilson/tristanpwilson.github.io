@@ -53,23 +53,25 @@
             <p>U. of Maryland, College Park</p>
             <p>2010 – 2014</p>
           </div>-->
-          <div class="box-section-main" id="box-section-proficiencies">
-            <h2>Skills</h2>
-            <p>User Research Moderation</p>
-            <p>User Research Design</p>
-            <p>Accessibility Evaluation</p>
-            <p>Accessibility Remediation</p>
-            <p>WCAG 2.1, Section 508 Compliance</p>
-            <p>Journey Mapping</p>
-            <p>Wireframing / Prototyping</p>
-            <p>User Persona Development</p>
-            <p>Usability Heuristic Evaluation</p>
-            <p>Card Sorting</p>
-            <p>Data Analysis / Statistics</p>
-            <p>HTML / CSS / JS</p>
-            <p>SQL / PHP (Moderate)</p>
-            <p>InVision / XD / Axure / Balsamiq</p>
-            <p>Morae / Noldus</p>
+          <div class="box-section-main" id="box-section-skills">
+            <a href="#" class="a-expander" id="expander-skills"><h2>Skills</h2></a>
+            <div id="wrapper-skills" class="notToggled">
+              <p>User Research Moderation</p>
+              <p>User Research Design</p>
+              <p>Accessibility Evaluation</p>
+              <p>Accessibility Remediation</p>
+              <p>WCAG 2.1, Section 508 Compliance</p>
+              <p>Journey Mapping</p>
+              <p>Wireframing / Prototyping</p>
+              <p>User Persona Development</p>
+              <p>Usability Heuristic Evaluation</p>
+              <p>Card Sorting</p>
+              <p>Data Analysis / Statistics</p>
+              <p>HTML / CSS / JS</p>
+              <p>SQL / PHP (Moderate)</p>
+              <p>InVision / XD / Axure / Balsamiq</p>
+              <p>Morae / Noldus</p>
+            </div>
           </div>
         </div>
         
@@ -80,7 +82,7 @@
         <div class="col-right" id="col-right">
           
           <div class="box-section-main" id="box-section-overview">
-            <h2>Overview</h2>
+            <h2>Summary</h2>
             <p>User experience, usability, and accessibility specialist with over six years of experience leading research and design efforts focused on websites, software, and medical devices.</p>
             <p>Formal background in behavioural and psychophysiological research. Graduate degree in clinical psychology. Proficient with front-end web development, data analysis, and computer hardware. Tech and people enthusiast.</p>
           </div>
@@ -153,8 +155,43 @@
 
 
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    
+    <script type="text/javascript">
+      
+      $(window).resize(function() {
+        if (($(this).width() > 861) && $("#wrapper-skills").css("display", "none")){
+          $("#wrapper-skills").css("display", "block");
+        }
+        else if(($(this).width() <= 861) && $("#wrapper-skills").hasClass("notToggled")){
+          $("#wrapper-skills").css("display", "none");
+        }
+
+
+      });
+
+      $( "#expander-skills" ).click(function() {
+        if( $(window).width() <= 861 ) {
+          $("#wrapper-skills").slideToggle( "slow", function() {});
+          $("#wrapper-skills").toggleClass("toggled").toggleClass("notToggled");
+          if( $("#wrapper-skills").hasClass("notToggled") ){
+            $("#box-section-skills").css("margin-bottom", "10px");
+          }
+          else{
+            $("#box-section-skills").css("margin-bottom", "15px");
+          }
+        }
+        
+      });
+
+
+      
+    </script>
   </body>
 
   
 </html>
+
+
+
+
+
+
