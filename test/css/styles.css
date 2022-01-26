@@ -154,15 +154,9 @@ a:focus{
   margin-top:15px;
 }
 
-
-#wrapper-skills {
+.wrapper-expander {
   display:block;
-  margin:0 0 !important;
-  padding:1px 0 !important;
 }
-  #wrapper-skills p:first-child {
-    margin-top:0;
-  }
 
 
 /* Divider Lines for Separating Rows & Cols */
@@ -245,8 +239,9 @@ a:focus{
   }
 
   #box-section-skills{
-    margin-bottom:10px;
+    
   }
+  #expander-contact i:after,
   #expander-skills i:after {
     content:"\e5cf";
     position:relative;
@@ -259,10 +254,25 @@ a:focus{
     margin:-2px 0 0 0px;
     color:#444;
     opacity:1;
+      transition:.4s ease all;
   }
-    #wrapper-skills {
+  #expander-contact.active i:after,
+  #expander-skills.active i:after {
+    transform:rotate(180deg);
+      transition:.4s ease all;
+  } 
+  #wrapper-contact,
+  #wrapper-skills {
       display:none;
     }
+  
+  .wrapper-expander {
+    margin:0 0 !important;
+    padding:1px 0 !important;
+  }
+  .wrapper-expander p:first-child {
+    margin-top:0;
+  }
   
   #box-section-education{
     display:flex;
