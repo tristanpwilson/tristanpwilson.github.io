@@ -13,6 +13,10 @@
   outline:1px dashed #eee;
   outline-offset:2px;}
 
+h1,h2,h3,h4,p,a{
+  color:#222;
+}
+
 h1,h2,h3,h4{
   line-height:100%;
 }
@@ -53,7 +57,6 @@ p{
 }
 
 a{
-  color:#333;
   text-decoration:none;
 }
 
@@ -62,6 +65,12 @@ a:focus{
   color:#1951C3;
   text-decoration:underline;
   transition:.2s linear all;
+}
+
+.a-expander:hover,
+.a-expander:focus{
+  color:#333;
+  text-decoration:none;
 }
 
 
@@ -80,7 +89,7 @@ a:focus{
   display:flex;
   flex-wrap: wrap;
   gap:45px;
-  justify-content:center;
+  justify-content:flex-start;
 }
 
 
@@ -144,6 +153,16 @@ a:focus{
 #box-section-publications p{
   margin-top:15px;
 }
+
+
+#wrapper-skills {
+  display:block;
+  margin:0 0 !important;
+  padding:1px 0 !important;
+}
+  #wrapper-skills p:first-child {
+    margin-top:0;
+  }
 
 
 /* Divider Lines for Separating Rows & Cols */
@@ -224,6 +243,14 @@ a:focus{
   .box-section-main{
     margin:0 0 30px 0;
   }
+
+  #box-section-skills{
+    margin-bottom:10px;
+  }
+    #wrapper-skills {
+      display:none;
+    }
+  
   #box-section-education{
     display:flex;
     flex-direction:column;
@@ -241,6 +268,7 @@ a:focus{
   }
   #divider-row-1{
     margin:0 0 30px 0;
+    height:1px;
   }  
   #divider-col-1{
     display:none;
