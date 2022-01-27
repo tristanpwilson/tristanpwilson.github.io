@@ -12,9 +12,14 @@
 
 *:focus{
   outline:1px dashed #eee;
-  outline-offset:2px;
+  outline-offset:0px;
   -webkit-tap-highlight-color: transparent;
 }
+
+
+/* ------------------------------------- */
+/* --------- Main Text Styles ---------- */
+/* ------------------------------------- */
 
 h1,h2,h3,h4,p,a{
   color:#222;
@@ -77,8 +82,9 @@ a:focus{
 }
 
 
-
-
+/* ------------------------------------- */
+/* -------- Text Here Text Here -------- */
+/* ------------------------------------- */
 
 .container-main{
   position:relative;
@@ -107,9 +113,9 @@ a:focus{
     transition:.5s ease all;
 }
 
-.col-head p{
-  font-size:20px;
-}
+  .col-head p{
+    font-size:20px;
+  }
 
 .col-left{
   flex-basis:calc(25% - 46px);
@@ -162,13 +168,31 @@ a:focus{
 }
 
 
-/* Divider Lines for Separating Rows & Cols */
+
+/* ------------------------------------- */
+/* --- Divider Lines for Separation ---- */
+/* ------------------------------------- */
+
 .divider {position:relative;background:#555;}
 #divider-row-1{position:relative; flex-basis:calc(100% - 45px); flex-grow:1; height:2px;}
 #divider-col-1{position:relative; flex-basis:2px; width:2px;}
 
 
 
+/* Styles for external link icons */
+.link-external img{
+  display:inline-block;
+  width:10px;
+  height:10px;
+  vertical-align:top;
+  margin:4px 0 0 6px;
+  opacity:.6;
+}
+.link-external:hover img{
+  color:#1951C3;
+  opacity:1;
+  transition:.2s linear all;
+}
 
 
 @media(max-width:1199px){
@@ -181,6 +205,7 @@ a:focus{
   }
 }
 
+
 @media(max-width:991px){
   .col-left{
     flex-basis:calc(35% - 46px);
@@ -191,6 +216,7 @@ a:focus{
       transition:none !important;
   }
 }
+
 
 @media(max-width:861px){
   h1{
@@ -210,9 +236,7 @@ a:focus{
   p{
     font-size:16px;
   }
-  .col-head p{
-    font-size:18px;
-  }
+
   .container-main{
     padding:0 15px;
   }
@@ -223,6 +247,9 @@ a:focus{
   .col-head{
     margin:0 0 30px 0;
   }
+    .col-head p{
+      font-size:18px;
+    }
   .col-left{
     flex-basis:calc(100% - 45px);
     flex-direction:column;
@@ -240,10 +267,26 @@ a:focus{
   .box-section-main{
     margin:0 0 30px 0;
   }
-
+  #box-section-contact,
   #box-section-skills{
-    
+    border-bottom:1px solid rgba(0,0,0,0.1);
   }
+  .a-expander{
+    display:block;
+    height:auto;
+    width:100%;
+     /*For the brief color highlight when user taps on mobile*/
+     -webkit-tap-highlight-color: rgba(0,0,0,0.03);  
+  }
+  .a-expander h2{
+    padding:15px 0;
+    margin:1px 0 0px 0;
+  }
+  .a-expander:focus {
+    /*background:rgba(0,0,0,0.01);*/
+    outline:1px dashed #eee;
+  } 
+
   #expander-contact i:after,
   #expander-skills i:after {
     content:"\e5cf";
@@ -259,6 +302,13 @@ a:focus{
     opacity:1;
       transition:.4s ease all;
   }
+  #expander-contact:focus i:after,
+  #expander-skills:focus i:after {
+    font-size:24px;
+    margin-right:2px;
+      transition:.2s linear all;
+  } 
+
   #expander-contact.active i:after,
   #expander-skills.active i:after {
     transform:rotate(180deg);
@@ -266,15 +316,18 @@ a:focus{
   } 
   #wrapper-contact,
   #wrapper-skills {
-      display:none;
-    }
+    display:none;
+  }
   
   .wrapper-expander {
     margin:0 0 !important;
     padding:1px 0 !important;
   }
-  .wrapper-expander p:first-child {
+  .wrapper-expander > p:first-child {
     margin-top:0;
+  }
+  .wrapper-expander{
+    padding-bottom:10px !important;
   }
   
   #box-section-education{
@@ -302,27 +355,34 @@ a:focus{
 }
 
 
-/*Styles for external link icon pseudoelements*/
+@media(max-width:460px){
+  h1{
+    font-size:32px;
+  }
+  h2{
 
-.link-external p:after,
-.link-external h4:after{
-  content:"\e89e";
-  position:absolute;
-  display:inline-block;
-  width:3px;
-  height:3px;
-  font-family: 'Material Icons';
-  font-size:10px;
-  margin:-2px 0 0 6px;
-  opacity:.6;
+    font-size:20px;
+  }
+  h3{
+
+    font-size:14px;
+  }
+  h4{
+    font-size:14px;
+  }
+  p{
+    font-size:14px;
+  }
+
+  .container-main{
+    padding:0 2vw;
+  }
+  .col-head{
+    height:115px;
+    margin:0 0 30px 0;
+  }
+    .col-head p{
+      font-size:16px;
+    }
 }
 
-
-.link-external:hover p:after,
-.link-external:focus p:after,
-.link-external:hover h4:after,
-.link-external:focus h4:after{
-  color:#1951C3;
-  opacity:1;
-  transition:.2s linear all;
-}
