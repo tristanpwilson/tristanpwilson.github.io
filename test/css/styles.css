@@ -284,7 +284,8 @@ a:focus{
   }
   .a-expander:focus {
     /*background:rgba(0,0,0,0.01);*/
-    outline:1px dashed #eee;
+    /*outline:1px dashed #eee;*/
+    outline:none;
   } 
 
   #expander-contact i:after,
