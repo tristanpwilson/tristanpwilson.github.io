@@ -16,6 +16,8 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+.mobile-only{display:none !important;}
+.desktop-only{display:flex;}
 
 /* ------------------------------------- */
 /* --------- Main Text Styles ---------- */
@@ -36,20 +38,23 @@ p{
 h1{
   font-size:42px;
   font-weight:400;
-  margin:0 0 10px 0;
+  margin:0 0 0px 0;
+  padding:10px 0;
 }
 
 h2{
   font-size:24px;
   font-weight:600;
-  margin:0 0 20px 0;
+  margin:0 0 0 0;
+  padding:10px 0;
   text-transform:uppercase;
 }
 
 h3{
   font-size:16px;
   font-weight:600;
-  margin:20px 0 10px 0;
+  margin:0 0 0 0;
+  padding:5px 0 5px 0;
 }
 
 h4{
@@ -61,7 +66,8 @@ h4{
 p{
   font-size:16px;
   font-weight:300;
-  margin:5px 0 0 0;
+  margin:5px 0 5px 0;
+  padding:0px 0 0px 0;
 }
 
 a{
@@ -126,7 +132,6 @@ a:focus{
     transition:.5s ease all;
 }
 
-
 .col-right{
   flex-basis:calc(75% - 46px);
   flex-shrink:1;
@@ -136,37 +141,33 @@ a:focus{
     transition:.5s ease all;
 }
 
-
 .box-section-main{
+  display:flex;
+  flex-direction:column;
   width:100%;
   margin:0 0 45px 0;
+  gap:15px 0;
 }
 
 #box-section-education{
-  display:flex;
   flex-direction:row;
   justify-content:flex-start;
   flex-wrap:wrap;
-  gap:0 45px;
+  gap:15px 45px;
 }
 #box-section-education h2{
   flex-basis:100%;
-  margin-bottom: 0;
 }
 #box-section-education div{
   flex-basis:calc(50% - 45px);
 }
-#box-section-education div p{
-  margin-top:0px;
-}
-#box-section-publications p{
-  margin-top:15px;
-}
+
+#box-section-education div p{}
+#box-section-publications p{}
 
 .wrapper-expander {
   display:block;
 }
-
 
 
 /* ------------------------------------- */
@@ -219,15 +220,17 @@ a:focus{
 
 
 @media(max-width:861px){
+  .mobile-only{display:flex;}
+  .desktop-only{display:none !important;}
+  
   h1{
     font-size:36px;
   }
   h2{
-
     font-size:22px;
+    padding:15px 0;
   }
   h3{
-
     font-size:16px;
   }
   h4{
@@ -241,7 +244,7 @@ a:focus{
     padding:0 15px;
   }
   .row-flex{
-    gap:0px;
+    gap:15px 0;
     justify-content:flex-start;
   }
   .col-head{
@@ -255,21 +258,24 @@ a:focus{
     flex-direction:column;
     flex-wrap: nowrap;
     flex-grow:1;
-    gap:0px;
+    gap:15px 0;
     justify-content:flex-start;
       transition:none !important;
   }
   .col-right{
     flex-basis:calc(100% - 45px);
     flex-grow:1;
+    gap:15px 0;
       transition:none !important;
   }
   .box-section-main{
-    margin:0 0 30px 0;
+    margin:0 0 15px 0;
   }
+  
   #box-section-contact,
   #box-section-skills{
     border-bottom:1px solid rgba(0,0,0,0.1);
+    gap:0 0 !important;
   }
   .a-expander{
     display:block;
@@ -278,18 +284,18 @@ a:focus{
      /*For the brief color highlight when user taps on mobile*/
      -webkit-tap-highlight-color: rgba(0,0,0,0.03);  
   }
+  
   .a-expander h2{
-    padding:15px 0;
-    margin:1px 0 0px 0;
+    margin:0 0 0 0;
   }
+  
   .a-expander:focus {
     /*background:rgba(0,0,0,0.01);*/
     /*outline:1px dashed #eee;*/
     outline:none;
   } 
 
-  #expander-contact i:after,
-  #expander-skills i:after {
+  .a-expander i:after {
     content:"\e5cf";
     position:relative;
     display:inline-block;
@@ -303,18 +309,17 @@ a:focus{
     opacity:1;
       transition:.4s ease all;
   }
-  #expander-contact:focus i:after,
-  #expander-skills:focus i:after {
+  .a-expander:focus i:after {
     font-size:24px;
     margin-right:2px;
       transition:.2s linear all;
   } 
 
-  #expander-contact.active i:after,
-  #expander-skills.active i:after {
+  .a-expander.active i:after {
     transform:rotate(180deg);
       transition:.4s ease all;
   } 
+  
   #wrapper-contact,
   #wrapper-skills {
     display:none;
@@ -322,20 +327,26 @@ a:focus{
   
   .wrapper-expander {
     margin:0 0 !important;
-    padding:1px 0 !important;
+    padding:0 0 !important;
   }
   .wrapper-expander > p:first-child {
     margin-top:0;
   }
-  .wrapper-expander{
-    padding-bottom:10px !important;
+  .wrapper-expander:before,
+  .wrapper-expander:after{
+    content:"";
+    position:relative;
+    display:block;
+    height:15px;
+    width:100%;
   }
   
+
   #box-section-education{
     display:flex;
     flex-direction:column;
     flex-wrap:nowrap;
-    gap:0;
+    gap:15px;
   }
   #box-section-education h2{
     flex-basis:100%;
@@ -346,8 +357,9 @@ a:focus{
   #box-section-publications h2{
     letter-spacing:-1px;
   }
+  
   #divider-row-1{
-    margin:0 0 30px 0;
+    margin:0 0 15px 0;
     height:1px;
   }  
   #divider-col-1{
