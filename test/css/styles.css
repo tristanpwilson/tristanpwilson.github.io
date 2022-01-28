@@ -54,7 +54,7 @@ h3{
   font-size:16px;
   font-weight:600;
   margin:0 0 0 0;
-  padding:5px 0 5px 0;
+  padding:10px 0 5px 0;
 }
 
 h4{
@@ -146,14 +146,14 @@ a:focus{
   flex-direction:column;
   width:100%;
   margin:0 0 45px 0;
-  gap:15px 0;
+  gap:12.5px 0;
 }
 
 #box-section-education{
   flex-direction:row;
   justify-content:flex-start;
   flex-wrap:wrap;
-  gap:15px 45px;
+  gap:12.5px 45px;
 }
 #box-section-education h2{
   flex-basis:100%;
@@ -220,7 +220,7 @@ a:focus{
 
 
 @media(max-width:861px){
-  .mobile-only{display:flex;}
+  .mobile-only{display:flex !important;}
   .desktop-only{display:none !important;}
   
   h1{
@@ -228,7 +228,7 @@ a:focus{
   }
   h2{
     font-size:22px;
-    padding:15px 0;
+    padding:10px 0;
   }
   h3{
     font-size:16px;
@@ -281,6 +281,7 @@ a:focus{
     display:block;
     height:auto;
     width:100%;
+    padding:5px 0;
      /*For the brief color highlight when user taps on mobile*/
      -webkit-tap-highlight-color: rgba(0,0,0,0.03);  
   }
@@ -337,8 +338,13 @@ a:focus{
     content:"";
     position:relative;
     display:block;
-    height:15px;
     width:100%;
+  }
+  .wrapper-expander:before{
+    height:5px;
+  }
+  .wrapper-expander:after{
+    height:12.5px;
   }
   
 
@@ -349,6 +355,7 @@ a:focus{
     gap:15px;
   }
   #box-section-education h2{
+    margin-top:10px;
     flex-basis:100%;
   }
   #box-section-education div{
