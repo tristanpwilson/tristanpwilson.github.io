@@ -46,7 +46,7 @@
           </div>
           
           <div class="box-section-main" id="box-section-contact">
-            <a href="#" onclick="return false;" class="a-expander" id="expander-contact">
+            <a href="#" onclick="return false;" class="a-expander" id="expander-contact" tabindex="-1" aria-expanded="false">
               <h2>Contact <i></i></h2>
             </a>
             <div class="notToggled wrapper-expander" id="wrapper-contact">
@@ -66,13 +66,14 @@
                 <p>CodePen<img src="img/external.svg" alt="external link"></p>
               </a>
             </div>
+            <noscript id="noscript-contact"></noscript>
           </div>
-          
+
           <div class="box-section-main" id="box-section-skills">
-            <a href="#" onclick="return false;" class="a-expander" id="expander-skills">
+            <a href="#" onclick="return false;" class="a-expander" id="expander-skills" tabindex="-1" aria-expanded="false">
               <h2>Skills <i></i></h2>
             </a>            
-            <div class="notToggled wrapper-expander" id="wrapper-skills">
+            <div class="notToggled wrapper-expander wrapper-flex" id="wrapper-skills">
               <p>User Research Moderation</p>
               <p>User Research Design</p>
               <p>Accessibility Evaluation</p>
@@ -89,6 +90,7 @@
               <p>InVision / XD / Axure / Balsamiq</p>
               <p>Morae / Noldus</p>
             </div>
+            <noscript id="noscript-skills"></noscript>
           </div>
         </div>
         
@@ -125,25 +127,25 @@
             <h2>Experience</h2>
             <div>
               <h3>Senior User Experience Specialist &nbsp; | &nbsp; 2018 - Present</h3>
-              <a href="http://www.userworks.com" target="_blank" class="link-external"><h4>UserWorks, Inc.</h4></a>
+              <a href="http://www.userworks.com" target="_blank" class="link-external"><h4>UserWorks, Inc.<img src="img/external.svg" alt="external link"></h4></a>
               <p>Usability evaluation, user experience testing, heuristic evaluation, user journey mapping, wireframing, prototyping, and accessibility remediation.</p>
             </div>
             
             <div>
               <h3>User Experience Specialist &nbsp; | &nbsp; 2015 – 2018</h3>
-              <a href="http://www.userworks.com" target="_blank" class="link-external"><h4>UserWorks, Inc.</h4></a>
+              <a href="http://www.userworks.com" target="_blank" class="link-external"><h4>UserWorks, Inc.<img src="img/external.svg" alt="external link"></h4></a>
               <p>Lorem ipsum position descripsum Lorem ipsum position descripsum Lorem ipsum position descripsum Lorem ipsum position descripsum Lorem ipsum position descripsum Lorem ipsum position descripsum Lorem ipsum position descripsum Lorem ipsum position descripsum Lorem ipsum position descripsum Lorem ipsum position descripsum Lorem ipsum position descripsum Lorem </p>
             </div>
             
             <div>
               <h3>Research Project Coordinator &nbsp; | &nbsp; 2013 - 2015</h3>
-              <a href="https://sites.google.com/site/caipumaryland/" target="_blank" class="link-external"><h4>Comprehensive Assessment and Intervention Program (CAIP) Research Lab</h4></a>
+              <a href="https://sites.google.com/site/caipumaryland/" target="_blank" class="link-external"><h4>Comprehensive Assessment and Intervention Program (CAIP) Research Lab<img src="img/external.svg" alt="external link"></h4></a>
               <p>Administered semi-structured interviews and assessments for parent/teen dyads. Gathered data using various psychophysiological measures including EEG, heart rate variability, and saliva sampling. Analyzed session videos via behavioral coding. Assisted with data analysis. Coordinaed with principal researchers on experimental design and development. Oversaw and trained more than thirty research assistants. Assisted with participant recruitment.</p>
             </div>
             
             <div>
               <h3>Research Project Coordinator &nbsp; | &nbsp; 2012 – 2014</h3>
-              <a href="http://www.start.umd.edu/" target="_blank" class="link-external"><h4>National Consortium for the Study of Terrorism & Responses to Terrorism (START) Research Lab</h4></a>
+              <a href="http://www.start.umd.edu/" target="_blank" class="link-external"><h4>National Consortium for the Study of Terrorism & Responses to Terrorism (START) Research Lab<img src="img/external.svg" alt="external link"></h4></a>
               <p>Calculated inter-rater reliability agreement for behavioral coding data pertaining to declassified propaganda videos produced by extremist groups e.g. Al Qaeda. Catalogued and managed data from multiple reseachers. Coordinated lab activities and trained new research assistants.</p>
             </div>
             
@@ -155,7 +157,7 @@
             
             <div>
               <h3>Teaching Assistant, Human Perception &nbsp; | &nbsp; 2012 – 2013</h3>
-              <a href="https://psyc.umd.edu/facultyprofile/Wilson/Tristan" target="_blank" class="link-external"><h4>University of Maryland, College Park</h4></a>
+              <a href="https://psyc.umd.edu/facultyprofile/Wilson/Tristan" target="_blank" class="link-external"><h4>University of Maryland, College Park<img src="img/external.svg" alt="external link"></h4></a>
               <p>Prepared and presented lecture materials and demonstrations. Generated and graded course examinations. Held regular office hours and student review sessions.</p>
             </div>
             
@@ -204,20 +206,42 @@
           $("#wrapper-skills").css("display", "none");
         }
       });
+      
 
+      
       
       function expander() {
         if( $(window).width() <= 861 ) {
+
           $(this).siblings(".wrapper-expander").slideToggle( 400 );
-          $(this).toggleClass("active");
+          $(this).toggleClass("active").attr("tabindex","0");
           $(this).siblings(".wrapper-expander").toggleClass("toggled").toggleClass("notToggled");
+          
+          if($(this).hasClass("active")){
+            $(this).attr("aria-expanded", "true");
+          }else{
+            $(this).attr("aria-expanded", "false");
+          }
         }
         
       };
       $( "#expander-contact" ).click(expander);
       $( "#expander-skills" ).click(expander);
-
       
+      //Run on page load  
+      $(document).ready(tabindexExpander);
+      $(window).resize(tabindexExpander);
+
+      //Set appropriate tabindex on expander links
+      //Runs on page load and screen resize
+      function tabindexExpander(){
+        if( $(window).width() <= 861 ) {
+          $(".a-expander").attr("tabindex","0").attr("href","#").css("cursor","pointer");
+        }else{
+          $(".a-expander").attr("tabindex","-1").attr("href","").css("cursor","text");
+        }
+      }
+
     </script>
   </body>
 
