@@ -30,6 +30,10 @@
         <div class="col-head" id="col-head">
           <h1>Tristan Wilson</h1>
           <p id="p-sub-head">UX / Usability Research & Design</p>
+          <nav>
+            <a href="#" class="active">Resume</a>
+            <a href="/portfolio.html">Portfolio</a>
+          </nav>
         </div>
         
         
@@ -116,16 +120,16 @@
         var imgSrcVal = $(this).attr("data-image-src");
         var imgCssVal = "url(" + imgSrcVal + ")";
         
-        $("#blackout-modal-portfolio").fadeIn(100);
-        $("#modal-portfolio").fadeIn(100);
+        $("#blackout-modal-portfolio").fadeIn(400);
+        $("#modal-portfolio").fadeIn(400);
         
         $(".modal-portfolio > img").css("background-image", imgCssVal);
       }
       
      
       function modalClose(){
-        $("#blackout-modal-portfolio").fadeOut(100);
-        $("#modal-portfolio").fadeOut(100);
+        $("#blackout-modal-portfolio").fadeOut(200);
+        $("#modal-portfolio").fadeOut(200);
       }
       
       //Run imgBgSrc function on page load  
