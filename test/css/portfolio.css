@@ -89,7 +89,6 @@ a:focus p{
 
 
 
-
 .blackout-modal-portfolio{
   position:fixed;
   width:100%;
@@ -153,11 +152,21 @@ a:focus p{
 
 
 @media(max-width:861px){
+  .col-portfolio{
+    justify-content:center;
+    gap:20px 20px;
+    flex-basis:100%;
+  }
+  .box-portfolio{
+    flex-basis:calc(100% - 10px);
+    height:250px;
+  }
+  
   .modal-portfolio{
-    top:5vh;
+    top:3vh;
     width:90%;
-    height:90vh;
-    min-height:900px;
+    height:96vh;
+    min-height:initial;
     left:5%;
   }
   .modal-portfolio .img-main{
