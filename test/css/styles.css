@@ -263,6 +263,7 @@ a:focus p{
   
   h1{
     font-size:34px;
+    padding:7.5px 0;
   }
   h2{
     font-size:22px;
@@ -467,6 +468,7 @@ a:focus p{
 @media(max-width:460px){
   h1{
     font-size:32px;
+    padding:5px 0;
   }
   h2{
 
