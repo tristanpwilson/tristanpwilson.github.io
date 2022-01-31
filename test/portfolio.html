@@ -1,36 +1,123 @@
 <!doctype html>
-<html>
+<html lang="en">
   
   <head>
 
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <!--<meta content="width=device-width, initial-scale=1" name="viewport">-->
+    <meta content="width=device-width; initial-scale=1" name="viewport">
 
     <meta name="description" content="Tristan Wilson is a UX, usability, and accessibility researcher/specialist with over 6 years of experience leading efforts to improve the design of websites, software, and medical devices. He has formal background in behavioural and psychophysiological research, and is proficient with front-end web development, data analysis, computer hardware.">
 
-    <title>Tristan Wilson | UX and Usability Researcher</title>
+    <title>Tristan Wilson | Portfolio | UX and Usability Researcher</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
   </head>
 
   <nav>
   </nav>
 
-  <body>
-    <div class="container-main" id="container-header">
+  <body ontouchstart="">
     
-    </div>
     
-    <div class="container-main" id="container-body">
-    
+    <div class="container-main" id="container-main">
+      <div class="row-flex flex-just-center">
+        
+        
+        <div class="col-head" id="col-head">
+          <h1>Tristan Wilson</h1>
+          <p id="p-sub-head">UX / Usability Research & Design</p>
+        </div>
+        
+        
+        <div class="divider" id="divider-row-1"></div>
+        
+        
+        <div class="col-portfolio">
+
+          <div class="box-portfolio" data-image-src="/img/portfolio/covidmd-1.png">
+            <h2>AA</h2>
+            <div>
+              <p>AA</p>
+            </div>
+          </div>
+
+          <div class="box-portfolio" data-image-src="/img/portfolio/jayhagram-1.png">
+            <h2>AA</h2>
+            <div>
+              <p>AA</p>
+            </div>
+          </div>
+        
+          <div class="box-portfolio" data-image-src="/img/portfolio/userworks-1.png">
+            <h2>AA</h2>
+            <div>
+              <p>AA</p>
+            </div>
+          </div>
+          
+          <div class="box-portfolio" data-image-src="/img/portfolio/journeymap-1.png">
+            <h2>AA</h2>
+            <div>
+              <p>AA</p>
+            </div>
+          </div>   
+          
+          <div class="box-portfolio" data-image-src="/img/portfolio/persona-2.png">
+            <h2>AA</h2>
+            <div>
+              <p>AA</p>
+            </div>
+          </div>       
+          
+          <div class="box-portfolio" data-image-src="/img/portfolio/persona-1.png">
+            <h2>AA</h2>
+            <div>
+              <p>AA</p>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
     </div>
 
 
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+      
+      //Run imgBgSrc function on page load  
+      $(document).ready(imgBgSrc);
+
+      //Set the bg-image css parameter for each box-portfolio div to its own store value
+      function imgBgSrc(){
+        
+        //$(".box-portfolio").css("background-image", $(this).data("imageSource"));
+        $( ".box-portfolio" ).each(function() {
+          
+          //Pull stored img data from each HTML element
+          var imgSrcVal = $(this).attr("data-image-src");
+          
+          //Format pulled data for CSS injection
+          var imgCssVal = "url(" + imgSrcVal + ")";
+          
+          //Set the bg-image css parameter equal to the stored img for each
+          $(this).css("background-image", imgCssVal);
+        });
+      }
+
+
+    </script>
   </body>
 
-  <footer>
-  </footer>
   
 </html>
+
+
+
+
+
+
