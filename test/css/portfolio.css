@@ -107,6 +107,7 @@ a:focus p{
   top:10vh;
   width:70%;
   height:80vh;
+  min-height:900px;
   left:15%;
   background:#fff;
   box-shadow:0 5px 10px 5px rgba(0,0,0,0.2), 0 10px 40px 5px rgba(0,0,0,0.5);
@@ -152,7 +153,18 @@ a:focus p{
 
 
 @media(max-width:861px){
-
+  .modal-portfolio{
+    top:5vh;
+    width:90%;
+    height:90vh;
+    min-height:900px;
+    left:5%;
+  }
+  .modal-portfolio .img-main{
+    flex-basis:100%;
+    height:80%;
+    background-size:100% auto;
+  }
 }
 
 
