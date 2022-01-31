@@ -38,56 +38,95 @@
         
         <div class="col-portfolio">
 
-          <div class="box-portfolio" data-image-src="img/portfolio/covidmd-1.png">
+          <a href="#" class="box-portfolio" data-image-src="img/portfolio/covidmd-1md.png">
             <h2>AA</h2>
             <div>
               <p>AA</p>
             </div>
-          </div>
+          </a>
 
-          <div class="box-portfolio" data-image-src="img/portfolio/jayhagram-1.png">
+          <a href="#" class="box-portfolio" data-image-src="img/portfolio/jayhagram-1md.png">
             <h2>AA</h2>
             <div>
               <p>AA</p>
             </div>
-          </div>
+          </a>
         
-          <div class="box-portfolio" data-image-src="img/portfolio/userworks-1.png">
+          <a href="#" class="box-portfolio" data-image-src="img/portfolio/userworks-1md.png">
             <h2>AA</h2>
             <div>
               <p>AA</p>
             </div>
-          </div>
+          </a>
           
-          <div class="box-portfolio" data-image-src="img/portfolio/journeymap-1.png">
+          <a href="#" class="box-portfolio" data-image-src="img/portfolio/journeymap-1md.png">
             <h2>AA</h2>
             <div>
               <p>AA</p>
             </div>
-          </div>   
+          </a>  
           
-          <div class="box-portfolio" data-image-src="img/portfolio/persona-2.png">
+          <a href="#" class="box-portfolio" data-image-src="img/portfolio/persona-2md.png">
             <h2>AA</h2>
             <div>
               <p>AA</p>
             </div>
-          </div>       
+          </a>      
           
-          <div class="box-portfolio" data-image-src="img/portfolio/persona-1.png">
+          <a href="#" class="box-portfolio" data-image-src="img/portfolio/persona-1md.png">
             <h2>AA</h2>
             <div>
               <p>AA</p>
             </div>
-          </div>
+          </a>
+          
           
         </div>
         
+        
       </div>
     </div>
+    
+    
+    
+    
+    <div class="blackout-modal-portfolio" id="blackout-modal-portfolio"></div>
+    
+    <div class="modal-portfolio" id="modal-portfolio">
+      <button type="button" tabindex="0" class="btn-close" id="btn-close">x</button>
+      <img alt="" class="img-main">
+      <h2>Placeholder</h2>
+      <p>Placeholder</p>
+    </div>
 
-
+    
+    
+    
+    
+    
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
+      
+      $(".box-portfolio").click(modalOpen);
+      $("#btn-close").click(modalClose);
+      $("#blackout-modal-portfolio").click(modalClose);
+      
+      
+      function modalOpen(){
+        var imgSrcVal = $(this).attr("data-image-src");
+        var imgCssVal = "url(" + imgSrcVal + ")";
+        
+        $("#blackout-modal-portfolio").fadeIn(100);
+        $("#modal-portfolio").fadeIn(100);
+        
+        $(".modal-portfolio > img").css("background-image", imgCssVal);
+      }
+      
+     
+      function modalClose(){
+        $("#blackout-modal-portfolio").fadeOut(100);
+        $("#modal-portfolio").fadeOut(100);
+      }
       
       //Run imgBgSrc function on page load  
       $(document).ready(imgBgSrc);
