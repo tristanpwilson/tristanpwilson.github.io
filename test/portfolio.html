@@ -44,43 +44,43 @@
         <div class="col-portfolio">
 
           <a href="#" onclick="return false;" class="box-portfolio" data-image-src="img/portfolio/covidmd-1md.png">
-            <h2></h2>
             <div>
-              <p></p>
+              <h2>COVID-19 data tracking and visualization hub for the state of Maryland (HTML, CSS, JS)</h2>
+              <p>From 2020-2021, I operated and maintained a COVID-19 data visualization site focused on the state of Maryland. Early on in the pandemic, I noticed that while the state published their COVID-19 data online, they did so in a way that could be confusing and/or difficult to parse for the layperson. I decided to scrape Maryland's public COVID-19 data and display it in a way that was more clear, visually interesting, and (hopefully) easy to understand. I used leaflet.js for the map visualizations, and chart.js as the base for all of my graphs and charts.</p>
             </div>
           </a>
 
           <a href="#" onclick="return false;" class="box-portfolio" data-image-src="img/portfolio/jayhagram-1md.png">
-            <h2></h2>
             <div>
-              <p></p>
+              <h2>Design and development of modeling portfolio (HTML, CSS, JS, Instagram API)</h2>
+              <p>In 2020, I designed, developed, and hosted a modeling portfolio for a friend who wanted improve her web presence, as well as have a centralized location for her work portfolio, contact information, and more. I built a clean, "minimalist" site that dynamically pulled her latest instagram photos using the instagram API; this way, she could update the content on her site by simply making a new post, without having to deal with code and/or go through me.</p>
             </div>
           </a>
         
-          <a href="#" onclick="return false;" class="box-portfolio" data-image-src="img/portfolio/userworks-1md.png">
-            <h2></h2>
+          <a href="#" onclick="return false;" class="box-portfolio box-1" data-image-src="img/portfolio/userworks-1md.png">
             <div>
-              <p></p>
+              <h2>Design and development of UserWorks Inc's new corporate website (HTML, CSS, JS, PHP)</h2>
+              <p>In 2017, I had the opportunity to redesign UserWorks' corporate website from the ground up. The previous site was outdated, not responsive, and had been built more than 5 years earlier using a commercial template. I designed and developed an entirely new website and style guide for the company.</p>
             </div>
           </a>
           
           <a href="#" onclick="return false;" class="box-portfolio" data-image-src="img/portfolio/journeymap-1md.png">
-            <h2></h2>
             <div>
+              <h2>User Journey Map for Medical Conference</h2>
               <p></p>
             </div>
           </a>  
           
           <a href="#" onclick="return false;" class="box-portfolio" data-image-src="img/portfolio/persona-2md.png">
-            <h2></h2>
             <div>
+              <h2>User personas for attendees of medical conference (1 of 3)</h2>
               <p></p>
             </div>
           </a>      
           
           <a href="#" onclick="return false;" class="box-portfolio" data-image-src="img/portfolio/persona-1md.png">
-            <h2></h2>
             <div>
+              <h2>User personas for users of an international financial website</h2>
               <p></p>
             </div>
           </a>
@@ -122,10 +122,15 @@
       $("#btn-close").click(modalClose);
       $("#blackout-modal-portfolio").click(modalClose);
       
+
       
       function modalOpen(){
         var imgSrcVal = $(this).attr("data-image-src");
         var imgCssVal = "url(" + imgSrcVal + ")";
+        var descriptionH2 = $(this).find("div > h2").html();
+        var descriptionP = $(this).find("div > p").html();
+        
+
         
         //Displaying the modal and background blackout
         $("#blackout-modal-portfolio").fadeIn(400);
@@ -133,6 +138,8 @@
         
         //Setting modal img url to whatever item the user selected
         $("#wrapper-img-zoom > img").css("background-image", imgCssVal);
+        $("#wrapper-modal-desc > h2").html(descriptionH2);
+        $("#wrapper-modal-desc > p").html(descriptionP);
         
         //Calling jQueryZoom for modal image & varying zoom ratio based on screen width
         if( $(window).width() < 861 ) {

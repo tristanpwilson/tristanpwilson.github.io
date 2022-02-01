@@ -32,24 +32,10 @@ h1{
 
 }
 
-h2{
-  text-transform: none;
-}
 
-h3{
-
-}
-
-h4{
-
-}
-
-p{
-
-}
 
 a{
-
+  font-size:14px;
 }
 
 a:hover,
@@ -87,7 +73,13 @@ a:focus p{
   background-position: top;
 }
 
+.box-portfolio h2{
+  visibility:hidden;
+}
 
+.box-portfolio p{
+  visibility:hidden;
+}
 
 .blackout-modal-portfolio{
   position:fixed;
@@ -103,7 +95,7 @@ a:focus p{
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
-  top:calc((100vh - (80px + 90vw / 1.7)) / 2);
+  top:calc((100vh - (120px + 90vw / 1.7)) / 2);
   width:90%;
   height:auto;
   left:5%;
@@ -127,7 +119,23 @@ a:focus p{
 }
 
 .modal-portfolio #wrapper-modal-desc{
-  height:80px;
+  flex-basis:100%;
+  height:120px;
+  padding:10px 20px;
+  background:rgba(40,40,40,1);
+}
+
+.modal-portfolio h2{
+  margin:0;
+  padding:5px 0;
+  font-size:16px;
+  text-transform: none;
+  color:#fff;
+}
+
+.modal-portfolio p{
+  font-size:14px;
+  color:#fff;
 }
 
 
@@ -155,7 +163,7 @@ a:focus p{
 
 @media(min-width:1990px){
   .modal-portfolio{
-    top:calc((100vh - 1138px) / 2);
+    top:calc((100vh - 1178px) / 2);
     width:1800px;
     left:calc((100% - 1800px) / 2);
   }
@@ -183,14 +191,14 @@ a:focus p{
   }
   
   .modal-portfolio{
-    top:calc(40px + 50vh - 96vw / 1.7);
+    top:calc(120px + 50vh - 96vw / 1.7);
     width:96%;
     height:auto;
     min-height:initial;
     left:2%;
   }
   .modal-portfolio #wrapper-modal-desc{
-    height:80px;
+    height:120px;
   }
   .modal-portfolio #wrapper-img-zoom{
     height:calc(96vw / 1.7);
