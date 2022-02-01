@@ -103,31 +103,31 @@ a:focus p{
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
-  top:10vh;
-  width:80%;
-  height:80vh;
-  min-height:900px;
-  left:10%;
+  top:calc((100vh - (80px + 90vw / 1.7)) / 2);
+  width:90%;
+  height:auto;
+  left:5%;
   background:#fff;
   box-shadow:0 5px 10px 5px rgba(0,0,0,0.2), 0 10px 40px 5px rgba(0,0,0,0.5);
 }
 
 .modal-portfolio #wrapper-img-zoom{
   flex-basis:100%;
-  height:80%;
-  background-image:url();
-  background-size:100% auto;
-  background-repeat: no-repeat;
-  background-position: top;
+  height:calc(90vw / 1.7);
+  /*max-height:70vh;*/
 }
 
 .modal-portfolio #wrapper-img-zoom .img-main{
   height:100%;
   width:100%;
   background-image:url();
-  background-size:100% auto;
+  background-size:cover;
   background-repeat: no-repeat;
   background-position: top;
+}
+
+.modal-portfolio #wrapper-modal-desc{
+  height:80px;
 }
 
 
@@ -153,8 +153,16 @@ a:focus p{
 }
 
 
-@media(max-width:1199px){
-
+@media(min-width:1990px){
+  .modal-portfolio{
+    top:calc((100vh - 1138px) / 2);
+    width:1800px;
+    left:calc((100% - 1800px) / 2);
+  }
+  .modal-portfolio #wrapper-img-zoom{
+    flex-basis:100%;
+    height:calc(1800px / 1.7);
+  }
 }
 
 
@@ -188,7 +196,6 @@ a:focus p{
     height:calc(96vw / 1.7);
   }
   .modal-portfolio .img-main{
-
     height:100%;
     background-size:100% auto;
   }
