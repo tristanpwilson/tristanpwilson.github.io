@@ -99,9 +99,13 @@
     
     <div class="modal-portfolio" id="modal-portfolio" style="display:none;">
       <button type="button" tabindex="0" class="btn-close" id="btn-close">x</button>
+      <div id="wrapper-img-zoom">
       <img alt="" class="img-main">
-      <h2>Placeholder</h2>
-      <p>Placeholder</p>
+      </div>
+      <div id="wrapper-modal-desc">
+        <h2>Placeholder</h2>
+        <p>Placeholder</p>
+      </div>
     </div>
 
     
@@ -110,6 +114,15 @@
     
     
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.zoom.js"></script>
+    
+    <script type="text/javascript">
+      
+//      $(document).ready(function(){
+//        $('a.photo').zoom({url: 'photo-big.jpg'});
+//      });
+    </script>
+    
     <script type="text/javascript">
       
       $(".box-portfolio").click(modalOpen);
@@ -121,10 +134,19 @@
         var imgSrcVal = $(this).attr("data-image-src");
         var imgCssVal = "url(" + imgSrcVal + ")";
         
+        //Displaying the modal and background blackout
         $("#blackout-modal-portfolio").fadeIn(400);
         $("#modal-portfolio").fadeIn(400);
         
-        $(".modal-portfolio > img").css("background-image", imgCssVal);
+        //Setting modal img url to whatever item the user selected
+        $("#wrapper-img-zoom > img").css("background-image", imgCssVal);
+        
+        //Calling jQueryZoom for modal image & varying zoom ratio based on screen width
+        if( $(window).width() < 861 ) {
+          $("#wrapper-img-zoom").zoom({url: imgSrcVal, on: "grab", magnify: 0.25, duration: 300});
+        }else{
+          $("#wrapper-img-zoom").zoom({url: imgSrcVal, on: "grab", magnify: 0.7, duration: 300});
+        }
       }
       
      
@@ -139,7 +161,6 @@
       //Set the bg-image css parameter for each box-portfolio div to its own store value
       function imgBgSrc(){
         
-        //$(".box-portfolio").css("background-image", $(this).data("imageSource"));
         $( ".box-portfolio" ).each(function() {
           
           //Pull stored img data from each HTML element
