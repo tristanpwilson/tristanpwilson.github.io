@@ -91,7 +91,7 @@ a:focus p{
 }
 
 .modal-portfolio{
-  position:absolute;
+  position:fixed;
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
@@ -191,14 +191,14 @@ a:focus p{
   }
   
   .modal-portfolio{
-    top:calc(120px + 50vh - 96vw / 1.7);
+    top:15vh;
     width:96%;
     height:auto;
     min-height:initial;
     left:2%;
   }
   .modal-portfolio #wrapper-modal-desc{
-    height:120px;
+    height:auto;
   }
   .modal-portfolio #wrapper-img-zoom{
     height:calc(96vw / 1.7);
