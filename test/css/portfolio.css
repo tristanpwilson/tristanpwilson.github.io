@@ -163,9 +163,9 @@ a:focus p{
   }
   
   .modal-portfolio{
-    top:3vh;
+    top:15vh;
     width:90%;
-    height:96vh;
+    height:70vh;
     min-height:initial;
     left:5%;
   }
@@ -180,5 +180,3 @@ a:focus p{
 @media(max-width:460px){
 
 }
-
-
