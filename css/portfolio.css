@@ -1,0 +1,215 @@
+/* CSS Document */
+
+
+*{
+}
+
+*:focus{
+}
+
+.mobile-only{display:none !important;}
+.desktop-only{display:flex;}
+
+
+
+/* ------------------------------------- */
+/* --------- Main Text Styles ---------- */
+/* ------------------------------------- */
+
+h1,h2,h3,h4,p,a{
+
+}
+
+h1,h2,h3,h4{
+
+}
+
+p{
+
+}
+
+h1{
+
+}
+
+
+
+a{
+  font-size:14px;
+}
+
+a:hover,
+a:focus{
+
+}
+
+a:hover p,
+a:focus p{
+
+}
+
+
+
+/* ------------------------------------- */
+/* ------- Portfolio Containers -------- */
+/* ------------------------------------- */
+
+.col-portfolio{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  gap:30px 30px;
+  flex-basis:100%;
+}
+
+.box-portfolio{
+  flex-basis:calc(50% - 15px);
+  height:400px;
+  background-color:transparent;
+  background-image:url();
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.box-portfolio h2{
+  visibility:hidden;
+}
+
+.box-portfolio p{
+  visibility:hidden;
+}
+
+.blackout-modal-portfolio{
+  position:fixed;
+  width:100%;
+  height:130%;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.6);
+}
+
+.modal-portfolio{
+  position:fixed;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  top:calc((100vh - (120px + 90vw / 1.7)) / 2);
+  width:90%;
+  height:auto;
+  left:5%;
+  background:#fff;
+  box-shadow:0 5px 10px 5px rgba(0,0,0,0.2), 0 10px 40px 5px rgba(0,0,0,0.5);
+}
+
+.modal-portfolio #wrapper-img-zoom{
+  flex-basis:100%;
+  height:calc(90vw / 1.7);
+  /*max-height:70vh;*/
+}
+
+.modal-portfolio #wrapper-img-zoom .img-main{
+  height:100%;
+  width:100%;
+  background-image:url();
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.modal-portfolio #wrapper-modal-desc{
+  flex-basis:100%;
+  height:120px;
+  padding:10px 20px;
+  background:rgba(40,40,40,1);
+}
+
+.modal-portfolio h2{
+  margin:0;
+  padding:5px 0;
+  font-size:16px;
+  text-transform: none;
+  color:#fff;
+}
+
+.modal-portfolio p{
+  font-size:14px;
+  color:#fff;
+}
+
+
+.btn-close{
+  position:absolute;
+  display:block;
+  top:10px;
+  right:10px;
+  height:24px;
+  width:24px;
+  margin:0;
+  padding:0 0 2.5px 0;
+  line-height:18px;
+  font-size:14px;
+  font-weight:500;
+  color:#ffffff;
+  text-shadow:0 0 2px rgba(0,0,0,0.9),0 0 1px rgba(0,0,0,0.9);
+  cursor:pointer;
+  background:#444;
+  border:1px solid #fff;
+  border-radius:50%;
+  z-index:100 !important;
+}
+
+
+@media(min-width:1990px){
+  .modal-portfolio{
+    top:calc((100vh - 1178px) / 2);
+    width:1800px;
+    left:calc((100% - 1800px) / 2);
+  }
+  .modal-portfolio #wrapper-img-zoom{
+    flex-basis:100%;
+    height:calc(1800px / 1.7);
+  }
+}
+
+
+@media(max-width:991px){
+
+}
+
+
+@media(max-width:861px){
+  .col-portfolio{
+    justify-content:center;
+    gap:20px 20px;
+    flex-basis:100%;
+  }
+  .box-portfolio{
+    flex-basis:calc(100% - 10px);
+    height:250px;
+  }
+  
+  .modal-portfolio{
+    top:15vh;
+    width:96%;
+    height:auto;
+    min-height:initial;
+    left:2%;
+  }
+  .modal-portfolio #wrapper-modal-desc{
+    height:auto;
+  }
+  .modal-portfolio #wrapper-img-zoom{
+    height:calc(96vw / 1.7);
+  }
+  .modal-portfolio .img-main{
+    height:100%;
+    background-size:100% auto;
+  }
+}
+
+
+@media(max-width:460px){
+
+}
