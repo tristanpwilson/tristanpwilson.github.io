@@ -100,7 +100,7 @@
     <div class="modal-portfolio" id="modal-portfolio" style="display:none;">
       <button type="button" tabindex="0" class="btn-close" id="btn-close">x</button>
       <div id="wrapper-img-zoom">
-      <img alt="" class="img-main">
+        <img alt="" class="img-main">
       </div>
       <div id="wrapper-modal-desc">
         <h2>Placeholder</h2>
@@ -115,13 +115,6 @@
     
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.zoom.js"></script>
-    
-    <script type="text/javascript">
-      
-//      $(document).ready(function(){
-//        $('a.photo').zoom({url: 'photo-big.jpg'});
-//      });
-    </script>
     
     <script type="text/javascript">
       
@@ -151,8 +144,14 @@
       
      
       function modalClose(){
+        //Hide modal and child content
         $("#blackout-modal-portfolio").fadeOut(200);
+        
+        //Hide blackout backdrop
         $("#modal-portfolio").fadeOut(200);
+        
+        //Destroy generated zoom img element from modal so they don't stack when repeated
+        $(".zoomImg").remove();
       }
       
       //Run imgBgSrc function on page load  
