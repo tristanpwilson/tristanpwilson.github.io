@@ -136,9 +136,9 @@
         
         //Calling jQueryZoom for modal image & varying zoom ratio based on screen width
         if( $(window).width() < 861 ) {
-          $("#wrapper-img-zoom").zoom({url: imgSrcVal, on: "grab", magnify: 0.25, duration: 300});
+          $("#wrapper-img-zoom").zoom({url: imgSrcVal, on: "grab", magnify: 0.5, duration: 300});
         }else{
-          $("#wrapper-img-zoom").zoom({url: imgSrcVal, on: "grab", magnify: 0.7, duration: 300});
+          $("#wrapper-img-zoom").zoom({url: imgSrcVal, on: "grab", magnify: 1, duration: 300});
         }
       }
       
