@@ -1,11 +1,11 @@
-@font-face {
+/*@font-face {
     font-family: 'Open Sans';
     src: url('../font/subset-OpenSans-BoldItalic.woff2') format('woff2'),
         url('../font/subset-OpenSans-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
-}
+}*/
 
 @font-face {
     font-family: 'Open Sans';
@@ -16,14 +16,14 @@
     font-display: swap;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'Open Sans';
     src: url('../font/subset-OpenSans-Bold.woff2') format('woff2'),
         url('../font/subset-OpenSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
-}
+}*/
 
 @font-face {
     font-family: 'Open Sans';
@@ -34,23 +34,23 @@
     font-display: swap;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'Open Sans';
     src: url('../font/subset-OpenSans-MediumItalic.woff2') format('woff2'),
         url('../font/subset-OpenSans-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
-}
+}*/
 
-@font-face {
+/*@font-face {
     font-family: 'Open Sans';
     src: url('../font/subset-OpenSans-Medium.woff2') format('woff2'),
         url('../font/subset-OpenSans-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
-}
+}*/
 
 @font-face {
     font-family: 'Open Sans';
@@ -97,11 +97,11 @@
     font-display: swap;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'Open Sans';
     src: url('../font/subset-OpenSans-ExtraBoldItalic.woff2') format('woff2'),
         url('../font/subset-OpenSans-ExtraBoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
-}
+}*/
