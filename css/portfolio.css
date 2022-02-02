@@ -95,7 +95,7 @@ a:focus p{
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
-  top:calc((100vh - (120px + 90vw / 1.7)) / 2);
+  top:5vh;
   width:90%;
   height:auto;
   left:5%;
@@ -106,6 +106,7 @@ a:focus p{
 .modal-portfolio #wrapper-img-zoom{
   flex-basis:100%;
   height:calc(90vw / 1.7);
+  max-height:80vh;
   /*max-height:70vh;*/
 }
 
