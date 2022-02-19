@@ -1,15 +1,9 @@
 /* CSS Document */
 
 
-*{
-}
+*{}
 
-*:focus{
-}
-
-.mobile-only{display:none !important;}
-.desktop-only{display:flex;}
-
+*:focus{}
 
 
 /* ------------------------------------- */
@@ -66,16 +60,70 @@ a:focus p{
 .box-portfolio{
   flex-basis:calc(50% - 15px);
   height:400px;
-  background-color:transparent;
+  background-color:#EAEAEA;
   background-image:url();
   background-size:cover;
   background-repeat: no-repeat;
   background-position: top;
+  box-shadow:0 1px 3px 0 rgba(0,0,0,0.3);
+}
+
+.box-portfolio:before{
+  content:"\e8ff";
+  position:absolute;
+  margin:10px 0 0 10px;
+  padding:5px;
+  font-family:Material Icons;
+  font-size:22px;
+  color:#ffffff;
+  background:rgba(34,34,34,.6);
+  border:2px solid #fff;
+  border-radius:50%;
+  opacity:.3;
+  transition:.2s ease all .05s;
+}
+
+.box-portfolio:hover:before,
+.box-portfolio:focus:before{
+  padding:10px;
+  font-size:32px;
+  opacity:1;
+  transition:.3s ease all;
 }
 
 .box-portfolio h2{
   visibility:hidden;
 }
+
+/*.box-portfolio div h2{
+  flex-basis:28px;
+  flex-shrink:1;
+  flex-grow:0;
+  
+  position:relative;
+  display:block;
+  height:28px;
+  width:80%;
+
+  padding:5px 10px;
+  margin:0 0 0 0;
+  line-height:100%;
+  font-size:14px;
+  font-weight:400;
+  text-transform:none !important;
+  
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  overflow:hidden !important;
+  
+  color:#fff;
+  background:rgba(34,34,34,.8);
+  border:1px solid #fff;
+  border-left: none;
+  border-radius:0 3px 3px 0;
+  box-shadow:0 1px 3px 0 rgba(0,0,0,0.3);
+}*/
+
 
 .box-portfolio p{
   visibility:hidden;
@@ -148,19 +196,33 @@ a:focus p{
   height:24px;
   width:24px;
   margin:0;
-  padding:0 0 2.5px 0;
-  line-height:18px;
+  padding:0;
+/*  line-height:18px;
   font-size:14px;
   font-weight:500;
-  color:#ffffff;
-  text-shadow:0 0 2px rgba(0,0,0,0.9),0 0 1px rgba(0,0,0,0.9);
+  color:#ffffff;*/
   cursor:pointer;
-  background:#444;
-  border:1px solid #fff;
-  border-radius:50%;
+  background:transparent;
+  border:none;
+ /*  border-radius:50%;*/
   z-index:100 !important;
 }
 
+.btn-close:after{
+  content:"\e5c9";
+  position:absolute;
+  left:0;
+  top:0;
+  height:26px;
+  width:26px;
+  font-family:Material Icons;
+  font-size:26px;
+  line-height:26px;
+  color:#444;
+  background:#ffffff;
+
+  border-radius:50%;
+}
 
 @media(min-width:1990px){
   .modal-portfolio{
