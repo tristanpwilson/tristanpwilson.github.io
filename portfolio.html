@@ -41,12 +41,15 @@
         <div class="divider" id="divider-row-1"></div>
         
         
+        <!-- Creative Portfolio -->
+        
         <div class="col-portfolio">
-          <!--<a href="#" onclick="return false;" class="box-portfolio" data-image-src="img/portfolio/color-contrast-checker-animated.apng">-->
+          
           <a href="#" onclick="return false;" class="box-portfolio" data-image-src="img/portfolio/color-contrast-checker-animated2.apng">
             <div>
               <h2>Design & Development of Custom Color Contrast Checker with Dynamic Luminance & Ratio Calculation (HTML, CSS, JS)</h2>
               <p>As an accessibility specialist, I check the color contrast of content quite frequently, and I've found that many of the contrast ratio calculators available online are frustrating to use and/or lacking features. In the end, I decided to create my own contrast checker from scratch. The tool accepts two hex values (entered manually, or selected via color picker), and uses JS to dynamically calculate their relative luminance, contrast, and WCAG compliance. This was one of the most math-intensive JavaScript projects I've completed in recent memory, but the effort was worth it because I now use this tool regularly.</p>
+              <span>https://tristanw.com/contrast/calc</span>
             </div>
           </a>
           
@@ -54,6 +57,7 @@
             <div>
               <h2>Design & Development of an Unofficial Maryland COVID-19 Data Visualization Hub (HTML, CSS, JS)</h2>
               <p>From 2020-2021, I designed, developed, and maintained a COVID-19 data visualization website focused on the state of Maryland. Early on in the pandemic, I noticed that while the state published their COVID-19 data online, they did so in a way that could be confusing and/or difficult to parse for the layperson. I decided to scrape Maryland's public COVID-19 data and display it in a way that was more clear, visually interesting, and (hopefully) easy to understand. I used leaflet.js for the map visualizations, and chart.js as the base for all of my graphs and charts.</p>
+              <span>https://covidmd.info</span>
             </div>
           </a>
 
@@ -68,6 +72,7 @@
             <div>
               <h2>Design & Development of UserWorks Inc's New Corporate Website (HTML, CSS, JS, PHP)</h2>
               <p>In 2017, I had the opportunity to redesign UserWorks' corporate website from the ground up. The previous site was outdated, not responsive, and had been built more than 5 years earlier using a commercial template. I designed and developed an entirely new website and style guide for the company.</p>
+              <span>https://userworks.com</span>
             </div>
           </a>
           
@@ -88,13 +93,35 @@
           <a href="#" onclick="return false;" class="box-portfolio" data-image-src="img/portfolio/persona-1md.png">
             <div>
               <h2>Design of User Personas for an International Financial Organization's Website</h2>
-              <p></p>
+              <p>In service to a client at UserWorks, I desiged three user personas representing major user groups for an international financial organization's public website.</p>
             </div>
           </a>
           
-          
         </div>
         
+        
+        <!--<div class="divider" id="divider-row-2"></div>-->
+        
+        
+        <!-- Codepens -->
+        
+        
+        <!--<div class="col-portfolio">
+
+          <iframe class="box-portfolio" height="400" style="width: 100%;" scrolling="no" title="CSS Grid | Basic Responsive Layout" src="https://codepen.io/srirachachacha/embed/preview/ggpzKZ?default-tab=result&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/srirachachacha/pen/ggpzKZ">
+            CSS Grid | Basic Responsive Layout</a> by Tristan Wilson (<a href="https://codepen.io/srirachachacha">@srirachachacha</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe> 
+         
+          
+          <iframe class="box-portfolio" height="400" style="width: 100%;" scrolling="no" title="Custom Text Underline Styles Using Pseudo Elements" src="https://codepen.io/srirachachacha/embed/preview/pNyQoY?default-tab=&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/srirachachacha/pen/pNyQoY">
+            Custom Text Underline Styles Using Pseudo Elements</a> by Tristan Wilson (<a href="https://codepen.io/srirachachacha">@srirachachacha</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          
+        </div>-->
         
       </div>
     </div>
@@ -112,6 +139,7 @@
       <div id="wrapper-modal-desc">
         <h2>Placeholder</h2>
         <p>Placeholder</p>
+        <a href="" title="External Link" target="_blank" class="link-external"></a>
       </div>
     </div>
 
@@ -136,6 +164,7 @@
         var imgCssVal = "url(" + imgSrcVal + ")";
         var descriptionH2 = $(this).find("div > h2").html();
         var descriptionP = $(this).find("div > p").html();
+        var descriptionA = $(this).find("div > span").html();
         
 
         
@@ -147,6 +176,7 @@
         $("#wrapper-img-zoom > img").css("background-image", imgCssVal);
         $("#wrapper-modal-desc > h2").html(descriptionH2);
         $("#wrapper-modal-desc > p").html(descriptionP);
+        $("#wrapper-modal-desc > a").html(descriptionA).attr("href",descriptionA);
         
         //Calling jQueryZoom for modal image & varying zoom ratio based on screen width
         if( $(window).width() < 861 ) {
@@ -163,6 +193,8 @@
         
         //Hide blackout backdrop
         $("#modal-portfolio").fadeOut(200);
+        
+        $("#wrapper-modal-desc > a").html("").attr("href","");
         
         //Destroy generated zoom img element from modal so they don't stack when repeated
         $(".zoomImg").remove();

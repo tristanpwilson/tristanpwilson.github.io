@@ -68,6 +68,11 @@ a:focus p{
   box-shadow:0 1px 3px 0 rgba(0,0,0,0.3);
 }
 
+.box-portfolio:focus{
+  outline:1px dashed #1985DD;
+  outline-offset:2px;
+}
+
 .box-portfolio:before{
   content:"\e8ff";
   position:absolute;
@@ -128,6 +133,9 @@ a:focus p{
 .box-portfolio p{
   visibility:hidden;
 }
+.box-portfolio div span{
+  visibility:hidden;
+}
 
 .blackout-modal-portfolio{
   position:fixed;
@@ -169,7 +177,7 @@ a:focus p{
 
 .modal-portfolio #wrapper-modal-desc{
   flex-basis:100%;
-  height:120px;
+  min-height:120px;
   padding:10px 20px;
   background:rgba(40,40,40,1);
 }
@@ -187,6 +195,10 @@ a:focus p{
   color:#fff;
 }
 
+.modal-portfolio a{
+  font-size:14px;
+  color:#70B5FF;
+}
 
 .btn-close{
   position:absolute;

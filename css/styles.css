@@ -144,6 +144,9 @@ a:focus p{
   .col-head nav a.active{
     border: 2px solid #555;
   }
+  .col-head nav a:focus{
+    border-color: #3B8BD7;
+  }
 
 .col-left{
   flex-basis:calc(20% - 46px);
@@ -206,7 +209,8 @@ a:focus p{
 /* ------------------------------------- */
 
 .divider {position:relative;background:#555;}
-#divider-row-1{position:relative; flex-basis:calc(100% - 45px); flex-grow:1; height:2px;}
+#divider-row-1,
+#divider-row-2{position:relative; flex-basis:calc(100% - 45px); flex-grow:1; height:2px;}
 #divider-col-1{position:relative; flex-basis:2px; width:2px;}
 
 
